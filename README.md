@@ -1,29 +1,51 @@
-# 开源软硬件趋势雷达
+# Open-Source Software & Hardware Trend Radar
 
-面向产品团队的每周趋势仪表板，追踪国内外开源软件、开放硬件、创客项目与科技众筹热点。
+[English](README.md) | [简体中文](README.zh-CN.md)
 
-## 在线访问
+A weekly trend dashboard for product teams, tracking notable open-source software, open hardware, maker projects, and technology crowdfunding campaigns worldwide.
+
+## Live dashboard
 
 https://open-source-weekly-radar.yujianxi0.chatgpt.site
 
-## 关注方向
+## What it tracks
 
-- 键盘、鼠标、控制器、HID 与人体工学输入
-- 语音、视觉、手势、眼动及 Agent 驱动的 AI 智能输入
-- 新奇、前沿且具技术突破潜力的开放硬件
-- GitHub、Hackaday、Hackster.io、Crowd Supply、Kickstarter、Indiegogo 等平台趋势
+- Keyboards, mice, controllers, HID devices, and ergonomic input
+- AI-native input through voice, vision, gesture, eye tracking, contextual awareness, and agents
+- Novel open-hardware projects with meaningful technical breakthroughs
+- Trends across GitHub, Hackaday, Hackster.io, Crowd Supply, Kickstarter, Indiegogo, and other sources
 
-## 本地开发
+## Selection model
+
+Projects are evaluated through two channels:
+
+- **Core relevance:** input devices, desktop workflows, cross-device control, and AI-assisted interaction
+- **Frontier breakthroughs:** highly novel hardware with strong technical significance, even before mainstream traction
+
+The opportunity score is calculated as:
+
+`Input relevance × 6 + AI input × 4 + Technical breakthrough × 4 + Market potential × 3 + Novelty × 2 + Popularity × 1`
+
+Popularity intentionally contributes only about 5% of the total weighting.
+
+## Local development
 
 ```bash
 npm install
 npm run dev
 ```
 
-构建：
+Build for production:
 
 ```bash
 npm run build
 ```
 
-数据快照和来源证据位于 `src/data.json`，仪表板主体位于 `src/content/dashboard/`。
+## Project structure
+
+- `src/data.json` — reviewed trend data and source evidence
+- `src/content/dashboard/` — dashboard-specific interface and analysis
+- `src/components/` and `src/charting/` — shared UI and visualization components
+- `docs/components/` — component reference documentation
+
+Generated build output and local dependencies are intentionally excluded from the repository.
