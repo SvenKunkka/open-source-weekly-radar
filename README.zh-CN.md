@@ -6,7 +6,7 @@
 
 ## 在线访问
 
-https://open-source-weekly-radar.yujianxi0.chatgpt.site
+https://svenkunkka.github.io/open-source-weekly-radar/
 
 ## 关注方向
 
