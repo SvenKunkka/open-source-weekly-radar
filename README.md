@@ -6,7 +6,7 @@ A weekly trend dashboard for product teams, tracking notable open-source softwar
 
 ## Live dashboard
 
-https://open-source-weekly-radar.yujianxi0.chatgpt.site
+https://svenkunkka.github.io/open-source-weekly-radar/
 
 ## What it tracks
 
