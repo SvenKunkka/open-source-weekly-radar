@@ -114,17 +114,17 @@ export function DashboardContent({ initialView = {} }) {
         { id: "software:tables", items: ["github-table"] },
         { id: "software:china", items: ["oschina-table"], header: <SectionHeader id="software-china-heading" title="国内发布侧信号" /> },
       ]}>
-        {item("github-stars", "GitHub 周新增 Star", "chart", 12,
-          <EvidenceChart id="github-stars" queryId="github_weekly" title="GitHub 周新增 Star Top 10"
+        {item("github-stars", "近七日新仓 Star", "chart", 12,
+          <EvidenceChart id="github-stars" queryId="github_weekly" title="近七日新仓 Star Top 10"
             variant="card" rows={github} sourceRows={github} height={410}
-            description="截至 2026-09-14 的滚动七日热门候选；官方周榜受限时使用可审计索引交叉核对。"
+            description="截至 2026-09-21 的近七日新建仓库热门候选；使用 GitHub 官方仓库 Star 快照，不冒充官方 Trending 精确排名。"
             spec={{ type: "horizontalBar", x: "project", y: "weeklyStars", showValues: true, sortOrder: "descending", showXAxisLabel: false, showYAxisLabel: false }} />)}
         {item("github-table", "GitHub 项目明细", "table", 12,
           <TableCard id="github-table" queryId="github_weekly" title="GitHub 项目明细" rows={github} searchable
-            description="周新增 Star、当前总 Star 与项目定位；名称可直接打开仓库。"
+            description="窗口内新仓 Star、当前总 Star 与项目定位；名称可直接打开仓库。"
             columns={[
               { field: "rank", label: "#" }, projectColumn,
-              { field: "weeklyStars", label: "周新增 Star" },
+              { field: "weeklyStars", label: "窗口内 Star" },
               { field: "totalStars", label: "总 Star" },
               { field: "category", label: "类别" },
               { field: "region", label: "团队 / 社区" },
@@ -277,7 +277,7 @@ export function DashboardContent({ initialView = {} }) {
         {item("kpi-instructables-weekly", "近七日新增项目", "metric", 4,
           <MetricCard id="kpi-instructables-weekly" queryId="instructables_freshness" title="近七日新增项目"
             value={integer.format(fusionFreshness.weeklyNew ?? 0)} sourceRows={instructablesFreshness} displayRows={instructablesFreshness}
-            description="Teachers + Fusion 筛选；复查窗口为 2026-09-07 至 2026-09-14。" />, 2)}
+            description="Teachers + Fusion 筛选；复查窗口为 2026-09-14 至 2026-09-21。" />, 2)}
         {item("kpi-instructables-count", "Fusion 项目总量", "metric", 4,
           <MetricCard id="kpi-instructables-count" queryId="instructables_freshness" title="Fusion 项目总量"
             value={integer.format(fusionFreshness.visibleProjects ?? 0)} sourceRows={instructablesFreshness} displayRows={instructablesFreshness}
@@ -360,9 +360,9 @@ export function DashboardContent({ initialView = {} }) {
       { id: "overview:signals", spacing: "after-metrics", items: ["github-stars", "category-mix"] },
       { id: "overview:summary", items: ["signal-summary"] },
     ]}>
-      {item("kpi-top-stars", "最高周新增 Star", "metric", 3,
-        <MetricCard id="kpi-top-stars" queryId="github_weekly" title="最高周新增 Star" value={compact.format(topWeeklyStars ?? 0)}
-          sourceRows={github} displayRows={github.slice(0, 1)} description={`${github[0]?.project ?? "—"}，当前滚动七日热门候选。`} />, 2)}
+      {item("kpi-top-stars", "新仓最高 Star", "metric", 3,
+        <MetricCard id="kpi-top-stars" queryId="github_weekly" title="新仓最高 Star" value={compact.format(topWeeklyStars ?? 0)}
+          sourceRows={github} displayRows={github.slice(0, 1)} description={`${github[0]?.project ?? "—"}，近七日新建仓库当前热门候选。`} />, 2)}
       {item("kpi-ai-share", "AI 相关项目占比", "metric", 3,
         <MetricCard id="kpi-ai-share" queryId="github_weekly" title="AI 相关项目占比" value={`${Math.round(aiShare * 100)}%`}
           sourceRows={github} displayRows={categoryRows} description={`${aiCount} / ${github.length} 个当前候选项目按公开定位归为 AI 相关。`} />, 2)}
@@ -372,10 +372,10 @@ export function DashboardContent({ initialView = {} }) {
       {item("kpi-instructables-weekly", "Instructables 七日新增", "metric", 3,
         <MetricCard id="kpi-instructables-weekly" queryId="instructables_freshness" title="Instructables 七日新增" value={integer.format(fusionFreshness.weeklyNew ?? 0)}
           sourceRows={instructablesFreshness} displayRows={instructablesFreshness} description="Teachers + Fusion 筛选；最近发布仍停留在 2026-04-27。" />, 2)}
-      {item("github-stars", "GitHub 周新增 Star", "chart", 8,
-        <EvidenceChart id="github-stars" queryId="github_weekly" title="GitHub 周新增 Star Top 10"
+      {item("github-stars", "近七日新仓 Star", "chart", 8,
+        <EvidenceChart id="github-stars" queryId="github_weekly" title="近七日新仓 Star Top 10"
           variant="card" rows={github} sourceRows={github} height={410}
-          description="本周 GitHub 热门候选的近似动量信号；其他平台因口径不同不叠加到同一坐标轴。"
+          description="近七日新建仓库的当前累计 Star；其他平台因口径不同不叠加到同一坐标轴。"
           spec={{ type: "horizontalBar", x: "project", y: "weeklyStars", showValues: true, sortOrder: "descending", showXAxisLabel: false, showYAxisLabel: false }} />)}
       {item("category-mix", "GitHub 类别构成", "chart", 4,
         <EvidenceChart id="category-mix" queryId="github_weekly" title="Top 10 项目类别构成"
@@ -391,9 +391,9 @@ export function DashboardContent({ initialView = {} }) {
           displayRows={[]}
           description="来自 GitHub、Hackaday 和 Instructables 的独立指标，不进行跨平台数值相加。">
           <div className="osw-signal-grid">
-            <article><span>01</span><strong>AI 热点继续向执行工具链集中</strong><p>VoiceStudio、ARTEMIS、open-code-review 与 Agent-Reach 把语音、移动自动化和代码工作流连到 Agent。</p></article>
-            <article><span>02</span><strong>输入设备开始“结构与模块即产品”</strong><p>X-Hinges、TypAir、KeyMod 与 BeeKeeb 的轨迹球、触控板和 MIP 屏，把输入延展到可感知结构、可穿戴和模块化组合。</p></article>
-            <article><span>03</span><strong>Instructables 适合灵感库，不适合周榜</strong><p>Fusion 教师页近七日没有新项目，但累计收藏榜仍能反映可复现结构方案。</p></article>
+            <article><span>01</span><strong>AI 热点转向更快的本地决策</strong><p>Jev 系新仓、本地类型化决策与剪映 Agent Skill 占据近七日新仓高位，执行效率成为主线。</p></article>
+            <article><span>02</span><strong>输入设备突破“电脑外设”边界</strong><p>无主机宏键盘、生物电输入、TypAir 与 KeyMod 把控制延展到家庭自动化、可穿戴和跨设备协同。</p></article>
+            <article><span>03</span><strong>前沿硬件更重视闭环能力</strong><p>行走机械手、Superboard 2040 和自平衡立方体把感知、决策、执行或调试整合成可验证闭环。</p></article>
           </div>
         </DataComponent>)}
     </Canvas>
