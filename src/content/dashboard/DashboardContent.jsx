@@ -117,7 +117,7 @@ export function DashboardContent({ initialView = {} }) {
         {item("github-stars", "近七日新仓 Star", "chart", 12,
           <EvidenceChart id="github-stars" queryId="github_weekly" title="近七日新仓 Star Top 10"
             variant="card" rows={github} sourceRows={github} height={410}
-            description="截至 2026-09-21 的近七日新建仓库热门候选；使用 GitHub 官方仓库 Star 快照，不冒充官方 Trending 精确排名。"
+            description="截至 2026-09-28 的近七日新建仓库热门候选；使用 GitHub 官方仓库 Star 快照，不冒充官方 Trending 精确排名。"
             spec={{ type: "horizontalBar", x: "project", y: "weeklyStars", showValues: true, sortOrder: "descending", showXAxisLabel: false, showYAxisLabel: false }} />)}
         {item("github-table", "GitHub 项目明细", "table", 12,
           <TableCard id="github-table" queryId="github_weekly" title="GitHub 项目明细" rows={github} searchable
@@ -277,7 +277,7 @@ export function DashboardContent({ initialView = {} }) {
         {item("kpi-instructables-weekly", "近七日新增项目", "metric", 4,
           <MetricCard id="kpi-instructables-weekly" queryId="instructables_freshness" title="近七日新增项目"
             value={integer.format(fusionFreshness.weeklyNew ?? 0)} sourceRows={instructablesFreshness} displayRows={instructablesFreshness}
-            description="Teachers + Fusion 筛选；复查窗口为 2026-09-14 至 2026-09-21。" />, 2)}
+            description="Teachers + Fusion 筛选；复查窗口为 2026-09-21 至 2026-09-28。" />, 2)}
         {item("kpi-instructables-count", "Fusion 项目总量", "metric", 4,
           <MetricCard id="kpi-instructables-count" queryId="instructables_freshness" title="Fusion 项目总量"
             value={integer.format(fusionFreshness.visibleProjects ?? 0)} sourceRows={instructablesFreshness} displayRows={instructablesFreshness}
