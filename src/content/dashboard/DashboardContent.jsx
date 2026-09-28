@@ -391,9 +391,9 @@ export function DashboardContent({ initialView = {} }) {
           displayRows={[]}
           description="来自 GitHub、Hackaday 和 Instructables 的独立指标，不进行跨平台数值相加。">
           <div className="osw-signal-grid">
-            <article><span>01</span><strong>AI 热点转向更快的本地决策</strong><p>Jev 系新仓、本地类型化决策与剪映 Agent Skill 占据近七日新仓高位，执行效率成为主线。</p></article>
-            <article><span>02</span><strong>输入设备突破“电脑外设”边界</strong><p>无主机宏键盘、生物电输入、TypAir 与 KeyMod 把控制延展到家庭自动化、可穿戴和跨设备协同。</p></article>
-            <article><span>03</span><strong>前沿硬件更重视闭环能力</strong><p>行走机械手、Superboard 2040 和自平衡立方体把感知、决策、执行或调试整合成可验证闭环。</p></article>
+            <article><span>01</span><strong>AI 开始直接进入输入闭环</strong><p>jev-chat-jarvis、Shapeshift 与 Violoop 都把“理解意图—生成候选—用户确认”放到输入动作本身。</p></article>
+            <article><span>02</span><strong>键鼠模块化继续向跨设备扩展</strong><p>suutari20、KeyMod、Prospector 与 BeeKeeb 触控板把宏键、指针、屏幕和远程控制组合成可拆分模块。</p></article>
+            <article><span>03</span><strong>前沿硬件从元件走向新介质</strong><p>SWANS 体内通信、自修复液态金属导体和个人芯片制造分别突破通信介质、柔性互连与小批量硅实现。</p></article>
           </div>
         </DataComponent>)}
     </Canvas>
