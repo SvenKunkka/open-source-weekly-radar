@@ -774,7 +774,7 @@
         {
           "rank": 1,
           "project": "BVIO Violoop",
-          "backers": 0,
+          "backers": null,
           "raisedDisplay": "官方页未返回金额；539 评论 / 4 更新",
           "status": "募资中 / 当前热门候选",
           "category": "AI 桌面输入",
@@ -804,7 +804,7 @@
         {
           "rank": 4,
           "project": "QIVIKA Smart Scope",
-          "backers": 0,
+          "backers": null,
           "raisedDisplay": "官方页未返回金额；47 评论 / 1 更新",
           "status": "当前热门候选 / 阶段待核",
           "category": "AI 计算摄影",
@@ -835,7 +835,7 @@
         ],
         "caveats": [
           "安全验证或动态页面阻止精确热门榜采集时，条目标为“当前热门候选”，不声明官方排名。",
-          "backers=0 表示官方页面未返回可审计支持者数，不代表零支持者；文本字段保留评论、更新或旧快照证据。"
+          "backers=null 表示官方页面未返回可审计支持者数，不代表零支持者；文本字段保留评论、更新或旧快照证据。"
         ]
       }
     },
@@ -844,7 +844,7 @@
         {
           "rank": 1,
           "project": "TypAir",
-          "backers": 0,
+          "backers": null,
           "backersDisplay": "未返回",
           "raisedDisplay": "€0 / 0%（第三方索引快照）",
           "status": "活动中；索引显示至 11 月 16 日",
@@ -855,7 +855,7 @@
         {
           "rank": 2,
           "project": "Touchord",
-          "backers": 0,
+          "backers": null,
           "backersDisplay": "未返回",
           "raisedDisplay": "未返回",
           "status": "当前项目页可见",

@@ -246,7 +246,7 @@ export function DashboardContent({ initialView = {} }) {
             description="当天项目快照；点击名称打开官方项目页。"
             columns={[
               { field: "rank", label: "#" }, projectColumn,
-              { field: "backers", label: "支持者", renderCell: value => integer.format(value) },
+              { field: "backers", label: "支持者", renderCell: value => Number.isFinite(value) ? integer.format(value) : "未返回" },
               { field: "raisedDisplay", label: "筹资信号" },
               { field: "status", label: "阶段" },
               { field: "category", label: "方向" },
