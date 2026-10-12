@@ -117,7 +117,7 @@ export function DashboardContent({ initialView = {} }) {
         {item("github-stars", "近七日新仓 Star", "chart", 12,
           <EvidenceChart id="github-stars" queryId="github_weekly" title="近七日新仓 Star Top 10"
             variant="card" rows={github} sourceRows={github} height={410}
-            description="截至 2026-10-05 的近七日新建仓库热门候选；使用 GitHub 官方仓库 Star 快照，不冒充官方 Trending 精确排名。"
+            description="截至 2026-10-12 的近七日新建仓库热门候选；使用 GitHub 官方仓库 Star 快照，不冒充官方 Trending 精确排名。"
             spec={{ type: "horizontalBar", x: "project", y: "weeklyStars", showValues: true, sortOrder: "descending", showXAxisLabel: false, showYAxisLabel: false }} />)}
         {item("github-table", "GitHub 项目明细", "table", 12,
           <TableCard id="github-table" queryId="github_weekly" title="GitHub 项目明细" rows={github} searchable
@@ -277,7 +277,7 @@ export function DashboardContent({ initialView = {} }) {
         {item("kpi-instructables-weekly", "近七日新增项目", "metric", 4,
           <MetricCard id="kpi-instructables-weekly" queryId="instructables_freshness" title="近七日新增项目"
             value={integer.format(fusionFreshness.weeklyNew ?? 0)} sourceRows={instructablesFreshness} displayRows={instructablesFreshness}
-            description="Teachers + Fusion 筛选；复查窗口为 2026-09-28 至 2026-10-05。" />, 2)}
+            description="Teachers + Fusion 筛选；复查窗口为 2026-10-05 至 2026-10-12。" />, 2)}
         {item("kpi-instructables-count", "Fusion 项目总量", "metric", 4,
           <MetricCard id="kpi-instructables-count" queryId="instructables_freshness" title="Fusion 项目总量"
             value={integer.format(fusionFreshness.visibleProjects ?? 0)} sourceRows={instructablesFreshness} displayRows={instructablesFreshness}
@@ -384,16 +384,22 @@ export function DashboardContent({ initialView = {} }) {
           spec={{ type: "pie", x: "category", y: "projects", showValues: true, showXAxisLabel: false, showYAxisLabel: false }} />)}
       {item("signal-summary", "本周信号", "custom", 12,
         <DataComponent id="signal-summary" queryId="github_weekly"
-          queryIds={["github_weekly", "hackaday_weekly", "instructables_freshness"]}
+          queryIds={["github_weekly", "hackaday_weekly", "maker_platforms_current", "crowdsupply_current", "instructables_freshness"]}
           title="本周值得团队讨论的三个信号" kind="custom" variant="card"
           sourceRows={github}
-          sourceRowsByQuery={{ github_weekly: github, hackaday_weekly: hackaday, instructables_freshness: instructablesFreshness }}
+          sourceRowsByQuery={{
+            github_weekly: github,
+            hackaday_weekly: hackaday,
+            maker_platforms_current: makerPlatforms,
+            crowdsupply_current: crowd,
+            instructables_freshness: instructablesFreshness,
+          }}
           displayRows={[]}
           description="来自 GitHub、Hackaday 和 Instructables 的独立指标，不进行跨平台数值相加。">
           <div className="osw-signal-grid">
-            <article><span>01</span><strong>输入设备开始变成可编程系统</strong><p>OpenMote、ZeroKeyUSB、Google 传送带键盘与动作腰带，把 HID、跨设备控制、物理确认和人体动作放进同一观察框架。</p></article>
-            <article><span>02</span><strong>Agent 正在获得开放硬件接口</strong><p>Muse Gadget SDK、CantaStorie 与 Jeff 分别提供外设能力协议、端侧多模态闭环和毫秒级意图决策。</p></article>
-            <article><span>03</span><strong>低成本硬件边界继续外移</strong><p>ESP32 隐藏 SDR、微振动吸附和 wafer.space 小批量芯片制造，把无线感知、新型执行与专用硅拉近到创客尺度。</p></article>
+            <article><span>01</span><strong>Agent 输入正在跨越设备边界</strong><p>iPhone-use 让 Codex 通过 USB 操作真实手机，WordCraft 等桌面应用则把快捷键、命令、CLI 与 MCP 收敛到同一动作模型。</p></article>
+            <article><span>02</span><strong>相机、软传感与触觉正在重写输入</strong><p>AI 计算器用相机读取手写公式，柔性光纤薄片感知三维形变，单键振动计算器把按压序列与触觉脉冲压缩成极简 I/O。</p></article>
+            <article><span>03</span><strong>开放参考设计缩短硬件扩展路径</strong><p>Valve 公开控制器几何、IR LED 与 MIPI/PCIe 扩展参考；OpenMote 和 ZeroKeyUSB 则展示标准 HID、本地运行与开放固件的产品化价值。</p></article>
           </div>
         </DataComponent>)}
     </Canvas>
