@@ -12,12 +12,12 @@ import {
 } from "../../data-app-public.jsx";
 
 export const dashboardTabs = [
-  { id: "dashboard", label: "总览" },
-  { id: "software", label: "软件" },
-  { id: "hardware", label: "硬件" },
-  { id: "crowdfunding", label: "众筹" },
+  { id: "dashboard", label: "Overview 总览" },
+  { id: "software", label: "Software 软件" },
+  { id: "hardware", label: "Hardware 硬件" },
+  { id: "crowdfunding", label: "Crowdfunding 众筹" },
   { id: "instructables", label: "Instructables" },
-  { id: "watchlist", label: "产品机会" },
+  { id: "watchlist", label: "Opportunities 产品机会" },
 ];
 
 const compact = new Intl.NumberFormat("zh-CN", { notation: "compact", maximumFractionDigits: 1 });
@@ -26,7 +26,7 @@ const money = new Intl.NumberFormat("zh-CN", { style: "currency", currency: "USD
 
 const projectColumn = {
   field: "project",
-  label: "项目",
+  label: "Project",
   renderCell: (value, row) => (
     <a className="osw-project-link" href={row.url} target="_blank" rel="noreferrer">
       {value}
@@ -55,7 +55,7 @@ function Canvas({ id, rows, children, className }) {
   return (
     <SortableRegion
       id={id}
-      label="开源趋势仪表板模块"
+      label="Open-source radar modules"
       variant="canvas"
       columns={12}
       spacing="standard"
@@ -89,9 +89,9 @@ export function DashboardContent({ initialView = {} }) {
   const watchlist = queries.product_watchlist?.rows ?? [];
   const coreRelevantCount = watchlist.filter(row => row.inputRelevance >= 4 || row.aiInput >= 4).length;
   const aiInputCount = watchlist.filter(row => row.aiInput >= 4).length;
-  const frontierCount = watchlist.filter(row => row.breakthrough >= 4 && row.wonder >= 4).length;
+  const frontierCount = watchlist.filter(row => row.isHardware === true && row.breakthrough >= 4 && row.wonder >= 4).length;
 
-  const aiCount = github.filter(row => row.category.includes("AI") || row.category === "LLM 基础设施").length;
+  const aiCount = github.filter(row => row.category.includes("AI") || row.category === "LLM infrastructure").length;
   const aiShare = github.length ? aiCount / github.length : 0;
   const topWeeklyStars = github[0]?.weeklyStars ?? null;
   const fusionFreshness = instructablesFreshness[0] ?? {};
@@ -112,28 +112,28 @@ export function DashboardContent({ initialView = {} }) {
       <Canvas id="open-source:software:canvas" rows={[
         { id: "software:chart", items: ["github-stars"] },
         { id: "software:tables", items: ["github-table"] },
-        { id: "software:china", items: ["oschina-table"], header: <SectionHeader id="software-china-heading" title="国内发布侧信号" /> },
+        { id: "software:china", items: ["oschina-table"], header: <SectionHeader id="software-china-heading" title="China release signals" /> },
       ]}>
-        {item("github-stars", "近七日新仓 Star", "chart", 12,
-          <EvidenceChart id="github-stars" queryId="github_weekly" title="近七日新仓 Star Top 10"
+        {item("github-stars", "New-repository stars", "chart", 12,
+          <EvidenceChart id="github-stars" queryId="github_weekly" title="New-repository candidates: stars"
             variant="card" rows={github} sourceRows={github} height={410}
-            description="截至 2026-10-12 的近七日新建仓库热门候选；使用 GitHub 官方仓库 Star 快照，不冒充官方 Trending 精确排名。"
+            description="Oct 12–19 new-repository candidates. Official metadata snapshots; Trending was unavailable. One out-of-scope adult-image repository excluded."
             spec={{ type: "horizontalBar", x: "project", y: "weeklyStars", showValues: true, sortOrder: "descending", showXAxisLabel: false, showYAxisLabel: false }} />)}
-        {item("github-table", "GitHub 项目明细", "table", 12,
-          <TableCard id="github-table" queryId="github_weekly" title="GitHub 项目明细" rows={github} searchable
-            description="窗口内新仓 Star、当前总 Star 与项目定位；名称可直接打开仓库。"
+        {item("github-table", "GitHub candidates", "table", 12,
+          <TableCard id="github-table" queryId="github_weekly" title="GitHub candidates" rows={github} searchable
+            description="Current stars on repositories created within the window; names open official repositories."
             columns={[
               { field: "rank", label: "#" }, projectColumn,
-              { field: "weeklyStars", label: "窗口内 Star" },
-              { field: "totalStars", label: "总 Star" },
-              { field: "category", label: "类别" },
-              { field: "region", label: "团队 / 社区" },
-              { field: "summary", label: "主要看点" },
+              { field: "weeklyStars", label: "New-repo stars" },
+              { field: "totalStars", label: "Total stars" },
+              { field: "category", label: "Category" },
+              { field: "region", label: "Community" },
+              { field: "summary", label: "Highlights" },
             ]} />)}
-        {item("oschina-table", "国内开源发布", "table", 12,
-          <TableCard id="oschina-table" queryId="oschina_releases" title="近七日国内开源发布" rows={oschina}
-            description="OSCHINA 过去七日的新版本与项目曝光；由于没有统一互动指标，这里不与 Star 横向比较。"
-            columns={[projectColumn, { field: "date", label: "发布日期" }, { field: "category", label: "类别" }, { field: "summary", label: "更新看点" }]} />)}
+        {item("oschina-table", "China release signals", "table", 12,
+          <TableCard id="oschina-table" queryId="oschina_releases" title="Recent OSCHINA releases" rows={oschina}
+            description="Dated releases from Oct 12–19; editorial exposure, not a popularity rank."
+            columns={[projectColumn, { field: "date", label: "Published" }, { field: "category", label: "Category" }, { field: "summary", label: "Release notes" }]} />)}
       </Canvas>
     );
   }
@@ -141,77 +141,79 @@ export function DashboardContent({ initialView = {} }) {
   if (tab === "hardware") {
     return (
       <Canvas id="open-source:hardware:canvas" rows={[
-        { id: "hardware:weekly", items: ["hackaday-comments", "crowd-backers"], header: <SectionHeader id="hardware-weekly-heading" title="海外开放硬件信号" /> },
+        { id: "hardware:weekly", items: ["hackaday-comments", "crowd-backers"], header: <SectionHeader id="hardware-weekly-heading" title="Open hardware signals" /> },
         { id: "hardware:details", items: ["hackaday-table", "crowd-table"] },
-        { id: "hardware:maker-platforms", items: ["maker-platforms-table"], header: <SectionHeader id="hardware-maker-heading" title="创客与输入设备观察" /> },
-        { id: "hardware:beekeeb", items: ["beekeeb-table"], header: <SectionHeader id="hardware-beekeeb-heading" title="开源键盘与小批量输入模块" /> },
-        { id: "hardware:curated", items: ["curated-hardware-table"], header: <SectionHeader id="hardware-curated-heading" title="团队补充关注" /> },
-        { id: "hardware:china", items: ["oshw-favorites"], header: <SectionHeader id="hardware-china-heading" title="国内开放硬件社区" /> },
+        { id: "hardware:maker-platforms", items: ["maker-platforms-table"], header: <SectionHeader id="hardware-maker-heading" title="Maker and input-device signals" /> },
+        { id: "hardware:beekeeb", items: ["beekeeb-table"], header: <SectionHeader id="hardware-beekeeb-heading" title="Keyboard and input modules" /> },
+        { id: "hardware:curated", items: ["curated-hardware-table"], header: <SectionHeader id="hardware-curated-heading" title="Team watchlist" /> },
+        { id: "hardware:china", items: ["oshw-favorites"], header: <SectionHeader id="hardware-china-heading" title="China hardware community" /> },
         { id: "hardware:china-table", items: ["oshw-table"] },
       ]}>
-        {item("hackaday-comments", "Hackaday 讨论热度", "chart", 7,
-          <EvidenceChart id="hackaday-comments" queryId="hackaday_weekly" title="近七日新项目评论数"
+        {item("hackaday-comments", "Hackaday discussion", "chart", 7,
+          <EvidenceChart id="hackaday-comments" queryId="hackaday_weekly" title="Recent articles: cumulative comments"
             variant="card" rows={hackaday} sourceRows={hackaday} height={290}
-            description="项目发布日期严格落在近七日；评论数为采集时累计值。"
+            description="Articles published in the review window; comments are cumulative snapshots."
             spec={{ type: "horizontalBar", x: "project", y: "comments", showValues: true, sortOrder: "descending", showXAxisLabel: false, showYAxisLabel: false }} />)}
-        {item("crowd-backers", "Crowd Supply 支持者", "chart", 5,
-          <EvidenceChart id="crowd-backers" queryId="crowdsupply_current" title="活跃众筹支持者"
+        {item("crowd-backers", "Crowd Supply backers", "chart", 5,
+          <EvidenceChart id="crowd-backers" queryId="crowdsupply_current" title="Campaigns: cumulative backers"
             variant="card" rows={crowd} sourceRows={crowd} height={290}
-            description="当前累计支持者快照，不是七日增量。"
+            description="Cumulative supporters. Table shows differences from the Oct 12 snapshot, not exact 168-hour growth."
             spec={{ type: "bar", x: "project", y: "backers", showValues: true, sortOrder: "descending", xTickLabelLayout: "wrap", showXAxisLabel: false, showYAxisLabel: false }} />)}
-        {item("hackaday-table", "Hackaday 项目明细", "table", 7,
-          <TableCard id="hackaday-table" queryId="hackaday_weekly" title="近七日硬件项目" rows={hackaday}
-            columns={[projectColumn, { field: "date", label: "发布" }, { field: "comments", label: "评论" }, { field: "category", label: "方向" }, { field: "summary", label: "主要看点" }]} />)}
-        {item("crowd-table", "Crowd Supply 项目明细", "table", 5,
-          <TableCard id="crowd-table" queryId="crowdsupply_current" title="活跃开放硬件众筹" rows={crowd}
+        {item("hackaday-table", "Hackaday stories", "table", 7,
+          <TableCard id="hackaday-table" queryId="hackaday_weekly" title="Recent hardware stories" rows={hackaday}
+            columns={[projectColumn, { field: "date", label: "Published" }, { field: "comments", label: "Comments" }, { field: "category", label: "Focus" }, { field: "summary", label: "Highlights" }]} />)}
+        {item("crowd-table", "Crowd Supply projects", "table", 5,
+          <TableCard id="crowd-table" queryId="crowdsupply_current" title="Campaign and pre-order snapshots" rows={crowd}
             columns={[
               projectColumn,
-              { field: "backers", label: "支持者" },
-              { field: "fundingPercent", label: "完成度", renderCell: value => value == null ? "—" : `${integer.format(value)}%` },
-              { field: "raisedUsd", label: "已筹", renderCell: value => money.format(value) },
+              { field: "backers", label: "Backers" },
+              { field: "fundingPercent", label: "Funded", renderCell: value => value == null ? "—" : `${integer.format(value)}%` },
+              { field: "raisedUsd", label: "Raised", renderCell: value => money.format(value) },
+              { field: "change", label: "Change vs Oct 12" },
+              { field: "stage", label: "Stage" },
             ]} />)}
-        {item("maker-platforms-table", "创客平台热点", "table", 12,
-          <TableCard id="maker-platforms-table" queryId="maker_platforms_current" title="Hackster.io、Arduino 与 Tindie 当前热点" rows={makerPlatforms} searchable
-            description="不同平台公开信号口径不一致，保留原始平台、阶段与热度说明，不进行跨平台数值合并。"
+        {item("maker-platforms-table", "Maker candidates", "table", 12,
+          <TableCard id="maker-platforms-table" queryId="maker_platforms_current" title="Hackster, Arduino and Tindie candidates" rows={makerPlatforms} searchable
+            description="Publication dates, cumulative views and maker availability claims are separate signals."
             columns={[
-              { field: "platform", label: "平台" }, projectColumn,
-              { field: "signal", label: "热度信号" },
-              { field: "stage", label: "阶段" },
-              { field: "category", label: "方向" },
-              { field: "summary", label: "主要看点" },
+              { field: "platform", label: "Platform" }, projectColumn,
+              { field: "signal", label: "Evidence / heat" },
+              { field: "stage", label: "Stage" },
+              { field: "category", label: "Focus" },
+              { field: "summary", label: "Highlights" },
             ]} />)}
-        {item("beekeeb-table", "BeeKeeb Japan 新品", "table", 12,
-          <TableCard id="beekeeb-table" queryId="beekeeb_current" title="BeeKeeb Japan 当前新品候选" rows={beekeeb} searchable
-            description="商城没有公开销量或七日增量，因此按新品区曝光展示，并保留价格、阶段与规格风险。"
-            columns={[
-              projectColumn,
-              { field: "signal", label: "当前信号" },
-              { field: "stage", label: "阶段" },
-              { field: "category", label: "方向" },
-              { field: "summary", label: "产品看点" },
-              { field: "risk", label: "核验风险" },
-            ]} />)}
-        {item("curated-hardware-table", "团队补充关注", "table", 12,
-          <TableCard id="curated-hardware-table" queryId="curated_hardware_watchlist" title="团队补充关注的开源硬件" rows={curatedHardware} searchable
-            description="用户指定项目单独展示，不混入 GitHub Trending 官方周榜；累计指标保留原核验日期。"
+        {item("beekeeb-table", "BeeKeeb candidates", "table", 12,
+          <TableCard id="beekeeb-table" queryId="beekeeb_current" title="BeeKeeb: current product candidates" rows={beekeeb} searchable
+            description="No public weekly sales. Homepage exposure and product-page prices are candidates, not sales ranks."
             columns={[
               projectColumn,
-              { field: "signal", label: "社区信号" },
-              { field: "license", label: "许可证" },
-              { field: "lastPush", label: "最近推送" },
-              { field: "stage", label: "阶段" },
-              { field: "category", label: "方向" },
-              { field: "summary", label: "主要看点" },
-              { field: "risk", label: "主要风险" },
+              { field: "signal", label: "Current signal" },
+              { field: "stage", label: "Stage" },
+              { field: "category", label: "Focus" },
+              { field: "summary", label: "Product notes" },
+              { field: "risk", label: "Verification risks" },
             ]} />)}
-        {item("oshw-favorites", "立创开源广场收藏", "chart", 12,
-          <EvidenceChart id="oshw-favorites" queryId="oshwhub_current" title="当前综合榜项目收藏数"
+        {item("curated-hardware-table", "Team watchlist", "table", 12,
+          <TableCard id="curated-hardware-table" queryId="curated_hardware_watchlist" title="User-curated open hardware" rows={curatedHardware} searchable
+            description="User-selected ongoing project; current cumulative metadata, not a Trending entry."
+            columns={[
+              projectColumn,
+              { field: "signal", label: "Community signal" },
+              { field: "license", label: "License" },
+              { field: "lastPush", label: "Last push" },
+              { field: "stage", label: "Stage" },
+              { field: "category", label: "Focus" },
+              { field: "summary", label: "Highlights" },
+              { field: "risk", label: "Risks" },
+            ]} />)}
+        {item("oshw-favorites", "OSHWHub favorites", "chart", 12,
+          <EvidenceChart id="oshw-favorites" queryId="oshwhub_current" title="OSHWHub candidates: cumulative favorites"
             variant="card" rows={[...oshw].sort((a, b) => b.favorites - a.favorites)} sourceRows={oshw} height={360}
-            description="立创开源广场当前累计收藏，用于观察国内硬件社区关注方向，不代表七日增量。"
+            description="Official project search-index snapshots; Explore returned 403. Counts are cumulative."
             spec={{ type: "horizontalBar", x: "project", y: "favorites", showValues: true, sortOrder: "descending", showXAxisLabel: false, showYAxisLabel: false }} />)}
-        {item("oshw-table", "立创开源广场项目", "table", 12,
-          <TableCard id="oshw-table" queryId="oshwhub_current" title="国内开放硬件项目明细" rows={oshw} searchable
-            columns={[projectColumn, { field: "category", label: "方向" }, { field: "views", label: "浏览" }, { field: "likes", label: "点赞" }, { field: "favorites", label: "收藏" }, { field: "comments", label: "评论" }]} />)}
+        {item("oshw-table", "OSHWHub candidates", "table", 12,
+          <TableCard id="oshw-table" queryId="oshwhub_current" title="China hardware candidates" rows={oshw} searchable
+            columns={[projectColumn, { field: "category", label: "Focus" }, { field: "views", label: "Views" }, { field: "likes", label: "Likes" }, { field: "favorites", label: "Favorites" }, { field: "comments", label: "Comments" }]} />)}
       </Canvas>
     );
   }
@@ -220,48 +222,48 @@ export function DashboardContent({ initialView = {} }) {
     return (
       <Canvas id="open-source:crowdfunding:canvas" rows={[
         { id: "crowdfunding:metrics", kind: "metrics", items: ["kpi-kickstarter", "kpi-indiegogo"] },
-        { id: "crowdfunding:charts", items: ["kickstarter-backers", "indiegogo-backers"], header: <SectionHeader id="crowdfunding-chart-heading" title="当前热门候选" /> },
+        { id: "crowdfunding:charts", items: ["kickstarter-backers", "indiegogo-backers"], header: <SectionHeader id="crowdfunding-chart-heading" title="Current candidates" /> },
         { id: "crowdfunding:tables", items: ["kickstarter-table", "indiegogo-table"] },
       ]}>
-        {item("kpi-kickstarter", "Kickstarter 热门候选", "metric", 6,
-          <MetricCard id="kpi-kickstarter" queryId="kickstarter_current" title="Kickstarter 热门候选"
+        {item("kpi-kickstarter", "Kickstarter candidates", "metric", 6,
+          <MetricCard id="kpi-kickstarter" queryId="kickstarter_current" title="Kickstarter candidates"
             value={integer.format(kickstarter.length)} sourceRows={kickstarter} displayRows={kickstarter}
-            description="当前可验证的科技与硬件项目；并非官方精确实时排名。" />, 3)}
-        {item("kpi-indiegogo", "Indiegogo 热门候选", "metric", 6,
-          <MetricCard id="kpi-indiegogo" queryId="indiegogo_current" title="Indiegogo 热门候选"
+            description="Current candidates cross-checked against official pages; not official popularity ranks." />, 3)}
+        {item("kpi-indiegogo", "Indiegogo follow-up candidates", "metric", 6,
+          <MetricCard id="kpi-indiegogo" queryId="indiegogo_current" title="Indiegogo follow-up candidates"
             value={integer.format(indiegogo.length)} sourceRows={indiegogo} displayRows={indiegogo}
-            description="包含募资中、Pledge Manager 与近期仍活跃的科技硬件项目。" />, 3)}
-        {item("kickstarter-backers", "Kickstarter 支持者", "chart", 6,
-          <EvidenceChart id="kickstarter-backers" queryId="kickstarter_current" title="Kickstarter 候选项目累计支持者"
+            description="Includes prelaunch, indexed rewards and historical follow-up with explicit verification limits." />, 3)}
+        {item("kickstarter-backers", "Kickstarter backers", "chart", 6,
+          <EvidenceChart id="kickstarter-backers" queryId="kickstarter_current" title="Kickstarter: cumulative backers"
             variant="card" rows={kickstarter} sourceRows={kickstarter} height={330}
-            description="采集时累计支持者，不是过去七日新增；筹资额与支持者可能来自不同更新时间的快照。"
+            description="Current cumulative supporters, including ended campaigns; unavailable values stay null."
             spec={{ type: "horizontalBar", x: "project", y: "backers", showValues: true, sortOrder: "descending", showXAxisLabel: false, showYAxisLabel: false }} />)}
-        {item("indiegogo-backers", "Indiegogo 支持者", "chart", 6,
-          <EvidenceChart id="indiegogo-backers" queryId="indiegogo_current" title="Indiegogo 候选项目支持者信号"
-            variant="card" rows={indiegogo} sourceRows={indiegogo} height={330}
-            description="部分数字是搜索索引可验证的下限；项目阶段不同，不与 Kickstarter 数值合并。"
-            spec={{ type: "horizontalBar", x: "project", y: "backers", showValues: true, sortOrder: "descending", showXAxisLabel: false, showYAxisLabel: false }} />)}
-        {item("kickstarter-table", "Kickstarter 项目明细", "table", 6,
-          <TableCard id="kickstarter-table" queryId="kickstarter_current" title="Kickstarter 科技与硬件候选" rows={kickstarter}
-            description="当天项目快照；点击名称打开官方项目页。"
+        {item("indiegogo-backers", "Indiegogo evidence", "chart", 6,
+          <DataComponent id="indiegogo-backers" queryId="indiegogo_current" title="Indiegogo: current counts unavailable"
+            kind="custom" variant="card" sourceRows={indiegogo} displayRows={indiegogo}>
+            <p data-reviewed-rows>No current backer totals could be verified. TypAir has indexed rewards; EveryMIDI AT is prelaunch. Historical counts appear only as dated notes below.</p>
+          </DataComponent>)}
+        {item("kickstarter-table", "Kickstarter details", "table", 6,
+          <TableCard id="kickstarter-table" queryId="kickstarter_current" title="Kickstarter technology candidates" rows={kickstarter}
+            description="Current official-page snapshots; click a name to inspect the source."
             columns={[
               { field: "rank", label: "#" }, projectColumn,
-              { field: "backers", label: "支持者", renderCell: value => Number.isFinite(value) ? integer.format(value) : "未返回" },
-              { field: "raisedDisplay", label: "筹资信号" },
-              { field: "status", label: "阶段" },
-              { field: "category", label: "方向" },
-              { field: "summary", label: "主要看点" },
+              { field: "backers", label: "Backers", renderCell: value => Number.isFinite(value) ? integer.format(value) : "Unavailable" },
+              { field: "raisedDisplay", label: "Funding evidence" },
+              { field: "status", label: "Stage" },
+              { field: "category", label: "Focus" },
+              { field: "summary", label: "Highlights" },
             ]} />)}
-        {item("indiegogo-table", "Indiegogo 项目明细", "table", 6,
-          <TableCard id="indiegogo-table" queryId="indiegogo_current" title="Indiegogo 科技与硬件候选" rows={indiegogo}
-            description="当天项目与搜索索引快照；≥ 表示可验证下限。"
+        {item("indiegogo-table", "Indiegogo details", "table", 6,
+          <TableCard id="indiegogo-table" queryId="indiegogo_current" title="Indiegogo: prelaunch and follow-up" rows={indiegogo}
+            description="Official indexed evidence with its limits; followers are not backers."
             columns={[
               { field: "rank", label: "#" }, projectColumn,
-              { field: "backersDisplay", label: "支持者" },
-              { field: "raisedDisplay", label: "筹资信号" },
-              { field: "status", label: "阶段" },
-              { field: "category", label: "方向" },
-              { field: "summary", label: "主要看点" },
+              { field: "backersDisplay", label: "Backers" },
+              { field: "raisedDisplay", label: "Funding evidence" },
+              { field: "status", label: "Stage" },
+              { field: "category", label: "Focus" },
+              { field: "summary", label: "Highlights" },
             ]} />)}
       </Canvas>
     );
@@ -274,26 +276,26 @@ export function DashboardContent({ initialView = {} }) {
         { id: "instructables:chart", items: ["instructables-favorites"] },
         { id: "instructables:table", items: ["instructables-table"] },
       ]}>
-        {item("kpi-instructables-weekly", "近七日新增项目", "metric", 4,
-          <MetricCard id="kpi-instructables-weekly" queryId="instructables_freshness" title="近七日新增项目"
-            value={integer.format(fusionFreshness.weeklyNew ?? 0)} sourceRows={instructablesFreshness} displayRows={instructablesFreshness}
-            description="Teachers + Fusion 筛选；复查窗口为 2026-10-05 至 2026-10-12。" />, 2)}
-        {item("kpi-instructables-count", "Fusion 项目总量", "metric", 4,
-          <MetricCard id="kpi-instructables-count" queryId="instructables_freshness" title="Fusion 项目总量"
-            value={integer.format(fusionFreshness.visibleProjects ?? 0)} sourceRows={instructablesFreshness} displayRows={instructablesFreshness}
-            description="教师项目页勾选 Fusion 后可见的项目总数。" />, 2)}
-        {item("kpi-instructables-latest", "最近发布", "metric", 4,
-          <MetricCard id="kpi-instructables-latest" queryId="instructables_freshness" title="最近发布"
+        {item("kpi-instructables-weekly", "Seven-day additions", "metric", 4,
+          <MetricCard id="kpi-instructables-weekly" queryId="instructables_freshness" title="Seven-day additions"
+            value={Number.isFinite(fusionFreshness.weeklyNew) ? integer.format(fusionFreshness.weeklyNew) : "Unknown"} sourceRows={instructablesFreshness} displayRows={instructablesFreshness}
+            description="Oct 12–19 review: filtered list unavailable. Unknown is not zero." />, 2)}
+        {item("kpi-instructables-count", "Current Fusion projects", "metric", 4,
+          <MetricCard id="kpi-instructables-count" queryId="instructables_freshness" title="Current Fusion projects"
+            value={Number.isFinite(fusionFreshness.visibleProjects) ? integer.format(fusionFreshness.visibleProjects) : "Unknown"} sourceRows={instructablesFreshness} displayRows={instructablesFreshness}
+            description="Current filtered project count is unavailable." />, 2)}
+        {item("kpi-instructables-latest", "Latest date", "metric", 4,
+          <MetricCard id="kpi-instructables-latest" queryId="instructables_freshness" title="Latest date"
             value={fusionFreshness.latestPublished ?? "—"} sourceRows={instructablesFreshness} displayRows={instructablesFreshness}
-            description={fusionFreshness.latestProject ?? "最近项目"} />, 2)}
-        {item("instructables-favorites", "Instructables Fusion 收藏榜", "chart", 12,
-          <EvidenceChart id="instructables-favorites" queryId="instructables_fusion" title="Teachers + Fusion 累计收藏 Top 10"
+            description={fusionFreshness.latestProject ?? "Latest project"} />, 2)}
+        {item("instructables-favorites", "Fusion historical favorites", "chart", 12,
+          <EvidenceChart id="instructables-favorites" queryId="instructables_fusion" title="Teachers + Fusion: historical favorites"
             variant="card" rows={instructables} sourceRows={instructables} height={420}
-            description="该页面不存在官方周热榜；以下是累计收藏榜，单独展示、不与周增量混用。"
+            description="Retained Sep 2 cumulative snapshot. Current Fusion list is unavailable."
             spec={{ type: "horizontalBar", x: "project", y: "favorites", showValues: true, sortOrder: "descending", showXAxisLabel: false, showYAxisLabel: false }} />)}
-        {item("instructables-table", "Instructables 项目明细", "table", 12,
-          <TableCard id="instructables-table" queryId="instructables_fusion" title="Fusion 教学项目明细" rows={instructables} searchable
-            columns={[projectColumn, { field: "category", label: "方向" }, { field: "favorites", label: "收藏" }, { field: "views", label: "浏览" }, { field: "madeIts", label: "复现数", renderCell: value => value == null ? "—" : integer.format(value) }]} />)}
+        {item("instructables-table", "Instructables details", "table", 12,
+          <TableCard id="instructables-table" queryId="instructables_fusion" title="Fusion projects: Sep 2 snapshot" rows={instructables} searchable
+            columns={[projectColumn, { field: "category", label: "Focus" }, { field: "favorites", label: "Favorites" }, { field: "views", label: "Views" }, { field: "madeIts", label: "Builds", renderCell: value => value == null ? "—" : integer.format(value) }]} />)}
       </Canvas>
     );
   }
@@ -306,49 +308,53 @@ export function DashboardContent({ initialView = {} }) {
         { id: "watchlist:intro", items: ["watchlist-summary"] },
         { id: "watchlist:table", items: ["watchlist-table"] },
       ]}>
-        {item("kpi-core-relevant", "输入设备高相关", "metric", 4,
-          <MetricCard id="kpi-core-relevant" queryId="product_watchlist" title="输入设备高相关"
+        {item("kpi-core-relevant", "Core-relevant projects", "metric", 4,
+          <MetricCard id="kpi-core-relevant" queryId="product_watchlist" title="Core-relevant projects"
             value={integer.format(coreRelevantCount)} sourceRows={watchlist} displayRows={watchlist.filter(row => row.inputRelevance >= 4 || row.aiInput >= 4)}
-            description="输入相关或 AI 输入评分达到 4/5 的项目。" />, 2)}
-        {item("kpi-ai-input", "AI 智能输入", "metric", 4,
-          <MetricCard id="kpi-ai-input" queryId="product_watchlist" title="AI 智能输入"
+            description="Input relevance or AI input >= 4/5." />, 2)}
+        {item("kpi-ai-input", "AI input", "metric", 4,
+          <MetricCard id="kpi-ai-input" queryId="product_watchlist" title="AI input"
             value={integer.format(aiInputCount)} sourceRows={watchlist} displayRows={watchlist.filter(row => row.aiInput >= 4)}
-            description="语音、视觉、手势、眼动、情境感知或 Agent 驱动的新输入方式。" />, 2)}
-        {item("kpi-frontier", "前沿突破硬件", "metric", 4,
-          <MetricCard id="kpi-frontier" queryId="product_watchlist" title="前沿突破硬件"
-            value={integer.format(frontierCount)} sourceRows={watchlist} displayRows={watchlist.filter(row => row.breakthrough >= 4 && row.wonder >= 4)}
-            description="技术突破与新奇度均达到 4/5；即使当前热度不高也可入选。" />, 2)}
-        {item("watchlist-score", "产品机会综合评分", "chart", 12,
-          <EvidenceChart id="watchlist-score" queryId="product_watchlist" title="产品机会综合评分"
-            variant="card" rows={watchlist} sourceRows={watchlist} height={430}
-            description="热度仅占 5%；主要权重给输入相关、AI 输入、技术突破、市场潜力与新奇度。"
+            description="Voice, vision, gesture, context or Agent-driven input; AI score >= 4/5." />, 2)}
+        {item("kpi-frontier", "Frontier hardware", "metric", 4,
+          <MetricCard id="kpi-frontier" queryId="product_watchlist" title="Frontier hardware"
+            value={integer.format(frontierCount)} sourceRows={watchlist} displayRows={watchlist.filter(row => row.isHardware === true && row.breakthrough >= 4 && row.wonder >= 4)}
+            description="Hardware only, with breakthrough and novelty both >= 4/5; low heat is allowed." />, 2)}
+        {item("watchlist-score", "Product opportunity score", "chart", 12,
+          <EvidenceChart id="watchlist-score" queryId="product_watchlist" title="Product opportunity score"
+            variant="card" rows={watchlist} sourceRows={watchlist} height={600}
+            description="Editorial 20–100 score. Input×6 + AI×4 + breakthrough×4 + market×3 + novelty×2 + heat×1. Heat weight: 5%."
             spec={{ type: "horizontalBar", x: "project", y: "score", showValues: true, sortOrder: "descending", showXAxisLabel: false, showYAxisLabel: false }} />)}
-        {item("watchlist-summary", "产品启发摘要", "custom", 12,
-          <DataComponent id="watchlist-summary" queryId="product_watchlist" title="双通道入选规则"
+        {item("watchlist-summary", "Opportunity framework", "custom", 12,
+          <DataComponent id="watchlist-summary" queryId="product_watchlist" title="Core and frontier selection"
             kind="custom" variant="card" sourceRows={watchlist} displayRows={watchlist}
-            description="既抓高相关产品，也允许低热度或低相关但技术突破明显的硬件进入雷达。">
+            description="Core relevance plus a hardware-only frontier exception. Scores are editorial judgments.">
             <div className="osw-watch-summary" data-reviewed-rows>
-              <div><strong>核心相关</strong><span>输入相关或 AI 输入达到 4/5：键鼠、控制器、HID、人体工学、跨设备输入和桌面 Agent 优先。</span></div>
-              <div><strong>前沿破格</strong><span>技术突破与新奇度同时达到 4/5：即使支持者少、尚未开募或与键鼠不直接相关，也进入观察池。</span></div>
-              <div><strong>风险护栏</strong><span>热度只占综合分 5%；同时标记预发布、Pledge Manager、规格变化与众筹履约风险。</span></div>
+              <div><strong>Core / 核心相关</strong><span>Input relevance or AI input ≥4/5. Prioritize keyboards, pointing devices, controllers and desktop workflows.</span></div>
+              <div><strong>Frontier / 前沿破格</strong><span>Hardware only: breakthrough and novelty both ≥4/5. Low heat and prelaunch projects can qualify.</span></div>
+              <div><strong>Evidence and risk / 风险</strong><span>Heat is 5% of score weight. Licensing, maturity, privacy, specifications and delivery are separate checks.</span></div>
             </div>
           </DataComponent>)}
-        {item("watchlist-table", "产品启发清单", "table", 12,
-          <TableCard id="watchlist-table" queryId="product_watchlist" title="产品机会与前沿硬件清单" rows={watchlist} searchable
+        {item("watchlist-table", "Opportunity details", "table", 12,
+          <TableCard id="watchlist-table" queryId="product_watchlist" title="Product opportunities and frontier hardware" rows={watchlist} searchable
             columns={[
-              { field: "priority", label: "优先级" }, projectColumn,
-              { field: "track", label: "机会方向" },
-              { field: "selectionPath", label: "入选路径" },
-              { field: "signal", label: "热度信号" },
-              { field: "stage", label: "项目阶段" },
-              { field: "risk", label: "主要风险" },
-              { field: "inputRelevance", label: "输入相关", renderCell: value => <span className="osw-relevance">{value}/5</span> },
-              { field: "aiInput", label: "AI 输入", renderCell: value => <span className="osw-relevance">{value}/5</span> },
-              { field: "breakthrough", label: "技术突破", renderCell: value => <span className="osw-relevance">{value}/5</span> },
-              { field: "potential", label: "市场潜力", renderCell: value => <span className="osw-relevance">{value}/5</span> },
-              { field: "wonder", label: "新奇度", renderCell: value => <span className="osw-relevance">{value}/5</span> },
-              { field: "score", label: "机会分" },
-              { field: "takeaway", label: "建议关注" },
+              { field: "priority", label: "Priority" }, projectColumn,
+              { field: "track", label: "Opportunity" },
+              { field: "selectionPath", label: "Selection path" },
+              { field: "signal", label: "Evidence / heat" },
+              { field: "stage", label: "Project stage" },
+              { field: "risk", label: "Risks" },
+              { field: "technology", label: "Key technology" },
+              { field: "openness", label: "License / openness" },
+              { field: "observedAt", label: "Checked (UTC)" },
+              { field: "inputRelevance", label: "Input relevance", renderCell: value => <span className="osw-relevance">{value}/5</span> },
+              { field: "aiInput", label: "AI input", renderCell: value => <span className="osw-relevance">{value}/5</span> },
+              { field: "breakthrough", label: "Breakthrough", renderCell: value => <span className="osw-relevance">{value}/5</span> },
+              { field: "potential", label: "Market potential", renderCell: value => <span className="osw-relevance">{value}/5</span> },
+              { field: "wonder", label: "Novelty", renderCell: value => <span className="osw-relevance">{value}/5</span> },
+              { field: "heat", label: "Heat (5%)", renderCell: value => <span className="osw-relevance">{value}/5</span> },
+              { field: "score", label: "Score" },
+              { field: "takeaway", label: "Keychron takeaway" },
             ]} />)}
       </Canvas>
     );
@@ -360,46 +366,44 @@ export function DashboardContent({ initialView = {} }) {
       { id: "overview:signals", spacing: "after-metrics", items: ["github-stars", "category-mix"] },
       { id: "overview:summary", items: ["signal-summary"] },
     ]}>
-      {item("kpi-top-stars", "新仓最高 Star", "metric", 3,
-        <MetricCard id="kpi-top-stars" queryId="github_weekly" title="新仓最高 Star" value={compact.format(topWeeklyStars ?? 0)}
-          sourceRows={github} displayRows={github.slice(0, 1)} description={`${github[0]?.project ?? "—"}，近七日新建仓库当前热门候选。`} />, 2)}
-      {item("kpi-ai-share", "AI 相关项目占比", "metric", 3,
-        <MetricCard id="kpi-ai-share" queryId="github_weekly" title="AI 相关项目占比" value={`${Math.round(aiShare * 100)}%`}
-          sourceRows={github} displayRows={categoryRows} description={`${aiCount} / ${github.length} 个当前候选项目按公开定位归为 AI 相关。`} />, 2)}
-      {item("kpi-hardware-posts", "七日硬件项目", "metric", 3,
-        <MetricCard id="kpi-hardware-posts" queryId="hackaday_weekly" title="七日硬件项目" value={integer.format(hackaday.length)}
-          sourceRows={hackaday} displayRows={hackaday} description="本仪表板收录的 Hackaday 近七日开放硬件项目。" />, 2)}
-      {item("kpi-instructables-weekly", "Instructables 七日新增", "metric", 3,
-        <MetricCard id="kpi-instructables-weekly" queryId="instructables_freshness" title="Instructables 七日新增" value={integer.format(fusionFreshness.weeklyNew ?? 0)}
-          sourceRows={instructablesFreshness} displayRows={instructablesFreshness} description="Teachers + Fusion 筛选；最近发布仍停留在 2026-04-27。" />, 2)}
-      {item("github-stars", "近七日新仓 Star", "chart", 8,
-        <EvidenceChart id="github-stars" queryId="github_weekly" title="近七日新仓 Star Top 10"
+      {item("kpi-top-stars", "Top new-repo stars", "metric", 3,
+        <MetricCard id="kpi-top-stars" queryId="github_weekly" title="Top new-repo stars" value={compact.format(topWeeklyStars ?? 0)}
+          sourceRows={github} displayRows={github.slice(0, 1)} description={`${github[0]?.project ?? "—"}，current new-repository candidate.`} />, 2)}
+      {item("kpi-ai-share", "AI share", "metric", 3,
+        <MetricCard id="kpi-ai-share" queryId="github_weekly" title="AI share" value={`${Math.round(aiShare * 100)}%`}
+          sourceRows={github} displayRows={categoryRows} description={`${aiCount} / ${github.length} candidates classified as AI-related.`} />, 2)}
+      {item("kpi-hardware-posts", "Recent hardware stories", "metric", 3,
+        <MetricCard id="kpi-hardware-posts" queryId="hackaday_weekly" title="Recent hardware stories" value={integer.format(hackaday.length)}
+          sourceRows={hackaday} displayRows={hackaday} description="Selected Hackaday stories published within the seven-day review window." />, 2)}
+      {item("kpi-instructables-weekly", "Fusion seven-day additions", "metric", 3,
+        <MetricCard id="kpi-instructables-weekly" queryId="instructables_freshness" title="Fusion seven-day additions" value={Number.isFinite(fusionFreshness.weeklyNew) ? integer.format(fusionFreshness.weeklyNew) : "Unknown"}
+          sourceRows={instructablesFreshness} displayRows={instructablesFreshness} description="Oct 19 check returned Loading. Current additions and latest date are unknown." />, 2)}
+      {item("github-stars", "New-repository stars", "chart", 8,
+        <EvidenceChart id="github-stars" queryId="github_weekly" title="New-repository candidates: stars"
           variant="card" rows={github} sourceRows={github} height={410}
-          description="近七日新建仓库的当前累计 Star；其他平台因口径不同不叠加到同一坐标轴。"
+          description="Current stars for new repositories; no cross-platform aggregation."
           spec={{ type: "horizontalBar", x: "project", y: "weeklyStars", showValues: true, sortOrder: "descending", showXAxisLabel: false, showYAxisLabel: false }} />)}
-      {item("category-mix", "GitHub 类别构成", "chart", 4,
-        <EvidenceChart id="category-mix" queryId="github_weekly" title="Top 10 项目类别构成"
+      {item("category-mix", "GitHub category mix", "chart", 4,
+        <EvidenceChart id="category-mix" queryId="github_weekly" title="Candidate category mix"
           variant="card" rows={categoryRows} sourceRows={github} height={410}
-          description="按项目公开描述人工归类；用于观察主题集中度。"
+          description="Manual classification from official repository descriptions."
           spec={{ type: "pie", x: "category", y: "projects", showValues: true, showXAxisLabel: false, showYAxisLabel: false }} />)}
-      {item("signal-summary", "本周信号", "custom", 12,
+      {item("signal-summary", "This week's signals", "custom", 12,
         <DataComponent id="signal-summary" queryId="github_weekly"
-          queryIds={["github_weekly", "hackaday_weekly", "maker_platforms_current", "crowdsupply_current", "instructables_freshness"]}
-          title="本周值得团队讨论的三个信号" kind="custom" variant="card"
+          queryIds={["github_weekly", "hackaday_weekly", "product_watchlist"]}
+          title="Three signals for the team" kind="custom" variant="card"
           sourceRows={github}
           sourceRowsByQuery={{
             github_weekly: github,
             hackaday_weekly: hackaday,
-            maker_platforms_current: makerPlatforms,
-            crowdsupply_current: crowd,
-            instructables_freshness: instructablesFreshness,
+            product_watchlist: watchlist,
           }}
           displayRows={[]}
-          description="来自 GitHub、Hackaday 和 Instructables 的独立指标，不进行跨平台数值相加。">
+          description="Source-backed input and hardware signals; product implications are editorial judgments.">
           <div className="osw-signal-grid">
-            <article><span>01</span><strong>Agent 输入正在跨越设备边界</strong><p>iPhone-use 让 Codex 通过 USB 操作真实手机，WordCraft 等桌面应用则把快捷键、命令、CLI 与 MCP 收敛到同一动作模型。</p></article>
-            <article><span>02</span><strong>相机、软传感与触觉正在重写输入</strong><p>AI 计算器用相机读取手写公式，柔性光纤薄片感知三维形变，单键振动计算器把按压序列与触觉脉冲压缩成极简 I/O。</p></article>
-            <article><span>03</span><strong>开放参考设计缩短硬件扩展路径</strong><p>Valve 公开控制器几何、IR LED 与 MIPI/PCIe 扩展参考；OpenMote 和 ZeroKeyUSB 则展示标准 HID、本地运行与开放固件的产品化价值。</p></article>
+            <article><span>01</span><strong>Human approval becomes a hardware function</strong><p>Zhiyan combines voice, accept/reject keys and Agent state. immurok proposes fingerprint approval for individual Agent commands; security and license boundaries remain critical.</p></article>
+            <article><span>02</span><strong>Open sensing does not mean validated haptics</strong><p>TAKTO exposes joint sensing and tendon actuation, but force rendering and latency are not yet measured. Separate sensing, actuation and wearable validation in product trials.</p></article>
+            <article><span>03</span><strong>Commodity radios become experimental instruments</strong><p>BirriaSDR and LR2021-SDR expose raw radio signals. They suggest lower-cost RF diagnostics, while calibration and board differences prevent treating them as reference instruments.</p></article>
           </div>
         </DataComponent>)}
     </Canvas>

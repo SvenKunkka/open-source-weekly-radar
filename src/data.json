@@ -1,7 +1,7 @@
 {
   "surface": "dashboard",
-  "title": "开源软硬件趋势雷达",
-  "generatedAt": "2026-10-12T00:36:44Z",
+  "title": "开源软硬件趋势雷达 | Open-source Technology Radar",
+  "generatedAt": "2026-10-19T06:38:29Z",
   "status": "observed",
   "filters": [],
   "queries": {
@@ -9,129 +9,159 @@
       "rows": [
         {
           "rank": 1,
-          "project": "math",
-          "owner": "openai",
-          "weeklyStars": 14079,
-          "totalStars": 14079,
-          "category": "AI / 形式化数学",
-          "region": "国际",
-          "summary": "719 篇数学手稿与证明材料集合，约 42% 顶层结果已形式化；官方明确提示部分未形式化结果仍可能有问题。",
-          "url": "https://github.com/openai/math"
+          "project": "d2r-mobile",
+          "owner": "jhaizhou-ops",
+          "weeklyStars": 3940,
+          "totalStars": 3940,
+          "forks": 1101,
+          "createdAt": "2026-10-12T08:41:19Z",
+          "category": "Gaming / compatibility",
+          "region": "Global community",
+          "summary": "Open-source iOS / macOS compatibility layer for Diablo II: Resurrected with the Reign of the Warlock expansion. Runs your own Switch copy natively on iPhone, iPad and Mac — full touch controls, 60 fps, new endgame modes. Bring your own game files. 开源的《暗黑破坏神 II：狱火重生》术士君临 iOS / macOS 兼容层",
+          "url": "https://github.com/jhaizhou-ops/d2r-mobile"
         },
         {
           "rank": 2,
-          "project": "wordcraft",
-          "owner": "storytold",
-          "weeklyStars": 5908,
-          "totalStars": 5908,
-          "category": "桌面工作流 / Agent",
-          "region": "国际",
-          "summary": "纯 Rust 的开源 Word 风格编辑器，支持 DOCX、跨平台和 422 个可由 CLI、JSON 与 MCP 驱动的命令。",
-          "url": "https://github.com/storytold/wordcraft"
+          "project": "tv-vibehack",
+          "owner": "Gathin23",
+          "weeklyStars": 2611,
+          "totalStars": 2611,
+          "forks": 311,
+          "createdAt": "2026-10-17T08:12:35Z",
+          "category": "Desktop workflow",
+          "region": "Global community",
+          "summary": "Your TV, minus the ads. Debloat any Android TV or Google TV over Wi-Fi and swap the ad-filled home screen for a clean Apple TV-style launcher. No root, fully reversible.",
+          "url": "https://github.com/Gathin23/tv-vibehack"
         },
         {
           "rank": 3,
-          "project": "huashu-art-motion",
-          "owner": "alchaincyf",
-          "weeklyStars": 3384,
-          "totalStars": 3384,
-          "category": "AI / 动画 Skill",
-          "region": "中国",
-          "summary": "面向 Coding Agent 的艺术动画技能包，提供 35 种艺术风格、9 种解说语法和可运行场景代码。",
-          "url": "https://github.com/alchaincyf/huashu-art-motion"
+          "project": "git-ai",
+          "owner": "feder-cr",
+          "weeklyStars": 2321,
+          "totalStars": 2321,
+          "forks": 260,
+          "createdAt": "2026-10-15T13:12:02Z",
+          "category": "AI / Agent",
+          "region": "Global community",
+          "summary": "Git designed for AI agents.",
+          "url": "https://github.com/feder-cr/git-ai"
         },
         {
           "rank": 4,
-          "project": "anatomy",
-          "owner": "wheresryan22",
-          "weeklyStars": 3283,
-          "totalStars": 3283,
-          "category": "AI / 交互可视化",
-          "region": "国际",
-          "summary": "让 Agent 生成可交互 SVG、WebGL 与 3D 机械解释图的技能，强调真实模型、动作与自检。",
-          "url": "https://github.com/wheresryan22/anatomy"
+          "project": "everything",
+          "owner": "HeyPuter",
+          "weeklyStars": 2249,
+          "totalStars": 2249,
+          "forks": 322,
+          "createdAt": "2026-10-13T16:18:22Z",
+          "category": "Software ecosystem",
+          "region": "Global community",
+          "summary": "We're rebuilding and open-sourcing the world’s software from scratch.",
+          "url": "https://github.com/HeyPuter/everything"
         },
         {
           "rank": 5,
-          "project": "ARTEX",
-          "owner": "mhtsec",
-          "weeklyStars": 3145,
-          "totalStars": 3145,
-          "category": "AI / 安全 Agent",
-          "region": "中国",
-          "summary": "AI 自主渗透测试系统，采用 AGPL-3.0；高 Fork 信号也提示需要进一步核验真实使用与来源结构。",
-          "url": "https://github.com/mhtsec/ARTEX"
+          "project": "solid-glass",
+          "owner": "deeplethe",
+          "weeklyStars": 2189,
+          "totalStars": 2189,
+          "forks": 27,
+          "createdAt": "2026-10-12T09:19:02Z",
+          "category": "AI / design system",
+          "region": "Global community",
+          "summary": "A design system for AI applications. Material, physical, tactile, technical.",
+          "url": "https://github.com/deeplethe/solid-glass"
         },
         {
           "rank": 6,
-          "project": "iPhone-use",
-          "owner": "zhongerxin",
-          "weeklyStars": 3042,
-          "totalStars": 3042,
-          "category": "AI / 跨设备输入",
-          "region": "中国",
-          "summary": "通过 USB、WebDriverAgent 与本地 MCP 让 Codex 操作真实 iPhone，并提供控件树、截图回退和实时屏幕。",
-          "url": "https://github.com/zhongerxin/iPhone-use"
+          "project": "BRUTAL",
+          "owner": "ahwootech",
+          "weeklyStars": 1930,
+          "totalStars": 1930,
+          "forks": 102,
+          "createdAt": "2026-10-14T19:33:56Z",
+          "category": "Game engines",
+          "region": "Global community",
+          "summary": "A free, open source C# framework for making games, or your own game engine. Direct access to native APIs and Vulkan, with the low-level libraries around them. The foundation under Kitten Space Agency and RimWorld's Waylith engine.",
+          "url": "https://github.com/ahwootech/BRUTAL"
         },
         {
           "rank": 7,
-          "project": "gridcraft",
-          "owner": "storytold",
-          "weeklyStars": 2918,
-          "totalStars": 2918,
-          "category": "桌面工作流 / 表格",
-          "region": "国际",
-          "summary": "纯 Rust 的开源 Excel 风格表格应用，属于 Agent 可驱动的 ArtCraft 办公套件。",
-          "url": "https://github.com/storytold/gridcraft"
+          "project": "handwired",
+          "owner": "chenglou",
+          "weeklyStars": 1748,
+          "totalStars": 1748,
+          "forks": 146,
+          "createdAt": "2026-10-15T02:15:09Z",
+          "category": "AI / neural networks",
+          "region": "Global community",
+          "summary": "Turn your regular JavaScript code into a neural net.",
+          "url": "https://github.com/chenglou/handwired"
         },
         {
           "rank": 8,
-          "project": "cadcraft",
-          "owner": "storytold",
-          "weeklyStars": 2654,
-          "totalStars": 2654,
-          "category": "桌面工作流 / CAD",
-          "region": "国际",
-          "summary": "纯 Rust 的开源 AutoCAD 风格设计与制图应用，瞄准可由 Agent 驱动的创作工作流。",
-          "url": "https://github.com/storytold/cadcraft"
+          "project": "uncharted_pc",
+          "owner": "Supermedo",
+          "weeklyStars": 1477,
+          "totalStars": 1477,
+          "forks": 76,
+          "createdAt": "2026-10-15T00:17:23Z",
+          "category": "Gaming / compatibility",
+          "region": "Global community",
+          "summary": "Uncharted: The Nathan Drake Collection running natively on Windows - by SuperMedo",
+          "url": "https://github.com/Supermedo/uncharted_pc"
         },
         {
           "rank": 9,
-          "project": "nvidia-macos-driver",
-          "owner": "nullmoth",
-          "weeklyStars": 2535,
-          "totalStars": 2535,
-          "category": "系统软件 / GPU",
-          "region": "国际",
-          "summary": "面向 Intel/OpenCore macOS 15 的 NVIDIA RTX Metal 驱动实验，源码可见但许可证仍需核验。",
-          "url": "https://github.com/nullmoth/nvidia-macos-driver"
+          "project": "open-claude-ui",
+          "owner": "Caho1",
+          "weeklyStars": 1219,
+          "totalStars": 1219,
+          "forks": 262,
+          "createdAt": "2026-10-14T14:05:05Z",
+          "category": "AI / desktop UI",
+          "region": "Global community",
+          "summary": "Open recreation of a desktop assistant interface with reusable React components; compatibility and branding require review.",
+          "url": "https://github.com/Caho1/open-claude-ui"
         },
         {
           "rank": 10,
-          "project": "aurelio-finance",
-          "owner": "LosaLosSantos",
-          "weeklyStars": 2241,
-          "totalStars": 2241,
-          "category": "AI / 本地个人财务",
-          "region": "国际",
-          "summary": "本地运行的开源个人财务应用，整合净资产、投资、现金、债务与 AI 财务顾问。",
-          "url": "https://github.com/LosaLosSantos/aurelio-finance"
+          "project": "net-merge",
+          "owner": "rohit267",
+          "weeklyStars": 1185,
+          "totalStars": 1185,
+          "forks": 49,
+          "createdAt": "2026-10-12T19:28:45Z",
+          "category": "Networking",
+          "region": "Global community",
+          "summary": "Use all your network adapters at once on Windows/Linux/Mac: per-connection load balancing over Wi-Fi, Ethernet and phone/USB tethers (TUN + Wintun)",
+          "url": "https://github.com/rohit267/net-merge"
         }
       ],
       "source": {
-        "label": "GitHub 当前热门候选：近七日新建仓库 Star 快照",
+        "label": "GitHub: new-repository candidates / 新仓候选",
         "href": "https://github.com/trending?since=weekly",
-        "executedAt": "2026-10-12T00:36:44Z",
+        "executedAt": "2026-10-19T06:38:29Z",
         "filters": [
-          "Strict creation window: repositories created 2026-10-05 through 2026-10-12",
-          "Sorted by current Star count using GitHub repository search, then rechecked against official repository metadata",
-          "Because every listed repository was created inside the window, weeklyStars equals its current cumulative Star count; this is not the official Trending order"
+          "Window: 2026-10-12 06:38:29 UTC to 2026-10-19 06:38:29 UTC (Asia/Shanghai: 14:38 to 14:38).",
+          "GitHub search query: created:2026-10-12..2026-10-19 sort:stars-desc, per_page=15; first 10 in-scope repositories after excluding one adult-image generation repository.",
+          "Creation timestamps checked against the exact window; current stars rechecked with official repository metadata."
+        ],
+        "caveats": [
+          "Trending endpoint was restricted. This is a new-repository candidate list, not an official Trending rank.",
+          "Current stars on a repository created inside the window are a cumulative snapshot; older repositories trending this week are outside this list."
+        ],
+        "evidenceFlow": [
+          {
+            "title": "GitHub connector",
+            "detail": "search_repositories(query=\"created:2026-10-12..2026-10-19 sort:stars-desc\", per_page=15), then fetch(url=\"https://api.github.com/repos/{owner}/{repo}\") for every selected row. Record stargazers_count, forks_count and created_at. Exclude the adult-image generation entry as outside the team product scope."
+          }
         ],
         "metricDefinitions": [
           {
-            "label": "窗口内新仓 Star",
+            "label": "New-repository stars",
             "field": "weeklyStars",
-            "definition": "近七日内新建仓库在采集时的累计 Star；由于仓库年龄不超过七日，可作为可审计的窗口内增长上限，不冒充 GitHub 官方 Trending 的 stars-this-week。",
+            "definition": "Current cumulative stargazers_count for repositories created within the seven-day window.",
             "componentIds": [
               "kpi-top-stars",
               "github-stars",
@@ -139,21 +169,22 @@
             ]
           },
           {
-            "label": "AI 相关占比",
+            "label": "AI share",
             "field": "category",
-            "definition": "按项目公开描述人工归类为 AI / Agent、AI 图像、AI 应用、LLM 基础设施或 AI 教程的项目数，占 Top 10 的比例。",
+            "definition": "Manually classified AI categories divided by the 10 selected candidates.",
             "componentIds": [
               "kpi-ai-share",
               "category-mix"
             ]
           }
-        ],
-        "caveats": [
-          "GitHub Trending 官方周榜未返回完整可审计数据，因此本期采用“近七日新建仓库 + 官方仓库 Star 快照”的当前热门候选口径。",
-          "此口径偏向新仓库，不包含本周突然升温但建立较早的项目；不与其他平台互动量横向相加。",
-          "ARTEX 的 Fork 数显著高于 Star，保留官方元数据但不把 Fork 直接当作热度质量证明。"
         ]
-      }
+      },
+      "methods": [
+        {
+          "language": "text",
+          "code": "Filter repository created_at to the exact UTC window. Exclude the out-of-scope adult-image repository. Sort remaining current stargazers_count descending; take 10. Set weeklyStars and totalStars to current stargazers_count; do not claim historical net additions."
+        }
+      ]
     },
     "curated_hardware_watchlist": {
       "rows": [
@@ -166,43 +197,29 @@
           "openIssues": 11,
           "license": "CERN-OHL-P-2.0",
           "lastPush": "2025-11-22",
-          "category": "ZMK / 键盘输入",
-          "stage": "开源硬件 / 可自组装",
-          "signal": "806 Stars · 63 Forks（10 月 12 日）",
-          "risk": "主仓近 10 个月无功能更新；固件模块独立维护，组装与兼容性需实测",
-          "summary": "带 1.69 英寸彩色 LCD、环境光感应与外置复位键的桌面 ZMK 接收器，可作为分体键盘状态与交互中枢。",
+          "category": "ZMK keyboard hub",
+          "stage": "Open hardware / self-assembly",
+          "signal": "806 stars / 63 forks; unchanged vs Oct 12",
+          "risk": "Main repository last pushed Nov 22, 2025; test firmware-module compatibility.",
+          "summary": "Desktop ZMK receiver with a color display and ambient-light sensing.",
           "url": "https://github.com/carrefinho/prospector"
         }
       ],
       "source": {
-        "label": "GitHub 人工关注项目 — carrefinho/prospector",
+        "label": "Prospector: user-curated ongoing watch",
         "href": "https://github.com/carrefinho/prospector",
-        "executedAt": "2026-10-12T00:36:44Z",
+        "executedAt": "2026-10-19T06:38:29Z",
         "filters": [
-          "User-curated hardware watchlist",
-          "Official GitHub repository metadata rechecked on 2026-10-12"
-        ],
-        "metricDefinitions": [
-          {
-            "label": "总 Star",
-            "field": "totalStars",
-            "definition": "GitHub 仓库 stargazers_count 的累计快照，不代表过去七日新增。",
-            "componentIds": [
-              "curated-hardware-table"
-            ]
-          },
-          {
-            "label": "Fork",
-            "field": "forks",
-            "definition": "GitHub 仓库 forks_count 的累计快照。",
-            "componentIds": [
-              "curated-hardware-table"
-            ]
-          }
+          "Official repository metadata rechecked Oct 19; 806 stars, 63 forks, 11 open issues."
         ],
         "caveats": [
-          "该项目由用户指定加入关注池，不代表进入 GitHub Trending 官方榜单。",
-          "Star、Fork、Issue、许可证与最近推送时间均来自 2026-10-12 的 GitHub 官方仓库元数据快照；这些是累计值，不代表七日新增。"
+          "Cumulative counts, unchanged from Oct 12. Not a weekly Trending entry."
+        ],
+        "evidenceFlow": [
+          {
+            "title": "Collection",
+            "detail": "Checked on 2026-10-19. Web open/search of https://github.com/carrefinho/prospector and the official project URLs in the rows. Search-index observations are explicitly labeled; not all origins return live data."
+          }
         ]
       }
     },
@@ -210,81 +227,91 @@
       "rows": [
         {
           "rank": 1,
-          "project": "旧 Galaxy S23 改造成游戏 PC",
-          "date": "2026-10-08",
-          "comments": 26,
-          "category": "再利用 / 桌面计算",
-          "summary": "用损坏旗舰手机、主动散热、SSD、USB Hub 与 DeX 组成约 40 美元的桌面游戏系统。",
-          "url": "https://hackaday.com/2026/10/08/turning-a-run-over-samsung-galaxy-s23-into-a-gaming-pc/"
+          "project": "LR2021-SDR",
+          "date": "2026-10-15",
+          "comments": 17,
+          "category": "RF / SDR",
+          "summary": "Experimental raw I/Q access turns a LoRa radio into a programmable receiver; current repository documents board-specific limits.",
+          "url": "https://hackaday.com/2026/10/15/another-wireless-chip-has-a-hidden-sdr-revealed/"
         },
         {
           "rank": 2,
-          "project": "PixelFonts 小屏压缩字体",
-          "date": "2026-10-10",
-          "comments": 22,
-          "category": "小屏 UI / 字体",
-          "summary": "面向小尺寸显示器的紧凑像素字体族，减少信息密度与可读性之间的冲突。",
-          "url": "https://hackaday.com/2026/10/10/slim-type-for-small-screens-with-pixelfonts/"
+          "project": "Undercooked V0.4 gamepad",
+          "date": "2026-10-16",
+          "comments": 10,
+          "category": "Game controller",
+          "summary": "RP2040-Zero and GP2040-CE support a low-cost wired controller with browser configuration.",
+          "url": "https://hackaday.com/2026/10/16/the-10e-gamepad/"
         },
         {
           "rank": 3,
-          "project": "Radxa Dragon Q8B SBC",
-          "date": "2026-10-10",
-          "comments": 17,
-          "category": "SBC / 桌面计算",
-          "summary": "SC8280XP 与 8GB LPDDR4X 的高性能单板机，性能与接口强，但 Linux 镜像和上手门槛仍高。",
-          "url": "https://hackaday.com/2026/10/10/poking-at-the-radxa-dragon-q8b-raspberry-pi-5-killer/"
+          "project": "BirriaSDR",
+          "date": "2026-10-18",
+          "comments": 9,
+          "category": "RF / SDR",
+          "summary": "A USB Wi-Fi adapter becomes a 14-bit, 40 MSps experimental receiver; calibration remains unverified.",
+          "url": "https://hackaday.com/2026/10/18/turning-a-wi-fi-adapter-into-an-sdr/"
         },
         {
           "rank": 4,
-          "project": "蒜皮摩擦电门窗传感器",
-          "date": "2026-10-08",
-          "comments": 13,
-          "category": "自供电传感 / 新材料",
-          "summary": "蒜皮与聚乙烯构成摩擦电纳米发电器，开门动作可产生 210–400V 信号并维持半年储存与 200 次循环。",
-          "url": "https://hackaday.com/2026/10/08/introducing-the-garlic-powered-door-and-window-sensor/"
+          "project": "TAKTO ONE",
+          "date": "2026-10-16",
+          "comments": 8,
+          "category": "Hand input / haptics",
+          "summary": "Open hand exoskeleton with magnetic encoders, IMUs, EMG and tendon actuation; force rendering is not yet measured.",
+          "url": "https://hackaday.com/2026/10/16/takto-open-source-hand-tracking-built-like-lego/"
         },
         {
           "rank": 5,
-          "project": "六边形网格 PCB 自动布线",
-          "date": "2026-10-11",
-          "comments": 9,
-          "category": "EDA / 算法",
-          "summary": "尝试用六边形网格改善 PCB 自动布线的方向选择与路径质量，仍需和成熟布线器做系统比较。",
-          "url": "https://hackaday.com/2026/10/11/improving-an-autorouter-with-a-hexagonal-grid/"
+          "project": "Single-propeller drone",
+          "date": "2026-10-17",
+          "comments": 4,
+          "category": "Robotics / control",
+          "summary": "One motor, a hinged hub and rapid speed modulation; indoor reference sensing is still required.",
+          "url": "https://hackaday.com/2026/10/17/building-a-flying-drone-with-a-single-propeller/"
         },
         {
           "rank": 6,
-          "project": "Valve Steam Frame 开放硬件参考",
-          "date": "2026-10-10",
-          "comments": 7,
-          "category": "VR / 控制器 / 开放 CAD",
-          "summary": "开放头显、头带和控制器 STEP 模型、IR LED 位置，并公开 MIPI Camera 与 PCIe 扩展口参考设计。",
-          "url": "https://hackaday.com/2026/10/10/valve-releases-hardware-and-cad-reference-for-new-vr-headset/"
+          "project": "Micro Arcade",
+          "date": "2026-10-17",
+          "comments": 3,
+          "category": "Remote input terminal",
+          "summary": "An AtomS3R streams a remote PC display and sends tilt plus short, double and long press events.",
+          "url": "https://hackaday.com/2026/10/17/2026-retrocomputing-challenge-dollhouse-arcade-cabinet-runs-remote-dos-games/"
         }
       ],
       "source": {
-        "label": "Hackaday — past seven days",
+        "label": "Hackaday: articles published in the review window",
         "href": "https://hackaday.com/",
-        "executedAt": "2026-10-12T00:36:44Z",
+        "executedAt": "2026-10-19T06:38:29Z",
         "filters": [
-          "Articles published 2026-10-05 through 2026-10-12",
-          "Selected input, AI and technically novel open-hardware stories with visible comment counts"
+          "Publication dates: 2026-10-12 through 2026-10-19",
+          "Six selected input and frontier-hardware stories, sorted by visible cumulative comments."
+        ],
+        "caveats": [
+          "Comment counts are current cumulative counts on recent articles, not a measured seven-day comment delta.",
+          "Selection is relevance-led, not a complete site-wide ranking."
+        ],
+        "evidenceFlow": [
+          {
+            "title": "Collection",
+            "detail": "Checked on 2026-10-19. Web open/search of https://hackaday.com/ and the official project URLs in the rows. Search-index observations are explicitly labeled; not all origins return live data."
+          },
+          {
+            "title": "Cross-check sources",
+            "detail": "https://github.com/molanocortes/takto-one ; https://github.com/luigifcruz/BirriaSDR ; https://github.com/SAMS0N1TE/lr2021-sdr ; https://github.com/apn201/Micro_Arcade ; https://github.com/jyjblrd/single-propeller-drone"
+          }
         ],
         "metricDefinitions": [
           {
-            "label": "评论数",
+            "label": "Comments",
             "field": "comments",
-            "definition": "采集时项目文章显示的累计评论数，用作近七日新发布项目的讨论热度代理指标。",
+            "definition": "Visible cumulative article comments at collection time.",
             "componentIds": [
               "hackaday-comments",
               "hackaday-table"
             ]
           }
-        ],
-        "caveats": [
-          "评论数是累计值，但文章发布时间严格限制在近七日；它不代表收藏、销量或代码活跃度。",
-          "题材优先匹配输入设备、端侧 AI 与前沿硬件，因此不是 Hackaday 全站评论排名。"
         ]
       }
     },
@@ -293,284 +320,253 @@
         {
           "rank": 1,
           "project": "OpenMote",
-          "backers": 1315,
-          "fundingPercent": 100,
-          "raisedUsd": 185600,
-          "category": "开源控制器 / HID",
-          "summary": "ESP32-S3 通用遥控器兼容 BLE 键盘、手柄、红外、Home Assistant、麦克风与动作输入。",
-          "url": "https://www.crowdsupply.com/hat-and-hammer/openmote"
+          "backers": 1467,
+          "fundingPercent": null,
+          "raisedUsd": 199165,
+          "stage": "Funding / 10 days left",
+          "category": "Open controller / HID",
+          "summary": "ESP32-S3 controller combines HID, motion, audio and local automation.",
+          "url": "https://www.crowdsupply.com/hat-and-hammer/openmote",
+          "change": "+152 backers vs 2026-10-12 snapshot",
+          "backerDelta": 152,
+          "previousBackers": 1315
         },
         {
           "rank": 2,
-          "project": "Openterface KeyMod",
-          "backers": 511,
-          "fundingPercent": 382,
-          "raisedUsd": 57415,
-          "category": "USB / 键鼠桥接",
-          "summary": "口袋 USB 多工具，把手机或电脑变成目标设备的键鼠和屏幕桥接器；当前为预购。",
-          "url": "https://www.crowdsupply.com/techxartisan/openterface-keymod"
+          "project": "KeyMod",
+          "backers": 520,
+          "fundingPercent": 377,
+          "raisedUsd": 56691,
+          "stage": "Pre-order",
+          "category": "USB / keyboard-mouse bridge",
+          "summary": "Pocket USB bridge for remote input and device control.",
+          "url": "https://www.crowdsupply.com/techxartisan/openterface-keymod",
+          "change": "+9 backers vs 2026-10-12 snapshot",
+          "backerDelta": 9,
+          "previousBackers": 511
         },
         {
           "rank": 3,
           "project": "Firehat",
-          "backers": 167,
-          "fundingPercent": 299,
-          "raisedUsd": 22433,
-          "category": "视频采集 / SBC",
-          "summary": "为单板机提供紧凑 FireWire DV 采集接口，显示旧接口资产再利用的长尾市场。",
-          "url": "https://www.crowdsupply.com/withrobot/firehat"
+          "backers": 169,
+          "fundingPercent": 355,
+          "raisedUsd": 26663,
+          "stage": "Pre-order",
+          "category": "Video capture / SBC",
+          "summary": "FireWire capture HAT for single-board computers.",
+          "url": "https://www.crowdsupply.com/withrobot/firehat",
+          "change": "+2 backers vs 2026-10-12 snapshot",
+          "backerDelta": 2,
+          "previousBackers": 167
         },
         {
           "rank": 4,
           "project": "Patternflow",
-          "backers": 49,
-          "fundingPercent": 229,
-          "raisedUsd": 22945,
-          "category": "旋钮输入 / 光乐器",
-          "summary": "四旋钮实时控制 8,192 像素；开放硬件、双向 OSC 与可由 AI 辅助生成的图案模块。",
-          "url": "https://www.crowdsupply.com/engmung/patternflow"
+          "backers": 51,
+          "fundingPercent": 237,
+          "raisedUsd": 23779,
+          "stage": "Pre-order",
+          "category": "Knob input / light instrument",
+          "summary": "Open LED synthesizer with direct touch interaction.",
+          "url": "https://www.crowdsupply.com/engmung/patternflow",
+          "change": "+2 backers vs 2026-10-12 snapshot",
+          "backerDelta": 2,
+          "previousBackers": 49
         },
         {
           "rank": 5,
-          "project": "ZerokeyUSB",
-          "backers": 32,
-          "fundingPercent": 266,
-          "raisedUsd": 6658,
-          "category": "USB HID / 安全输入",
-          "summary": "离线加密凭据库以标准 USB 键盘输入账号密码，10 月 6 日新增可选浏览器扩展。",
-          "url": "https://www.crowdsupply.com/depbit/zerokeyusb"
+          "project": "ZeroKeyUSB",
+          "backers": 35,
+          "fundingPercent": 286,
+          "raisedUsd": 7153,
+          "stage": "Funding / 17 days left",
+          "category": "USB HID / credential input",
+          "summary": "Offline credential manager using USB input.",
+          "url": "https://www.crowdsupply.com/depbit/zerokeyusb",
+          "change": "+3 backers vs 2026-10-12 snapshot",
+          "backerDelta": 3,
+          "previousBackers": 32
         }
       ],
       "source": {
-        "label": "Crowd Supply active campaigns",
+        "label": "Crowd Supply: cumulative campaign and pre-order snapshots",
         "href": "https://www.crowdsupply.com/",
-        "executedAt": "2026-10-12T00:36:44Z",
+        "executedAt": "2026-10-19T06:38:29Z",
         "filters": [
-          "Active campaigns visible on the Crowd Supply homepage on 2026-10-12",
-          "Current cumulative funding and backer snapshots; not seven-day deltas"
+          "Current homepage observations on 2026-10-19",
+          "Compare against repository snapshot 2026-10-12T00:36:44Z."
+        ],
+        "caveats": [
+          "Snapshot differences span about 7 days 6 hours, not exactly 168 hours. They can include cancellations or corrections.",
+          "OpenMote is labeled Funded without a percentage: fundingPercent is null, not an invented 100%.",
+          "KeyMod funding fell from $57,415 to $56,691 while backers increased; cause is not established."
+        ],
+        "evidenceFlow": [
+          {
+            "title": "Collection",
+            "detail": "Checked on 2026-10-19. Web open/search of https://www.crowdsupply.com/ and the official project URLs in the rows. Search-index observations are explicitly labeled; not all origins return live data."
+          }
         ],
         "metricDefinitions": [
           {
-            "label": "支持者",
+            "label": "Backers",
             "field": "backers",
-            "definition": "采集时 Crowd Supply 页面显示的累计支持者人数。",
+            "definition": "Current cumulative backer count.",
             "componentIds": [
               "crowd-backers",
               "crowd-table"
             ]
+          },
+          {
+            "label": "Snapshot change",
+            "field": "backerDelta",
+            "definition": "Current backers minus the 2026-10-12 00:36 UTC snapshot; not a strict 7-day delta.",
+            "componentIds": [
+              "crowd-table"
+            ]
           }
-        ],
-        "caveats": [
-          "支持者、筹资额和完成度是当前累计众筹快照，不是过去七日新增。",
-          "首页只显示部分活动；fundingPercent=100 用于页面仅标注 Funded、未公开精确百分比的项目。"
         ]
       }
     },
     "maker_platforms_current": {
       "rows": [
         {
-          "platform": "Hackster.io",
-          "project": "AI Scientific Calculator V2",
-          "signal": "21 小时内新报道",
-          "stage": "开源模块化原型",
-          "category": "视觉 / AI 输入",
-          "summary": "ESP32、相机、双屏和实体键盘组合本地/云 AI，可拍摄手写公式并转换为计算任务。",
-          "url": "https://www.hackster.io/news/a-scientific-calculator-for-the-age-of-ai-90c24e3c51f1"
+          "platform": "Hackster.io / Arduino",
+          "project": "Arduino USB Camera",
+          "signal": "Official launch 2026-10-15",
+          "stage": "Available / commercial accessory",
+          "category": "Vision + voice input",
+          "summary": "USB camera, microphone and touch-controlled lighting integrate with local App Lab vision and gesture models.",
+          "url": "https://blog.arduino.cc/2026/10/15/bring-usb-connected-ai-vision-to-your-projects-with-the-new-arduino-usb-camera/"
         },
         {
-          "platform": "Hackster.io",
-          "project": "PhoneBot",
-          "signal": "21 小时内新报道",
-          "stage": "开源研究原型",
-          "category": "具身 AI / 旧手机再利用",
-          "summary": "约 400 美元、13 关节的人形机器人，用旧 Android 手机承担视觉、IMU、TFLite 推理和通信。",
-          "url": "https://www.hackster.io/news/don-t-throw-away-your-old-phone-build-a-robot-instead-392de07d053a"
+          "platform": "Hackster.io / Kickstarter",
+          "project": "ToolDance X1",
+          "signal": "New campaign report within review window; 370 official comments",
+          "stage": "Crowdfunding / commercial hardware",
+          "category": "Desktop manufacturing",
+          "summary": "Optional simultaneous five-axis module; independent machining performance and delivery still need validation.",
+          "url": "https://www.kickstarter.com/projects/147449099/tooldance-x1-smart-desktop-cnc-with-industrial-capability"
         },
         {
-          "platform": "Hackster.io",
-          "project": "柔性 3D 形变传感片",
-          "signal": "2 天内新报道",
-          "stage": "开放获取研究原型",
-          "category": "可穿戴 / 新型控制器",
-          "summary": "粗糙化橡胶光纤嵌入硅胶片，近实时重建表面弯曲与受力，误差低于 0.4cm。",
-          "url": "https://www.hackster.io/news/roughened-optical-fibers-turn-soft-sheets-of-silicone-into-three-dimensional-shape-sensors-0279e9419b86"
-        },
-        {
-          "platform": "Hackster.io",
-          "project": "单键振动计算器",
-          "signal": "2 天内新报道",
-          "stage": "奇特交互原型",
-          "category": "单键输入 / 触觉输出",
-          "summary": "只有一个按键与一个振动马达，用短按、长按、双击输入，用振动脉冲返回结果，也可接入 ChatGPT。",
-          "url": "https://www.hackster.io/news/could-you-operate-this-ultra-weird-calculator-e77fb7277e69"
+          "platform": "Tindie / maker website",
+          "project": "Softpad",
+          "signal": "Maker offer checked Oct 13; configurator candidate dated Oct 14",
+          "stage": "Hand-assembled / software candidate",
+          "category": "Context-aware macropad",
+          "summary": "Six keys and OLED labels; companion switches profiles by app. Maker reports 2 units at $49 on Oct 13; not live Tindie inventory.",
+          "url": "https://nuvko.works/"
         },
         {
           "platform": "Arduino Project Hub",
-          "project": "JBR-001 Desktop Companion",
-          "signal": "Trending · 79k+ views · 7 comments",
-          "stage": "教程 / 展示原型",
-          "category": "AI 桌面伙伴",
-          "summary": "当前 Trending 首位的 Arduino UNO Q 桌面伴侣，保留累计互动口径。",
+          "project": "JBR-001",
+          "signal": "Trending snapshot: 82k+ views",
+          "stage": "Tutorial / ongoing candidate",
+          "category": "Desktop companion",
+          "summary": "Cumulative view count is rounded; not a seven-day project launch or precise increase.",
           "url": "https://projecthub.arduino.cc/"
         },
         {
-          "platform": "Tindie",
-          "project": "本周无可审计新增",
-          "signal": "Homepage / browse endpoint 502",
-          "stage": "抓取受限",
-          "category": "口径说明",
-          "summary": "2026-10-12 复查入口仍未返回可审计商品列表，未把旧商品冒充本周新品。",
-          "url": "https://www.tindie.com/"
+          "platform": "Arduino Project Hub",
+          "project": "AI Room Tracker",
+          "signal": "Trending snapshot: 2,303 views",
+          "stage": "Tutorial / ongoing candidate",
+          "category": "Context sensing",
+          "summary": "Footsteps, alarm zones and motion access control; cumulative homepage visibility only.",
+          "url": "https://projecthub.arduino.cc/"
+        },
+        {
+          "platform": "Arduino Project Hub",
+          "project": "Hand Gesture Recognition",
+          "signal": "Trending snapshot: 6,509 views",
+          "stage": "Tutorial / ongoing candidate",
+          "category": "Gesture input",
+          "summary": "Qualcomm multimedia SDK gesture-recognition tutorial; no weekly interaction delta is available.",
+          "url": "https://projecthub.arduino.cc/"
         }
       ],
       "source": {
-        "label": "Hackster.io、Arduino Project Hub 与 Tindie 当前快照",
+        "label": "Maker platforms: current candidates and recent launches",
         "href": "https://www.hackster.io/news",
-        "executedAt": "2026-10-12T00:36:44Z",
+        "executedAt": "2026-10-19T06:38:29Z",
         "filters": [
-          "Hackster.io reports published 2026-10-05 through 2026-10-12",
-          "Arduino Project Hub current Trending list captured 2026-10-12",
-          "Tindie homepage and browse endpoint checked 2026-10-12; returned HTTP 502 and no auditable product snapshot"
-        ],
-        "metricDefinitions": [
-          {
-            "label": "热度信号",
-            "field": "signal",
-            "definition": "各平台当前可见的浏览、respects、价格、补货或首页曝光信号；不同平台不做数值相加。",
-            "componentIds": [
-              "maker-platforms-table"
-            ]
-          }
+          "Hackster news and linked official announcements reviewed for Oct 12–19",
+          "Arduino Project Hub current Trending snapshot",
+          "Tindie returned HTTP 502; maker website used for Softpad, with its own Oct 13/14 dates."
         ],
         "caveats": [
-          "Hackster 的时间信号、Arduino 的累计互动和 Tindie 的抓取状态不是同一种指标，故只保留原始文本，不做跨平台数值排名。"
+          "Launch dates, rounded cumulative views, inventory claims and media exposure are different measures and are not ranked together.",
+          "Commercial products are included as product signals; open-source status is not assumed."
+        ],
+        "evidenceFlow": [
+          {
+            "title": "Collection",
+            "detail": "Checked on 2026-10-19. Web open/search of https://www.hackster.io/news and the official project URLs in the rows. Search-index observations are explicitly labeled; not all origins return live data."
+          },
+          {
+            "title": "Cross-check sources",
+            "detail": "https://projecthub.arduino.cc/ ; https://www.tindie.com/ ; https://nuvko.works/ ; https://tooldance.ai/"
+          }
         ]
       }
     },
     "oshwhub_current": {
       "rows": [
         {
-          "project": "X86 计算机主板",
-          "views": 153000,
-          "likes": 915,
-          "favorites": 1200,
-          "comments": 489,
-          "category": "计算平台",
-          "url": "https://oshwhub.com/explore"
+          "project": "知言 Zhiyan",
+          "views": 1100,
+          "likes": 8,
+          "favorites": 12,
+          "comments": 7,
+          "category": "Voice / Agent input",
+          "signal": "Current index: 1.1k views (rounded); comments Oct 13–16",
+          "summary": "ESP-NOW voice + three keys, USB HID/audio receiver and optional Agent status display.",
+          "url": "https://oshwhub.com/runobj/project_amwzvrns"
         },
         {
-          "project": "Moji 2.0 AI 桌面机器人",
-          "views": 118000,
-          "likes": 263,
-          "favorites": 717,
-          "comments": 159,
-          "category": "AI 桌面硬件",
-          "url": "https://oshwhub.com/movecall/moji2"
-        },
-        {
-          "project": "庐山派 K230 CanMV",
-          "views": 208000,
-          "likes": 169,
-          "favorites": 431,
-          "comments": 111,
-          "category": "AI 视觉开发板",
-          "url": "https://oshwhub.com/explore"
-        },
-        {
-          "project": "黄山派 SF32LB52",
-          "views": 141000,
-          "likes": 146,
-          "favorites": 371,
-          "comments": 85,
-          "category": "低功耗多媒体开发板",
-          "url": "https://oshwhub.com/explore"
-        },
-        {
-          "project": "EDA-Pager",
-          "views": 47000,
-          "likes": 117,
-          "favorites": 295,
-          "comments": 75,
-          "category": "ESP32 / LTE",
-          "url": "https://oshwhub.com/course-examples/eda-pager"
-        },
-        {
-          "project": "泰山派 3M（RK3576）",
-          "views": 142000,
-          "likes": 93,
-          "favorites": 231,
-          "comments": 100,
-          "category": "卡片计算机",
-          "url": "https://oshwhub.com/explore"
-        },
-        {
-          "project": "插片版小智 AI 机器人",
-          "views": 166000,
-          "likes": 174,
-          "favorites": 590,
-          "comments": 340,
-          "category": "AI 机器人",
-          "url": "https://oshwhub.com/explore"
-        },
-        {
-          "project": "HTX 单手键盘",
-          "views": 58000,
-          "likes": 243,
-          "favorites": 286,
-          "comments": 88,
-          "category": "键盘 / 人机交互",
-          "url": "https://oshwhub.com/explore"
-        },
-        {
-          "project": "VoiceCore AI 语音键鼠",
-          "views": null,
-          "likes": null,
-          "favorites": null,
-          "comments": null,
-          "category": "AI 语音输入 / HID",
-          "url": "https://oshwhub.com/magiclx/project_xlrplkhx"
-        },
-        {
-          "project": "可爱二进制无线键盘",
-          "views": null,
-          "likes": null,
-          "favorites": null,
-          "comments": null,
-          "category": "可编程键鼠 / 宏",
-          "url": "https://oshwhub.com/kjpig/binary-keyboard-wireless-edtion"
-        },
-        {
-          "project": "多媒体智能蓝牙键鼠",
-          "views": null,
-          "likes": null,
-          "favorites": null,
-          "comments": null,
-          "category": "空中飞鼠 / 跨设备输入",
-          "url": "https://oshwhub.com/qq82871836/project_fdbabtwb"
+          "project": "FunModularKeyboard",
+          "views": 5200,
+          "likes": 27,
+          "favorites": 74,
+          "comments": 21,
+          "category": "Modular voice macropad",
+          "signal": "Current index: 5.2k views (rounded); last project update Sep 23",
+          "summary": "ESP32-S3 macropad with voice functions and magnetic I2C expansion modules.",
+          "url": "https://oshwhub.com/leo2542029230/project_hrxosjyd"
         }
       ],
       "source": {
-        "label": "立创开源广场综合排序",
+        "label": "OSHWHub: official project pages through search index",
         "href": "https://oshwhub.com/explore",
-        "executedAt": "2026-10-12T00:36:44Z",
+        "executedAt": "2026-10-19T06:38:29Z",
         "filters": [
-          "OSHWHub Explore endpoint checked on 2026-10-12",
-          "Endpoint did not return auditable rows; retained the last verified cumulative snapshot from 2026-09-14"
+          "Explore returned HTTP 403; official project-page search excerpts supplied current candidates.",
+          "Zhiyan was created Sep 17 and updated Sep 29; comments dated Oct 13–16 establish recent discussion, not a new launch."
+        ],
+        "caveats": [
+          "Views are rounded index snapshots; favorites and comments are cumulative.",
+          "This replaces the stale Sep 14 general ranking with two relevant, currently indexed candidates; not a site-wide rank."
+        ],
+        "evidenceFlow": [
+          {
+            "title": "Collection",
+            "detail": "Checked on 2026-10-19. Web open/search of https://oshwhub.com/explore and the official project URLs in the rows. Search-index observations are explicitly labeled; not all origins return live data."
+          },
+          {
+            "title": "Cross-check sources",
+            "detail": "https://oshwhub.com/runobj/project_amwzvrns ; https://oshwhub.com/leo2542029230/project_hrxosjyd ; https://github.com/agthuang/zhiyan"
+          }
         ],
         "metricDefinitions": [
           {
-            "label": "收藏",
+            "label": "Favorites",
             "field": "favorites",
-            "definition": "采集时项目卡片显示的累计收藏数。",
+            "definition": "Cumulative favorites in the official project-page search index.",
             "componentIds": [
               "oshw-favorites",
               "oshw-table"
             ]
           }
-        ],
-        "caveats": [
-          "本表是累计浏览、点赞、收藏与评论快照，不是七日增量。",
-          "2026-10-12 入口仍未返回可审计项目数据，因此沿用 2026-09-14 快照并明确标注，不声称本周排名变化。"
         ]
       }
     },
@@ -587,11 +583,11 @@
         },
         {
           "rank": 2,
-          "project": "600W 3D 打印 Halbach 无刷电机",
+          "project": "600W 3D-printed Halbach brushless motor",
           "favorites": 1525,
           "views": 274728,
           "madeIts": 4,
-          "category": "电机 / 3D 打印",
+          "category": "Motor / 3D printing",
           "url": "https://www.instructables.com/600-Watt-3d-printed-Halbach-Array-Brushless-DC-Ele"
         },
         {
@@ -627,7 +623,7 @@
           "favorites": 1070,
           "views": 180046,
           "madeIts": 3,
-          "category": "3D 打印",
+          "category": "3D printing",
           "url": "https://www.instructables.com/3D-Print-Your-Own-Leather-Stamps"
         },
         {
@@ -636,7 +632,7 @@
           "favorites": 1063,
           "views": 143909,
           "madeIts": 6,
-          "category": "结构 / 家具",
+          "category": "Structure / furniture",
           "url": "https://www.instructables.com/5-Piece-Cardboard-Lounge-Chair"
         },
         {
@@ -645,7 +641,7 @@
           "favorites": 1026,
           "views": 119307,
           "madeIts": null,
-          "category": "激光切割",
+          "category": "Laser cutting",
           "url": "https://www.instructables.com/Portable-Hot-Tub"
         },
         {
@@ -663,110 +659,125 @@
           "favorites": 934,
           "views": 110238,
           "madeIts": 7,
-          "category": "电子 / 机构",
+          "category": "Electronics / mechanisms",
           "url": "https://www.instructables.com/Easily-Build-a-MACHINE-THAT-DESTROYS-WHAT-IT-CREAT"
         }
       ],
       "source": {
-        "label": "Instructables Teachers + Fusion — Favorites",
-        "href": "https://www.instructables.com/teachers/projects/",
-        "executedAt": "2026-10-12T00:36:44Z",
+        "label": "Instructables Teachers + Fusion: historical favorites snapshot",
+        "href": "https://www.instructables.com/teachers/projects/?fusion=",
+        "executedAt": "2026-10-19T06:38:29Z",
         "filters": [
-          "Teachers projects",
-          "Fusion checked",
-          "Last fully verified Favorites snapshot retained from 2026-09-02"
+          "Last verified favorites snapshot: 2026-09-02",
+          "Rechecked Oct 19; page returned Loading and no project rows."
+        ],
+        "caveats": [
+          "Historical cumulative counts only. No current popularity or weekly-change claim."
+        ],
+        "evidenceFlow": [
+          {
+            "title": "Collection",
+            "detail": "Checked on 2026-10-19. Web open/search of https://www.instructables.com/teachers/projects/?fusion= and the official project URLs in the rows. Search-index observations are explicitly labeled; not all origins return live data."
+          }
         ],
         "metricDefinitions": [
           {
-            "label": "收藏",
+            "label": "Favorites",
             "field": "favorites",
-            "definition": "Instructables 项目卡片显示的累计 favorites。",
+            "definition": "Cumulative favorites from the retained 2026-09-02 snapshot.",
             "componentIds": [
               "instructables-favorites",
               "instructables-table"
             ]
           }
-        ],
-        "caveats": [
-          "Fusion 页面本周仍只返回加载状态；累计榜沿用最后一次可验证快照，不冒充实时或七日排名。"
         ]
       }
     },
     "instructables_freshness": {
       "rows": [
         {
-          "weeklyNew": 0,
-          "visibleProjects": 789,
-          "latestProject": "Fusion 过滤页本周无可验证新增",
-          "latestDate": "2026-04-27",
-          "latestPublished": "2026-04-27",
-          "note": "2026-10-05 复查页面仍仅返回加载状态；沿用最后可验证发布日期，未发现 9 月 28 日至 10 月 5 日新增证据。"
+          "weeklyNew": null,
+          "visibleProjects": null,
+          "latestProject": "Current Fusion list unavailable / 本期列表不可核验",
+          "latestDate": null,
+          "latestPublished": null,
+          "note": "2026-10-19: Loading only. New project count and current latest date are unknown, not zero."
         }
       ],
       "source": {
-        "label": "Instructables Teachers + Fusion — Newest",
-        "href": "https://www.instructables.com/teachers/projects/",
-        "executedAt": "2026-10-12T00:36:44Z",
+        "label": "Instructables Fusion: unavailable current observations",
+        "href": "https://www.instructables.com/teachers/projects/?fusion=",
+        "executedAt": "2026-10-19T06:38:29Z",
         "filters": [
-          "Teachers + Fusion page checked on 2026-10-12",
-          "Review window 2026-10-05 through 2026-10-12"
+          "Review window Oct 12–19; current list unavailable."
+        ],
+        "caveats": [
+          "Null means unknown. Do not interpret an inaccessible list as zero new projects."
+        ],
+        "evidenceFlow": [
+          {
+            "title": "Collection",
+            "detail": "Checked on 2026-10-19. Web open/search of https://www.instructables.com/teachers/projects/?fusion= and the official project URLs in the rows. Search-index observations are explicitly labeled; not all origins return live data."
+          }
         ],
         "metricDefinitions": [
           {
-            "label": "近七日新增",
+            "label": "Seven-day additions",
             "field": "weeklyNew",
-            "definition": "发布日期位于 2026-10-05 至 2026-10-12 的可验证项目数量。",
+            "definition": "Unknown because the current filtered list could not be read.",
             "componentIds": [
               "kpi-instructables-weekly"
             ]
           }
-        ],
-        "caveats": [
-          "页面本次未返回完整项目卡；0 表示没有可验证新增证据，不等同于平台官方声明零新增。"
         ]
       }
     },
     "oschina_releases": {
       "rows": [
         {
-          "project": "QuotaPanel v0.2.0",
-          "date": "2026-10-10",
-          "category": "AI 桌面效率",
-          "summary": "菜单栏聚合 AI 订阅与 API 额度，并新增小米 MiMo Token Plan 数据源。",
-          "url": "https://www.oschina.net/news/502955"
+          "project": "Magpie v0.1.14",
+          "date": "2026-10-16",
+          "category": "AI / text-selection input",
+          "summary": "Windows release for selection-triggered translation, explanation and workflow actions.",
+          "url": "https://www.oschina.net/news/503067/magpie-0-1-14-released-windows-ver"
         },
         {
-          "project": "LinkAndroid v2.4.0",
-          "date": "2026-10-10",
-          "category": "跨设备输入 / 投屏",
-          "summary": "将投屏内核升级到 scrcpy 5.0，强化 Android 投屏操控、录屏、文件与脚本自动化。",
-          "url": "https://www.oschina.net/news/502954"
+          "project": "Termexo v0.10.14",
+          "date": "2026-10-18",
+          "category": "AI / desktop workflow",
+          "summary": "Adds Pi Agent and improves agent installation, updates and notifications.",
+          "url": "https://www.oschina.net/news/503070"
         },
         {
-          "project": "ToolForge v0.1.8",
-          "date": "2026-10-10",
-          "category": "桌面工作流",
-          "summary": "Rust + Tauri 开源桌面工具箱新增 11 个实用工具，面向开发与文件处理。",
-          "url": "https://www.oschina.net/news/502937"
+          "project": "ToolForge v0.2.0",
+          "date": "2026-10-19",
+          "category": "Desktop tools",
+          "summary": "Rust/Tauri toolbox expands its plugin marketplace and available tools.",
+          "url": "https://www.oschina.net/news/503084"
         },
         {
-          "project": "Bevy 0.20",
-          "date": "2026-10-09",
-          "category": "开源引擎 / 3D",
-          "summary": "大型版本推进 WESL 着色器、实时路径追踪和场景编辑器基础。",
-          "url": "https://www.oschina.net/news/502913/bevy-engine-0-20"
+          "project": "AIGCPanel v2.6.0",
+          "date": "2026-10-18",
+          "category": "AI / audiovisual tools",
+          "summary": "Adds photo-based avatar creation and adjustable speech synthesis settings.",
+          "url": "https://www.oschina.net/news/503072"
         }
       ],
       "source": {
-        "label": "OSCHINA 开源资讯",
+        "label": "OSCHINA: dated release announcements",
         "href": "https://www.oschina.net/news",
-        "executedAt": "2026-10-12T00:36:44Z",
+        "executedAt": "2026-10-19T06:38:29Z",
         "filters": [
-          "OSCHINA news entries checked for 2026-10-05 through 2026-10-12",
-          "Only items with visible publication dates inside the window are included"
+          "Release announcements dated Oct 12–19; manual relevance selection."
         ],
         "caveats": [
-          "OSCHINA 列表为编辑发布流，不是按阅读量计算的热榜；本表按日期和主题相关性筛选。"
+          "Editorial release feed, not a popularity ranking. Detail endpoints returned no body; summaries use visible announcement excerpts."
+        ],
+        "evidenceFlow": [
+          {
+            "title": "Collection",
+            "detail": "Checked on 2026-10-19. Web open/search of https://www.oschina.net/news and the official project URLs in the rows. Search-index observations are explicitly labeled; not all origins return live data."
+          }
         ]
       }
     },
@@ -776,67 +787,76 @@
           "rank": 1,
           "project": "BVIO Violoop",
           "backers": null,
-          "raisedDisplay": "官方页未返回金额；614 评论 / 4 更新",
-          "status": "募资中 / 当前热门候选",
-          "category": "AI 桌面输入",
-          "summary": "读取屏幕、准备跨应用任务并等待实体确认；评论数较上周 539 增至 614。",
+          "raisedDisplay": "Amount unavailable; 725 comments / 6 updates",
+          "status": "Funding / current candidate",
+          "category": "AI desktop input",
+          "summary": "Comments 614 → 725 (+111) since Oct 12 snapshot; screen-reading and computer-use device.",
           "url": "https://www.kickstarter.com/projects/bvio/violoop-plug-in-ai-for-your-computer"
         },
         {
           "rank": 2,
-          "project": "GENKI MANTA",
-          "backers": 4853,
-          "raisedDisplay": "$1,182,785（官方页）；984 评论 / 10 更新",
-          "status": "10 月 1 日结束 / 履约前",
-          "category": "游戏控制器",
-          "summary": "TMR 摇杆、压力感应按键、三段扳机、MantaOS 与键鼠模式。",
-          "url": "https://www.kickstarter.com/projects/humanthings/manta"
+          "project": "immurok IK-1",
+          "backers": 4665,
+          "raisedDisplay": "S$483,756; 139 comments / 4 updates",
+          "status": "Campaign ended Sep 22 / pre-order",
+          "category": "Fingerprint / Agent approval",
+          "summary": "Current official snapshot; maker now advertises December 2026 delivery. Apps Apache-2.0; hardware/firmware BSL-1.1.",
+          "url": "https://www.kickstarter.com/projects/immurok/immurokwireless-fingerprint-auth-key-for-mac-and-linux"
         },
         {
           "rank": 3,
-          "project": "URXR One",
-          "backers": 1648,
-          "raisedDisplay": "$1,354,194（官方页）；701 评论 / 8 更新",
-          "status": "9 月 18 日结束 / 履约前",
-          "category": "XR / 手势输入",
-          "summary": "93g 空间显示眼镜，包含 6DoF、手势追踪和视频透视。",
-          "url": "https://www.kickstarter.com/projects/urxrone-glasses/urxr-one-lightweight-spatial-display-glasses"
+          "project": "ToolDance X1",
+          "backers": null,
+          "raisedDisplay": "Amount unavailable; 370 comments / 2 updates",
+          "status": "Funding / current candidate",
+          "category": "Desktop CNC",
+          "summary": "New campaign corroborated by official page and Hackster; commercial hardware, no verified open-hardware license.",
+          "url": "https://www.kickstarter.com/projects/147449099/tooldance-x1-smart-desktop-cnc-with-industrial-capability"
         },
         {
           "rank": 4,
-          "project": "QIVIKA Smart Scope",
-          "backers": null,
-          "raisedDisplay": "官方页未返回金额；77 评论 / 1 更新",
-          "status": "当前热门候选 / 阶段待核",
-          "category": "AI 计算摄影",
-          "summary": "手机长焦光学附件结合星体、鸟类和动物识别；评论数较上周 47 增至 77。",
-          "url": "https://www.kickstarter.com/projects/qivika/turn-your-phone-into-a-smart-scope"
+          "project": "GENKI MANTA",
+          "backers": 4903,
+          "raisedDisplay": "$1,193,886; 1,024 comments / 11 updates",
+          "status": "Campaign ended Oct 1 / fulfillment tracking",
+          "category": "Game controller",
+          "summary": "Current post-campaign totals, not immutable final campaign totals. Backers +50 vs Oct 12; changes may include late pledges or corrections.",
+          "url": "https://www.kickstarter.com/projects/humanthings/manta"
         }
       ],
       "source": {
-        "label": "Kickstarter Technology 热门入口与项目页索引快照",
+        "label": "Kickstarter Technology: current candidates",
         "href": "https://www.kickstarter.com/discover/advanced?category_id=16&sort=popularity",
-        "executedAt": "2026-10-12T00:36:44Z",
+        "executedAt": "2026-10-19T06:38:29Z",
         "filters": [
-          "Kickstarter Technology discovery and official project pages checked on 2026-10-12",
-          "Official discovery page returned no auditable ranking; candidates cross-checked using official project pages",
-          "Backer and funding figures keep their original snapshot dates when current values were unavailable"
+          "Discovery returned no auditable ranking; official project pages, maker pages and dated Hackster coverage cross-checked.",
+          "Current counters checked Oct 19; comparison baseline Oct 12."
+        ],
+        "caveats": [
+          "Candidates are not official popularity ranks. Backer counts and amounts are cumulative; null is unavailable.",
+          "Ended campaigns may still show changing totals; preserve stage separately."
+        ],
+        "evidenceFlow": [
+          {
+            "title": "Collection",
+            "detail": "Checked on 2026-10-19. Web open/search of https://www.kickstarter.com/discover/advanced?category_id=16&sort=popularity and the official project URLs in the rows. Search-index observations are explicitly labeled; not all origins return live data."
+          },
+          {
+            "title": "Cross-check sources",
+            "detail": "https://immurok.com/ ; https://tooldance.ai/"
+          }
         ],
         "metricDefinitions": [
           {
-            "label": "支持者",
+            "label": "Backers",
             "field": "backers",
-            "definition": "采集时项目官方社区页或搜索索引显示的累计支持者；不是过去七日增量。",
+            "definition": "Current official cumulative supporters, including post-campaign snapshots.",
             "componentIds": [
               "kickstarter-backers",
               "kickstarter-table",
               "kpi-kickstarter"
             ]
           }
-        ],
-        "caveats": [
-          "安全验证或动态页面阻止精确热门榜采集时，条目标为“当前热门候选”，不声明官方排名。",
-          "backers=null 表示官方页面未返回可审计支持者数，不代表零支持者；文本字段保留评论、更新或旧快照证据。"
         ]
       }
     },
@@ -846,516 +866,625 @@
           "rank": 1,
           "project": "TypAir",
           "backers": null,
-          "backersDisplay": "未返回",
-          "raisedDisplay": "未返回；沿用项目页与索引候选",
-          "status": "当前热门候选 / 阶段待核",
-          "category": "可穿戴键盘",
-          "summary": "可穿戴蓝牙键盘用自定义手势字母表控制眼镜、手机、电脑与电视。",
-          "url": "https://www.indiegogo.com/en/projects/mindrove/typair-the-keyboard-you-wear"
+          "backersDisplay": "Unavailable",
+          "raisedDisplay": "Official rewards index: €89 early bird; €169 standard",
+          "status": "Reward listing / current candidate; funding state unverified",
+          "category": "Wearable keyboard",
+          "summary": "Official indexed rewards list November 2026 delivery; direct dynamic page returns no auditable counters.",
+          "url": "https://www.indiegogo.com/en/projects/mindrove/typair-the-keyboard-you-wear/rewards"
         },
         {
           "rank": 2,
-          "project": "Touchord",
+          "project": "EveryMIDI AT",
           "backers": null,
-          "backersDisplay": "未返回",
-          "raisedDisplay": "未返回",
-          "status": "项目页可识别 / 阶段待核",
-          "category": "开源 MIDI 控制器",
-          "summary": "开放式触控和弦生成 MIDI 控制器，面向音乐人与创客。",
-          "url": "https://www.indiegogo.com/en/projects/mbdaugdara/touchord-chord-generating-midi-controller"
+          "backersDisplay": "17 followers (index; not backers)",
+          "raisedDisplay": "Prelaunch; no funding total",
+          "status": "Upcoming / prelaunch",
+          "category": "Aftertouch retrofit",
+          "summary": "Pressure-based expressive control for existing instruments; official indexed search shows Upcoming. No verified new launch date.",
+          "url": "https://www.indiegogo.com/en/projects/everymidi-tech/everymidi-at"
         },
         {
           "rank": 3,
           "project": "Proxmark5",
-          "backers": 3201,
-          "backersDisplay": "3,201（旧累计快照）",
-          "raisedDisplay": "$1,112,557（旧累计快照）",
-          "status": "Pledge Manager / 履约跟踪",
-          "category": "开源安全硬件",
-          "summary": "开源 RFID 研究平台；当前动态页面不可审计，因此不声明本周增量。",
+          "backers": null,
+          "backersDisplay": "Unavailable; prior snapshot 3,201",
+          "raisedDisplay": "Prior snapshot $1,112,557; not reverified",
+          "status": "Pledge Manager in prior snapshot / current stage unverified",
+          "category": "RFID research",
+          "summary": "Dynamic official page remains unavailable; old numeric values removed from current chart.",
           "url": "https://www.indiegogo.com/en/projects/rfidresearchgroup/proxmark5"
         },
         {
           "rank": 4,
           "project": "QwertyMax",
           "backers": null,
-          "backersDisplay": "≥290（旧评论索引下限）",
-          "raisedDisplay": "未返回",
-          "status": "近期活跃候选 / 履约待核",
-          "category": "键盘",
-          "summary": "为高频符号和快捷操作增加专用键位；本期未取得新的官方计数。",
+          "backersDisplay": "Unavailable",
+          "raisedDisplay": "Unavailable",
+          "status": "Historical watch candidate / current stage unverified",
+          "category": "Keyboard",
+          "summary": "Dedicated symbol and shortcut keys. No current metric or review-window activity could be verified.",
           "url": "https://www.indiegogo.com/en/projects/typemax/qwertymax"
         }
       ],
       "source": {
-        "label": "Indiegogo Innovation & Tech 项目页与搜索索引快照",
+        "label": "Indiegogo: indexed candidates, prelaunch and follow-up",
         "href": "https://www.indiegogo.com/explore/innovation-and-tech?project_type=campaign&project_timing=all&sort=trending",
-        "executedAt": "2026-10-12T00:36:44Z",
+        "executedAt": "2026-10-19T06:38:29Z",
         "filters": [
-          "Indiegogo Innovation & Tech and official project pages checked on 2026-10-12",
-          "Dynamic browse and project pages returned no auditable metrics; official page titles and retained search-index snapshots were cross-checked",
-          "Campaign, Pledge Manager and recent-activity stages kept separate"
-        ],
-        "metricDefinitions": [
-          {
-            "label": "支持者",
-            "field": "backers",
-            "definition": "采集时 Indiegogo 官方项目页或搜索索引显示的累计支持者；≥ 表示只能验证到的下限。",
-            "componentIds": [
-              "indiegogo-backers",
-              "indiegogo-table",
-              "kpi-indiegogo"
-            ]
-          }
+          "Dynamic discovery unavailable. Search index of official rewards and project search pages cross-checked.",
+          "EveryMIDI: official search index crawled within 3–6 days; 17 followers, Upcoming."
         ],
         "caveats": [
-          "安全验证或动态页面阻止精确热门榜采集，因此列为“当前热门候选”。",
-          "支持者与金额可能是累计值、下限或未返回；阶段与字段原样标注，不与 Kickstarter 合并排名。"
+          "No auditable current supporter counts. All backers remain null.",
+          "Reward delivery estimates, follower counts and historical Pledge Manager status are not funding success or strict weekly heat."
+        ],
+        "evidenceFlow": [
+          {
+            "title": "Collection",
+            "detail": "Checked on 2026-10-19. Web open/search of https://www.indiegogo.com/explore/innovation-and-tech?project_type=campaign&project_timing=all&sort=trending and the official project URLs in the rows. Search-index observations are explicitly labeled; not all origins return live data."
+          },
+          {
+            "title": "Cross-check sources",
+            "detail": "https://www.indiegogo.com/en/projects/search?projectTags=97 ; https://www.indiegogo.com/en/projects/mindrove/typair-the-keyboard-you-wear/rewards ; https://everymidi.com/"
+          }
         ]
       }
     },
     "product_watchlist": {
       "rows": [
         {
-          "priority": 1,
           "project": "BVIO Violoop",
-          "track": "AI 智能输入",
-          "signal": "Kickstarter 当前热门候选；614 评论 / 4 更新",
-          "stage": "募资中",
-          "risk": "跨应用读屏与执行权限、隐私、误操作和众筹履约边界待验证",
-          "inputRelevance": 5,
-          "aiInput": 5,
-          "breakthrough": 4,
-          "potential": 5,
-          "wonder": 5,
-          "heat": 5,
-          "takeaway": "把实体确认、端侧隐私和可撤销执行做成输入设备级安全边界。",
+          "track": "AI computer input",
+          "signal": "725 comments; +111 vs Oct 12",
+          "stage": "Funding / current candidate",
+          "technology": "Screen understanding + computer control",
+          "risk": "Privacy, mistaken actions and delivery remain unverified.",
+          "takeaway": "Keychron: pair Agent actions with explicit physical confirmation and revocation.",
           "url": "https://www.kickstarter.com/projects/bvio/violoop-plug-in-ai-for-your-computer",
-          "selectionPath": "双重命中",
-          "score": 96
-        },
-        {
-          "priority": 2,
-          "project": "iPhone-use",
-          "track": "Agent 跨设备输入",
-          "signal": "近七日新仓 3,042 Stars · 304 Forks",
-          "stage": "开源插件 / 早期生态",
-          "risk": "需 Xcode、签名、USB 与 WebDriverAgent；屏幕内容、输入数据和控制权限需要严格本地化与授权",
+          "isHardware": true,
+          "openness": "Commercial; open-source scope unverified",
+          "observedAt": "2026-10-19T06:38:29Z",
           "inputRelevance": 5,
           "aiInput": 5,
           "breakthrough": 4,
           "potential": 5,
-          "wonder": 4,
-          "heat": 5,
-          "takeaway": "研究键鼠产品如何通过本地桥接安全控制手机，并将截图、控件树和物理确认统一成跨屏输入协议。",
-          "url": "https://github.com/zhongerxin/iPhone-use",
-          "selectionPath": "双重命中",
-          "score": 94
-        },
-        {
-          "priority": 3,
-          "project": "AI Scientific Calculator V2",
-          "track": "视觉 AI 输入终端",
-          "signal": "Hackster 21 小时内新报道",
-          "stage": "开源模块化原型",
-          "risk": "云 API 成本与隐私、拍照识别准确率、ESP32 本地模型能力和学术作弊风险需控制",
-          "inputRelevance": 4,
-          "aiInput": 5,
-          "breakthrough": 4,
-          "potential": 4,
           "wonder": 5,
-          "heat": 4,
-          "takeaway": "相机、键盘、双屏与本地/云模型的组合，可迁移为带视觉输入的桌面快捷终端。",
-          "url": "https://www.hackster.io/news/a-scientific-calculator-for-the-age-of-ai-90c24e3c51f1",
-          "selectionPath": "双重命中",
-          "score": 86
-        },
-        {
-          "priority": 4,
-          "project": "OpenMote",
-          "track": "跨设备控制器",
-          "signal": "Crowd Supply 累计 $185,600 · 1,315 backers",
-          "stage": "募资中 / 10 月 29 日结束",
-          "risk": "固件与 Studio 仍开发中；供货、Wiimote 外壳适配和量产一致性待验证",
-          "inputRelevance": 5,
-          "aiInput": 2,
-          "breakthrough": 4,
-          "potential": 5,
-          "wonder": 4,
           "heat": 5,
-          "takeaway": "把键盘、手柄、红外、动作、音频与本地自动化统一成可编程跨设备遥控器。",
-          "url": "https://www.crowdsupply.com/hat-and-hammer/openmote",
-          "selectionPath": "双重命中",
-          "score": 82
+          "selectionPath": "Both / 双重命中",
+          "score": 96,
+          "priority": 1
         },
         {
-          "priority": 5,
-          "project": "单键振动计算器",
-          "track": "极简输入与触觉输出",
-          "signal": "Hackster 2 天内新报道",
-          "stage": "奇特交互原型",
-          "risk": "学习成本极高、输入速度慢、振动编码可读性与无障碍效果未量化",
+          "project": "TAKTO ONE",
+          "track": "Hand tracking / haptics",
+          "signal": "Oct 16 article: 8 comments; 52 GitHub stars",
+          "stage": "Research prototype",
+          "technology": "12 AS5600 encoders + IMUs + EMG + tendon drives",
+          "risk": "Only two servos fitted; thumb absent. Force rendering and latency not measured; wearable safety and cost unresolved.",
+          "takeaway": "Keychron: test finger sensing and haptic control separately before combining them.",
+          "url": "https://github.com/molanocortes/takto-one",
+          "isHardware": true,
+          "openness": "CERN-OHL-S-2.0 hardware / Apache-2.0 software",
+          "observedAt": "2026-10-19T06:38:29Z",
           "inputRelevance": 5,
-          "aiInput": 4,
-          "breakthrough": 4,
-          "potential": 2,
-          "wonder": 5,
-          "heat": 3,
-          "takeaway": "把短按、长按、双击与振动脉冲压缩成最小 I/O，可用于盲操作、隐蔽快捷键和触觉训练实验。",
-          "url": "https://www.hackster.io/news/could-you-operate-this-ultra-weird-calculator-e77fb7277e69",
-          "selectionPath": "双重命中",
-          "score": 81
-        },
-        {
-          "priority": 6,
-          "project": "柔性 3D 形变传感片",
-          "track": "可穿戴与软体输入",
-          "signal": "Hackster 2 天内新报道 · 开放获取论文",
-          "stage": "研究原型",
-          "risk": "光纤密度、校准漂移、量产封装、耐久和运动伪影尚未验证",
-          "inputRelevance": 4,
-          "aiInput": 2,
+          "aiInput": 3,
           "breakthrough": 5,
-          "potential": 5,
-          "wonder": 5,
-          "heat": 3,
-          "takeaway": "可用于掌托、握持区或可穿戴控制器，把弯曲、姿态与压力合成连续多维输入。",
-          "url": "https://www.hackster.io/news/roughened-optical-fibers-turn-soft-sheets-of-silicone-into-three-dimensional-shape-sensors-0279e9419b86",
-          "selectionPath": "双重命中",
-          "score": 80
-        },
-        {
-          "priority": 7,
-          "project": "WordCraft",
-          "track": "Agent 原生桌面编辑",
-          "signal": "近七日新仓 5,908 Stars · 1,717 Forks",
-          "stage": "开源应用 / 早期快速增长",
-          "risk": "功能覆盖声明很广；DOCX 兼容、复杂排版、MCP 权限和长期维护仍需压力测试",
-          "inputRelevance": 4,
-          "aiInput": 4,
-          "breakthrough": 3,
-          "potential": 5,
-          "wonder": 3,
-          "heat": 5,
-          "takeaway": "键盘快捷键、命令搜索、CLI 与 MCP 共用同一命令模型，值得作为 Agent 友好输入产品的软件架构参考。",
-          "url": "https://github.com/storytold/wordcraft",
-          "selectionPath": "核心相关",
-          "score": 78
-        },
-        {
-          "priority": 8,
-          "project": "TypAir",
-          "track": "可穿戴键盘",
-          "signal": "Indiegogo 当前热门候选；官方动态页受限",
-          "stage": "项目页可识别 / 阶段待核",
-          "risk": "学习成本、EMG/手势误触、长时佩戴舒适度与履约真实性待验证",
-          "inputRelevance": 5,
-          "aiInput": 2,
-          "breakthrough": 4,
           "potential": 4,
           "wonder": 5,
           "heat": 2,
-          "takeaway": "探索不依赖桌面的指间输入，但必须把校准、纠错和疲劳作为核心体验。",
-          "url": "https://www.indiegogo.com/en/projects/mindrove/typair-the-keyboard-you-wear",
-          "selectionPath": "双重命中",
-          "score": 78
+          "selectionPath": "Both / 双重命中",
+          "score": 86,
+          "priority": 2
         },
         {
-          "priority": 9,
-          "project": "GENKI MANTA",
-          "track": "高性能控制器",
-          "signal": "Kickstarter 累计 $1,182,785 · 4,853 backers；10 月 1 日结束",
-          "stage": "众筹结束 / 履约前",
-          "risk": "压力按键曲线、MantaOS 稳定性、量产一致性与交付时间待验证",
+          "project": "知言 Zhiyan",
+          "track": "Voice + Agent input",
+          "signal": "1.1k indexed views; comments Oct 13–16",
+          "stage": "Open prototype / recently discussed",
+          "technology": "ESP32-S3 + ESP-NOW + USB HID/audio + status screen",
+          "risk": "Mic assembly and display variants need care; wireless audio privacy requires review.",
+          "takeaway": "Keychron: prototype PTT, accept/reject and Agent state in one small controller.",
+          "url": "https://github.com/agthuang/zhiyan",
+          "isHardware": true,
+          "openness": "Open source / check license",
+          "observedAt": "2026-10-19T06:38:29Z",
           "inputRelevance": 5,
-          "aiInput": 1,
-          "breakthrough": 4,
+          "aiInput": 5,
+          "breakthrough": 3,
+          "potential": 4,
+          "wonder": 4,
+          "heat": 2,
+          "selectionPath": "Core / 核心相关",
+          "score": 84,
+          "priority": 3
+        },
+        {
+          "project": "immurok IK-1",
+          "track": "Fingerprint / Agent approval",
+          "signal": "4,665 cumulative backers; S$483,756",
+          "stage": "Ended / December 2026 pre-order",
+          "technology": "BLE authentication + PAM / Credential Provider",
+          "risk": "Not FIDO or Windows Hello. Hardware/firmware BSL restrict competing hardware; security and delivery claims need validation.",
+          "takeaway": "Keychron: study per-command physical approval; assess independent licensing and security architecture.",
+          "url": "https://immurok.com/",
+          "isHardware": true,
+          "openness": "Apps Apache-2.0; hardware/firmware BSL-1.1 source-available",
+          "observedAt": "2026-10-19T06:38:29Z",
+          "inputRelevance": 5,
+          "aiInput": 4,
+          "breakthrough": 3,
           "potential": 5,
           "wonder": 3,
-          "heat": 5,
-          "takeaway": "把 TMR、压力感应与三段扳机组合成可配置的键鼠/手柄双模交互。",
-          "url": "https://www.kickstarter.com/projects/humanthings/manta",
-          "selectionPath": "核心相关",
-          "score": 76
+          "heat": 4,
+          "selectionPath": "Core / 核心相关",
+          "score": 83,
+          "priority": 4
         },
         {
-          "priority": 10,
-          "project": "Patternflow",
-          "track": "旋钮式生成交互",
-          "signal": "Crowd Supply 229% · $22,945 · 49 backers",
-          "stage": "募资末期 / 开源硬件",
-          "risk": "小团队履约、8,192 像素供电与散热、无线更新安全和生态持续性待验证",
+          "project": "OpenMote",
+          "track": "Cross-device controller",
+          "signal": "1,467 backers; +152 vs Oct 12",
+          "stage": "Funding / 10 days left",
+          "technology": "HID + motion + audio + local automation",
+          "risk": "Firmware maturity, supply and fulfillment remain risks.",
+          "takeaway": "Keychron: combine multiple input protocols behind a programmable local controller.",
+          "url": "https://www.crowdsupply.com/hat-and-hammer/openmote",
+          "isHardware": true,
+          "openness": "Open source / check license",
+          "observedAt": "2026-10-19T06:38:29Z",
+          "inputRelevance": 5,
+          "aiInput": 2,
+          "breakthrough": 4,
+          "potential": 5,
+          "wonder": 4,
+          "heat": 4,
+          "selectionPath": "Both / 双重命中",
+          "score": 81,
+          "priority": 5
+        },
+        {
+          "project": "earshot",
+          "track": "Audio input for coding agents",
+          "signal": "963 cumulative stars; created Oct 15",
+          "stage": "Early open-source software",
+          "technology": "CPU-only agent audio tooling",
+          "risk": "Audio permissions, content privacy and output quality need review.",
+          "takeaway": "Keychron: expose microphone capture and review as explicit, visible Agent actions.",
+          "url": "https://github.com/Leonxlnx/earshot",
+          "isHardware": false,
+          "openness": "Open source / check license",
+          "observedAt": "2026-10-19T06:38:29Z",
           "inputRelevance": 4,
+          "aiInput": 5,
+          "breakthrough": 3,
+          "potential": 4,
+          "wonder": 4,
+          "heat": 3,
+          "selectionPath": "Core / 核心相关",
+          "score": 79,
+          "priority": 6
+        },
+        {
+          "project": "TypAir",
+          "track": "Wearable keyboard",
+          "signal": "Official rewards index: €89 tier",
+          "stage": "Current candidate / stage unverified",
+          "technology": "Finger-movement alphabet + Bluetooth",
+          "risk": "Learning effort, false inputs and November delivery estimate remain unverified.",
+          "takeaway": "Keychron: measure correction rate and fatigue for desk-free typing.",
+          "url": "https://www.indiegogo.com/en/projects/mindrove/typair-the-keyboard-you-wear/rewards",
+          "isHardware": true,
+          "openness": "Commercial; openness unverified",
+          "observedAt": "2026-10-19T06:38:29Z",
+          "inputRelevance": 5,
           "aiInput": 2,
           "breakthrough": 4,
           "potential": 4,
-          "wonder": 5,
-          "heat": 4,
-          "takeaway": "研究四旋钮映射可变语义的交互层，以及 AI 生成内容到实体控件的可追溯转换。",
-          "url": "https://www.crowdsupply.com/engmung/patternflow",
-          "selectionPath": "双重命中",
-          "score": 74
+          "wonder": 4,
+          "heat": 2,
+          "selectionPath": "Both / 双重命中",
+          "score": 76,
+          "priority": 7
         },
         {
-          "priority": 11,
-          "project": "Gboard Conveyor Belt",
-          "track": "动态键盘结构",
-          "signal": "上期高相关项目；主仓累计信号保留",
-          "stage": "开放概念原型",
-          "risk": "移动机构安全、速度与准确率、噪声、耐久和真实人体工学收益尚未验证",
+          "project": "Magpie v0.1.14",
+          "track": "Selection-triggered AI",
+          "signal": "Windows release Oct 16",
+          "stage": "Open-source application",
+          "technology": "Text selection + context actions",
+          "risk": "Selected-text privacy and cross-app permissions need review.",
+          "takeaway": "Keychron: bind deliberate selection gestures to a clear action palette.",
+          "url": "https://www.oschina.net/news/503067/magpie-0-1-14-released-windows-ver",
+          "isHardware": false,
+          "openness": "Open source / check license",
+          "observedAt": "2026-10-19T06:38:29Z",
           "inputRelevance": 5,
-          "aiInput": 1,
-          "breakthrough": 4,
-          "potential": 3,
-          "wonder": 5,
-          "heat": 3,
-          "takeaway": "把“手去找键”反转为“键来到手边”，启发可变布局与无障碍触觉导引。",
-          "url": "https://github.com/google/mozc-devices/tree/main/mozc-conveyorbelt",
-          "selectionPath": "双重命中",
-          "score": 72
-        },
-        {
-          "priority": 12,
-          "project": "PhoneBot",
-          "track": "旧手机具身 AI",
-          "signal": "Hackster 21 小时内新报道",
-          "stage": "开源研究原型",
-          "risk": "仅在平地训练、舵机负载有限、Wi-Fi 控制链路和跌倒安全需验证",
-          "inputRelevance": 2,
           "aiInput": 4,
-          "breakthrough": 4,
-          "potential": 4,
-          "wonder": 5,
-          "heat": 3,
-          "takeaway": "旧手机已具备相机、IMU、算力与无线，可作为低成本桌面机器人或输入附件的可替换感知核心。",
-          "url": "https://www.hackster.io/news/don-t-throw-away-your-old-phone-build-a-robot-instead-392de07d053a",
-          "selectionPath": "双重命中",
-          "score": 69
-        },
-        {
-          "priority": 13,
-          "project": "Prospector",
-          "track": "ZMK / 键盘输入",
-          "signal": "GitHub 累计 806 Stars · 63 Forks",
-          "stage": "开源硬件 / 可自组装",
-          "risk": "主仓近 11 个月无功能更新；固件模块、外壳和屏幕兼容需实测",
-          "inputRelevance": 5,
-          "aiInput": 1,
-          "breakthrough": 3,
-          "potential": 4,
-          "wonder": 4,
-          "heat": 3,
-          "takeaway": "把接收器升级为键盘状态、配对、环境感知与轻量交互中枢。",
-          "url": "https://github.com/carrefinho/prospector",
-          "selectionPath": "核心相关",
-          "score": 69
-        },
-        {
-          "priority": 14,
-          "project": "ZerokeyUSB",
-          "track": "安全 HID 输入",
-          "signal": "Crowd Supply 266% · $6,658 · 32 backers",
-          "stage": "募资中 / 首批生产",
-          "risk": "AES-128 与 PIN 威胁模型、恶意主机、供应链、树脂封装返修和 2FA 尚待验证",
-          "inputRelevance": 5,
-          "aiInput": 1,
-          "breakthrough": 3,
+          "breakthrough": 2,
           "potential": 4,
           "wonder": 3,
-          "heat": 3,
-          "takeaway": "把敏感输入限制在本地硬件并通过标准 HID 输出，研究可验证的物理确认与最小权限。",
-          "url": "https://www.crowdsupply.com/depbit/zerokeyusb",
-          "selectionPath": "核心相关",
-          "score": 67
+          "heat": 2,
+          "selectionPath": "Core / 核心相关",
+          "score": 74,
+          "priority": 8
         },
         {
-          "priority": 15,
-          "project": "BeeKeeb TPS43 Trackpad",
-          "track": "分体键盘指针",
-          "signal": "BeeKeeb 首页新品位 · ¥1,860",
-          "stage": "模块在售",
-          "risk": "XIAO BLE 不含、玻璃不可拆、整机手势固件与掌托结构需验证",
-          "inputRelevance": 5,
-          "aiInput": 1,
-          "breakthrough": 3,
-          "potential": 4,
-          "wonder": 3,
-          "heat": 3,
-          "takeaway": "把 43×40mm 多点触控作为分体键盘内建指针模块，统一 ZMK 手势体验。",
-          "url": "https://shop.beekeeb.jp/products/tps43-trackpad-module",
-          "selectionPath": "核心相关",
-          "score": 67
-        },
-        {
-          "priority": 16,
-          "project": "Valve Steam Frame 开放参考",
-          "track": "开放 XR 控制器平台",
-          "signal": "Hackaday 10 月 10 日新文 · 7 评论",
-          "stage": "已出货 / 参考设计开放",
-          "risk": "STEP 与扩展参考不等于完整开源；供货、许可和控制器改装边界需核验",
+          "project": "Arduino USB Camera",
+          "track": "Vision + voice input",
+          "signal": "Official announcement Oct 15",
+          "stage": "Available accessory",
+          "technology": "USB camera + mic + local MediaPipe / VLM workflows",
+          "risk": "Compute is on the host board; privacy, lighting and latency need real workloads.",
+          "takeaway": "Keychron: use a standard camera/audio path for local multimodal desktop input.",
+          "url": "https://blog.arduino.cc/2026/10/15/bring-usb-connected-ai-vision-to-your-projects-with-the-new-arduino-usb-camera/",
+          "isHardware": true,
+          "openness": "Commercial accessory; open application ecosystem",
+          "observedAt": "2026-10-19T06:38:29Z",
           "inputRelevance": 4,
+          "aiInput": 5,
+          "breakthrough": 2,
+          "potential": 4,
+          "wonder": 3,
+          "heat": 3,
+          "selectionPath": "Core / 核心相关",
+          "score": 73,
+          "priority": 9
+        },
+        {
+          "project": "Softpad",
+          "track": "Context-aware macropad",
+          "signal": "Oct 14 configurator candidate; maker offer Oct 13",
+          "stage": "Small-batch / candidate software",
+          "technology": "Six keys + OLED + app-based profiles",
+          "risk": "Unsigned companion; updated UI not tested on physical hardware; small supply.",
+          "takeaway": "Keychron: a shared label display can reduce cost; prioritize reliable profile switching.",
+          "url": "https://nuvko.works/",
+          "isHardware": true,
+          "openness": "Maker hardware; full license scope unverified",
+          "observedAt": "2026-10-19T06:38:29Z",
+          "inputRelevance": 5,
+          "aiInput": 2,
+          "breakthrough": 3,
+          "potential": 4,
+          "wonder": 3,
+          "heat": 2,
+          "selectionPath": "Core / 核心相关",
+          "score": 70,
+          "priority": 10
+        },
+        {
+          "project": "Prospector",
+          "track": "ZMK display hub",
+          "signal": "806 stars; unchanged from Oct 12",
+          "stage": "Open hardware / ongoing watch",
+          "technology": "ZMK receiver + color LCD",
+          "risk": "Main repo last pushed Nov 2025; module compatibility needs testing.",
+          "takeaway": "Keychron: place connection and layer state on the receiver.",
+          "url": "https://github.com/carrefinho/prospector",
+          "isHardware": true,
+          "openness": "Open source / check license",
+          "observedAt": "2026-10-19T06:38:29Z",
+          "inputRelevance": 5,
           "aiInput": 1,
-          "breakthrough": 4,
+          "breakthrough": 3,
           "potential": 4,
           "wonder": 4,
           "heat": 3,
-          "takeaway": "公开控制器几何、IR LED 与扩展口能显著降低第三方附件门槛，适合借鉴开放机械接口策略。",
-          "url": "https://hackaday.com/2026/10/10/valve-releases-hardware-and-cad-reference-for-new-vr-headset/",
-          "selectionPath": "双重命中",
-          "score": 67
+          "selectionPath": "Core / 核心相关",
+          "score": 69,
+          "priority": 11
         },
         {
-          "priority": 17,
-          "project": "蒜皮摩擦电传感器",
-          "track": "自供电情境感知",
-          "signal": "Hackaday 10 月 8 日新文 · 13 评论",
-          "stage": "研究原型",
-          "risk": "高电压低电流、外部 MCU 仍需供电、湿度与长期循环稳定性待验证",
+          "project": "BeeKeeb TPS43",
+          "track": "Integrated pointing module",
+          "signal": "¥1,860 current product page",
+          "stage": "Existing module candidate",
+          "technology": "43 × 40 mm multitouch pad",
+          "risk": "Overlay bonding and firmware integration need testing.",
+          "takeaway": "Keychron: compare integrated touchpad reach with trackball ergonomics.",
+          "url": "https://shop.beekeeb.jp/products/tps43-trackpad-module",
+          "isHardware": true,
+          "openness": "Commercial module; integration ecosystem",
+          "observedAt": "2026-10-19T06:38:29Z",
+          "inputRelevance": 5,
+          "aiInput": 1,
+          "breakthrough": 3,
+          "potential": 4,
+          "wonder": 3,
+          "heat": 2,
+          "selectionPath": "Core / 核心相关",
+          "score": 66,
+          "priority": 12
+        },
+        {
+          "project": "Micro Arcade",
+          "track": "Small remote input terminal",
+          "signal": "Oct 17 article: 3 comments",
+          "stage": "Open prototype",
+          "technology": "Wi-Fi display stream + tilt / button events",
+          "risk": "Network delay, small UI and host authentication need testing.",
+          "takeaway": "Keychron: separate compact input/display endpoint from host compute.",
+          "url": "https://github.com/apn201/Micro_Arcade",
+          "isHardware": true,
+          "openness": "Open source / check license",
+          "observedAt": "2026-10-19T06:38:29Z",
+          "inputRelevance": 5,
+          "aiInput": 1,
+          "breakthrough": 3,
+          "potential": 3,
+          "wonder": 4,
+          "heat": 1,
+          "selectionPath": "Core / 核心相关",
+          "score": 64,
+          "priority": 13
+        },
+        {
+          "project": "EveryMIDI AT",
+          "track": "Expressive input",
+          "signal": "17 indexed followers; Upcoming",
+          "stage": "Prelaunch",
+          "technology": "Aftertouch retrofit for existing instruments",
+          "risk": "No launch or performance validation; pressure response and mounting need tests.",
+          "takeaway": "Keychron: study pressure-based expression without occupying another hand.",
+          "url": "https://www.indiegogo.com/en/projects/everymidi-tech/everymidi-at",
+          "isHardware": true,
+          "openness": "Commercial concept; openness unverified",
+          "observedAt": "2026-10-19T06:38:29Z",
+          "inputRelevance": 5,
+          "aiInput": 1,
+          "breakthrough": 3,
+          "potential": 3,
+          "wonder": 4,
+          "heat": 1,
+          "selectionPath": "Core / 核心相关",
+          "score": 64,
+          "priority": 14
+        },
+        {
+          "project": "BirriaSDR",
+          "track": "Low-cost RF instrumentation",
+          "signal": "Oct 18 article: 9 comments; 113 stars",
+          "stage": "Experimental hardware repurposing",
+          "technology": "MT7921AU raw I/Q, 14-bit at 40 MSps",
+          "risk": "Receive-only; gain, sensitivity and frequency accuracy uncalibrated.",
+          "takeaway": "Keychron: explore low-cost 2.4 GHz interference observation, not compliance-grade testing.",
+          "url": "https://github.com/luigifcruz/BirriaSDR",
+          "isHardware": true,
+          "openness": "Open source / check license",
+          "observedAt": "2026-10-19T06:38:29Z",
           "inputRelevance": 2,
           "aiInput": 1,
           "breakthrough": 5,
           "potential": 4,
           "wonder": 5,
-          "heat": 3,
-          "takeaway": "探索无需电池的按压、开合与结构状态传感，把包装或外壳本身变成低功耗输入源。",
-          "url": "https://hackaday.com/2026/10/08/introducing-the-garlic-powered-door-and-window-sensor/",
-          "selectionPath": "前沿破格",
-          "score": 61
+          "heat": 2,
+          "selectionPath": "Frontier / 前沿破格",
+          "score": 60,
+          "priority": 15
         },
         {
-          "priority": 18,
-          "project": "旧手机桌面游戏 PC",
-          "track": "计算模块再利用",
-          "signal": "Hackaday 10 月 8 日新文 · 26 评论",
-          "stage": "创客原型",
-          "risk": "电池依赖、散热固定、USB Hub 稳定性、Bootloader 与长期系统支持不确定",
+          "project": "LR2021-SDR",
+          "track": "Handheld RF instrumentation",
+          "signal": "Oct 15 article: 17 comments; 144 stars",
+          "stage": "Experimental hardware repurposing",
+          "technology": "Raw 16-bit I/Q over SPI",
+          "risk": "Undocumented mode and board-dependent RF path; legal transmit limits and calibration matter.",
+          "takeaway": "Keychron: investigate radio diagnostics and sensing with reproducible bench measurements.",
+          "url": "https://github.com/SAMS0N1TE/lr2021-sdr",
+          "isHardware": true,
+          "openness": "Open source / check license",
+          "observedAt": "2026-10-19T06:38:29Z",
+          "inputRelevance": 2,
+          "aiInput": 1,
+          "breakthrough": 5,
+          "potential": 4,
+          "wonder": 5,
+          "heat": 2,
+          "selectionPath": "Frontier / 前沿破格",
+          "score": 60,
+          "priority": 16
+        },
+        {
+          "project": "Undercooked V0.4",
+          "track": "Low-cost game controller",
+          "signal": "Oct 16 article: 10 comments",
+          "stage": "DIY prototype",
+          "technology": "RP2040-Zero + GP2040-CE",
+          "risk": "Hand wiring, button feel and mechanical durability need testing.",
+          "takeaway": "Keychron: use an open firmware baseline for quick layout and ergonomics trials.",
+          "url": "https://www.instructables.com/Undercooked-V04-Simplified-Gamepad-for-Non-Gamers-",
+          "isHardware": true,
+          "openness": "Open source / check license",
+          "observedAt": "2026-10-19T06:38:29Z",
+          "inputRelevance": 5,
+          "aiInput": 1,
+          "breakthrough": 2,
+          "potential": 3,
+          "wonder": 3,
+          "heat": 2,
+          "selectionPath": "Core / 核心相关",
+          "score": 59,
+          "priority": 17
+        },
+        {
+          "project": "ToolDance X1",
+          "track": "Desktop prototyping",
+          "signal": "370 official comments; new campaign",
+          "stage": "Funding / current candidate",
+          "technology": "Optional simultaneous five-axis CNC",
+          "risk": "Commercial claims; delivery, rigidity, CAM maturity and tooling costs need independent checks.",
+          "takeaway": "Keychron: evaluate prototype fixtures and complex shells after independent machining tests.",
+          "url": "https://www.kickstarter.com/projects/147449099/tooldance-x1-smart-desktop-cnc-with-industrial-capability",
+          "isHardware": true,
+          "openness": "Commercial; open-hardware license not verified",
+          "observedAt": "2026-10-19T06:38:29Z",
           "inputRelevance": 2,
           "aiInput": 1,
           "breakthrough": 4,
-          "potential": 5,
+          "potential": 4,
           "wonder": 4,
           "heat": 4,
-          "takeaway": "旧手机可作为带 GPU、屏幕与无线的桌面计算核心，启发模块化主机与键鼠套装的新价位带。",
-          "url": "https://hackaday.com/2026/10/08/turning-a-run-over-samsung-galaxy-s23-into-a-gaming-pc/",
-          "selectionPath": "前沿破格",
-          "score": 59
+          "selectionPath": "Frontier / 前沿破格",
+          "score": 56,
+          "priority": 18
+        },
+        {
+          "project": "Single-propeller drone",
+          "track": "Actuation / control",
+          "signal": "Oct 17 article: 4 comments",
+          "stage": "Open research prototype",
+          "technology": "One motor + hinged propeller hub",
+          "risk": "Indoor beacon dependence, stability and exposed moving parts limit deployment.",
+          "takeaway": "Keychron: explore what sensing and control can replace in actuator count.",
+          "url": "https://github.com/jyjblrd/single-propeller-drone",
+          "isHardware": true,
+          "openness": "Open source / check license",
+          "observedAt": "2026-10-19T06:38:29Z",
+          "inputRelevance": 1,
+          "aiInput": 1,
+          "breakthrough": 5,
+          "potential": 3,
+          "wonder": 5,
+          "heat": 1,
+          "selectionPath": "Frontier / 前沿破格",
+          "score": 50,
+          "priority": 19
         }
       ],
       "source": {
-        "label": "跨平台产品机会评分：输入相关 + 前沿破格",
-        "executedAt": "2026-10-12T00:36:44Z",
+        "label": "Product opportunities: core relevance + hardware frontier",
+        "href": "https://github.com/SvenKunkka/open-source-weekly-radar",
+        "executedAt": "2026-10-19T06:38:29Z",
         "filters": [
-          "Core relevance: inputRelevance >= 4 or aiInput >= 4",
-          "Frontier exception: breakthrough >= 4 and wonder >= 4",
-          "Review window 2026-10-05 through 2026-10-12; ongoing products retained only when stage or evidence was rechecked"
+          "Core: inputRelevance >= 4 OR aiInput >= 4.",
+          "Frontier: isHardware AND breakthrough >= 4 AND wonder >= 4.",
+          "New observations Oct 12–19 plus explicitly labeled ongoing, prelaunch and user-curated projects."
+        ],
+        "caveats": [
+          "All six 1–5 scores are editorial judgments, not measured performance.",
+          "Opportunity scores range from 20 to 100 under the requested 1–5 inputs; weights are 6/4/4/3/2/1. Heat is 5% of total weight.",
+          "Software can enter through core relevance but is excluded from the hardware-frontier KPI.",
+          "Commercial and source-available products are labeled separately; inclusion does not imply OSI/OSHWA-compliant licensing."
+        ],
+        "evidenceFlow": [
+          {
+            "title": "Collection",
+            "detail": "Checked on 2026-10-19. Web open/search of https://github.com/SvenKunkka/open-source-weekly-radar and the official project URLs in the rows. Search-index observations are explicitly labeled; not all origins return live data."
+          }
         ],
         "metricDefinitions": [
           {
-            "label": "机会分",
+            "label": "Opportunity score",
             "field": "score",
-            "definition": "0–100 人工评分：输入相关×6 + AI 输入×4 + 技术突破×4 + 市场潜力×3 + 新奇度×2 + 热度×1。前五项与热度均为 1–5 分。",
+            "definition": "inputRelevance*6 + aiInput*4 + breakthrough*4 + potential*3 + wonder*2 + heat. Each dimension is 1–5.",
             "componentIds": [
               "watchlist-score",
               "watchlist-table"
             ]
           },
           {
-            "label": "输入相关",
+            "label": "Core relevance",
             "field": "inputRelevance",
-            "definition": "与键盘、鼠标、控制器、HID、人体工学、跨设备输入和桌面工作流的直接相关程度，1–5 分。",
+            "definition": "Direct relation to input devices and desktop workflows; 1 low, 5 very high.",
             "componentIds": [
               "watchlist-table",
               "kpi-core-relevant"
             ]
           },
           {
-            "label": "AI 输入",
+            "label": "AI input",
             "field": "aiInput",
-            "definition": "是否利用语音、视觉、手势、眼动、情境感知或 Agent 形成新的人机输入方式，1–5 分。",
+            "definition": "Role of AI in voice, vision, gestures, context or Agent input; 1 low, 5 very high.",
             "componentIds": [
               "watchlist-table",
               "kpi-ai-input"
             ]
           },
           {
-            "label": "技术突破",
+            "label": "Hardware frontier",
             "field": "breakthrough",
-            "definition": "相对常见消费硬件在传感器、执行器、材料、系统架构或交互范式上的技术跨越，1–5 分。",
+            "definition": "Hardware only; breakthrough and novelty both >=4. Scores reflect editorial potential, not lab validation.",
             "componentIds": [
               "watchlist-table",
               "kpi-frontier"
             ]
           }
-        ],
-        "caveats": [
-          "输入相关、AI 输入、技术突破、市场潜力、新奇度与热度均为 1–5 分的人工判断。",
-          "机会分严格按输入相关×6 + AI 输入×4 + 技术突破×4 + 市场潜力×3 + 新奇度×2 + 热度×1 计算；热度权重为总权重 5%。",
-          "预发布、募资、Pledge Manager、研究原型、累计热门与抓取受限均保留独立阶段，不混为同一排名。"
         ]
-      }
+      },
+      "methods": [
+        {
+          "language": "javascript",
+          "code": "score = inputRelevance*6 + aiInput*4 + breakthrough*4 + potential*3 + wonder*2 + heat; core = inputRelevance >= 4 || aiInput >= 4; frontier = isHardware && breakthrough >= 4 && wonder >= 4; selectionPath = core && frontier ? \"Both / 双重命中\" : core ? \"Core / 核心相关\" : \"Frontier / 前沿破格\"; sort by score descending; assign priority from 1."
+        }
+      ]
     },
     "beekeeb_current": {
       "rows": [
         {
           "project": "14mm Trackball",
-          "signal": "新品区 / ¥1,980",
-          "stage": "实验用批次",
-          "category": "轨迹球 / 键盘输入",
-          "summary": "树脂球体，约 9g；面向分体键盘与紧凑指针模块实验。",
-          "risk": "卖家明确提示不同传感器组合可能造成差异，后续批次重量与规格可能变更。",
+          "signal": "New-products section / ¥1,980",
+          "stage": "Existing candidate / no dated launch",
+          "category": "Trackball",
+          "summary": "Compact trackball component for small pointing-device experiments.",
+          "risk": "Sensor compatibility and batch differences need testing.",
           "url": "https://shop.beekeeb.jp/products/14mm-trackball"
         },
         {
-          "project": "19mm 超轻量 Trackball POD1",
-          "signal": "新品区 / ¥4,880",
-          "stage": "限定套装 / 页面仍可见",
-          "category": "轨迹球 / 轻量化",
-          "summary": "三色树脂轨迹球套装，单球约 4g，用于观察低惯量与配色差异化。",
-          "risk": "页面标注销售期为 7 月 3 日至 8 月 31 日，当前仍展示但实际库存和可购买状态需复核。",
+          "project": "19mm Trackball POD1",
+          "signal": "New-products section / ¥4,880",
+          "stage": "Existing candidate / seasonal set",
+          "category": "Trackball",
+          "summary": "Lightweight 19mm ball set; no weekly sales count is published.",
+          "risk": "Check seasonal stock and sensor compatibility.",
           "url": "https://shop.beekeeb.jp/products/19mm-light-trackball-summer-set"
         },
         {
-          "project": "Azoteq TPS43 Trackpad Module",
-          "signal": "新品区 / ¥1,860",
-          "stage": "模块在售",
-          "category": "多点触控 / 分体键盘",
-          "summary": "43×40mm、2048×1792 分辨率、玻璃盖板与多点触控，包含转接板和线材。",
-          "risk": "页面配线示例使用的 XIAO BLE 不包含；玻璃贴合后不可拆，整机兼容与手势固件需验证。",
+          "project": "Azoteq TPS43 Trackpad",
+          "signal": "Product page / ¥1,860",
+          "stage": "Existing module candidate",
+          "category": "Touch input",
+          "summary": "43 × 40 mm multitouch module with glass overlay and adapter.",
+          "risk": "Overlay is not removable after bonding; XIAO BLE is not included.",
           "url": "https://shop.beekeeb.jp/products/tps43-trackpad-module"
         },
         {
-          "project": "MIP Low-power LCD Module",
-          "signal": "新品区 / 首页 ¥2,680 起；产品页 ¥2,980",
-          "stage": "ZMK 兼容模块",
-          "category": "键盘屏幕 / 低功耗",
-          "summary": "1.26/1.08 英寸 Sharp Memory-in-Pixel 屏，可显示层状态、WPM 和动画，适合无线键盘。",
-          "risk": "首页与产品页价格不一致；仅支持 3.3V，DF52 与排针不可同时连接。",
+          "project": "Sharp MIP LCD module",
+          "signal": "Homepage from ¥2,680; product page ¥2,980",
+          "stage": "Existing module candidate",
+          "category": "ZMK / keyboard display",
+          "summary": "1.26 or 1.08 inch memory LCD supports ZMK layers, WPM and animation.",
+          "risk": "3.3 V only; choose one connector. Variant price difference requires checkout verification.",
           "url": "https://shop.beekeeb.jp/products/lcd-display-module"
+        },
+        {
+          "project": "Toucan / 3W6HS",
+          "signal": "Collection index: from ¥29,800 / ¥17,800",
+          "stage": "Collection index, crawled two weeks ago",
+          "category": "Split keyboards",
+          "summary": "Keyboard collection was checked alongside modules; no dated new arrival verified.",
+          "risk": "Collection index is older and indicates sold out; current availability unverified.",
+          "url": "https://shop.beekeeb.jp/collections/キーボード"
         }
       ],
       "source": {
-        "label": "BeeKeeb Japan 新品区与产品页快照",
+        "label": "BeeKeeb: split keyboards, pointing modules and ZMK displays",
         "href": "https://shop.beekeeb.jp/",
-        "executedAt": "2026-10-12T00:36:44Z",
+        "executedAt": "2026-10-19T06:38:29Z",
         "filters": [
-          "Homepage New Products section captured 2026-10-12",
-          "Split-keyboard, trackball, touchpad, keyboard-display and ZMK-related items selected",
-          "Product pages and visible homepage prices rechecked; no sales or dated launch metrics are published"
-        ],
-        "metricDefinitions": [
-          {
-            "label": "商品信号",
-            "field": "signal",
-            "definition": "BeeKeeb 首页新品区曝光和采集时日元标价；平台不公开销量、浏览或七日增量。",
-            "componentIds": [
-              "beekeeb-table"
-            ]
-          }
+          "Homepage, keyboard collection, TPS43 and MIP module pages reviewed.",
+          "No dated new arrivals or weekly sales counts verified."
         ],
         "caveats": [
-          "这是商城新品候选，不是销量或全站热度排名。",
-          "首页新品顺序与核心价格在 2026-10-12 未见变化，平台不提供发布日期或七日销量。",
-          "MIP 屏首页与产品页标价仍存在冲突，保留风险提示并建议采购前复核。"
+          "Homepage new-products order is unchanged from Oct 12; this does not prove no product was added.",
+          "Keyboard collection index is older (two weeks); do not present it as live stock.",
+          "MIP homepage and product-page prices differ, possibly by variant."
+        ],
+        "evidenceFlow": [
+          {
+            "title": "Collection",
+            "detail": "Checked on 2026-10-19. Web open/search of https://shop.beekeeb.jp/ and the official project URLs in the rows. Search-index observations are explicitly labeled; not all origins return live data."
+          }
         ]
       }
     }
