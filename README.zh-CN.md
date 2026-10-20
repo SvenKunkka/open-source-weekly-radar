@@ -49,3 +49,10 @@ npm run build
 - `docs/components/`：组件参考文档
 
 生成的构建产物和本地依赖未提交到仓库。
+
+
+<!-- SVENKUNKKA-CONTACT:BEGIN -->
+
+**仓库维护者 / Repository maintainer:** [SvenKunkka](https://github.com/SvenKunkka) · [X / Twitter](https://x.com/Svenu1s5)
+
+<!-- SVENKUNKKA-CONTACT:END -->

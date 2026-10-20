@@ -1,3 +1,7 @@
+<!-- SVENKUNKKA-README-NAV:BEGIN -->
+[中文项目说明](#project-overview-zh) · [English overview](#project-overview-en) · [维护者 X / Maintainer on X](https://x.com/Svenu1s5)
+<!-- SVENKUNKKA-README-NAV:END -->
+
 # Open-Source Software & Hardware Trend Radar
 
 [English](README.md) | [简体中文](README.zh-CN.md)
@@ -49,3 +53,30 @@ npm run build
 - `docs/components/` — component reference documentation
 
 Generated build output and local dependencies are intentionally excluded from the repository.
+
+
+---
+
+<!-- SVENKUNKKA-PROJECT-INFO:BEGIN -->
+
+<a id="project-overview-zh"></a>
+## 中文项目说明
+
+面向产品团队的开源软硬件趋势仪表板，聚焦输入设备、AI 交互、创客与科技众筹项目，结合相关性、技术突破、新奇度等维度筛选，并保留来源证据。
+
+**使用入口：** 访问 [在线仪表板](https://svenkunkka.github.io/open-source-weekly-radar/)；本地运行 `npm install`、`npm run dev`，构建使用 `npm run build`，趋势资料位于 `src/data.json`。
+
+**范围说明：** 页面内容以仓库已收录的数据与对应来源为准；评分是项目筛选模型，不是对市场表现的保证。
+
+<a id="project-overview-en"></a>
+## English project overview
+
+A trend dashboard for product teams covering open-source software and hardware, input devices, AI interaction, maker projects, and technology crowdfunding, with relevance, breakthrough, and novelty-based selection and source evidence.
+
+**Getting started:** Visit the [dashboard](https://svenkunkka.github.io/open-source-weekly-radar/). Locally, run `npm install` and `npm run dev`; build with `npm run build`. Trend material is stored in `src/data.json`.
+
+**Scope:** Content reflects the repository’s collected data and cited sources. Scores are a selection model, not a guarantee of market performance.
+
+**仓库维护者 / Repository maintainer:** [SvenKunkka](https://github.com/SvenKunkka) · [X / Twitter](https://x.com/Svenu1s5)
+
+<!-- SVENKUNKKA-PROJECT-INFO:END -->
