@@ -101,3 +101,6 @@
     margin-bottom: 8px;
   }
 }
+
+.osw-language-control { display: flex; justify-content: flex-end; align-items: center; gap: 10px; margin: 12px 0 18px; font-size: 13px; color: var(--secondary); flex-wrap: wrap; }
+.osw-language-control select { font: inherit; color: var(--text); background: var(--card-surface); border: 1px solid var(--border); border-radius: 8px; padding: 7px 10px; }
