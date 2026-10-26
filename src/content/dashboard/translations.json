@@ -146,5 +146,22 @@
   "TAKTO exposes joint sensing and tendon actuation, but force rendering and latency are not yet measured. Separate sensing, actuation and wearable validation in product trials.": "TAKTO 开放关节感知与腱驱动方案，但力反馈效果和延迟尚未测定。产品试验应分别验证感知、驱动及佩戴安全性。",
   "Commodity radios become experimental instruments": "通用无线芯片成为实验仪器",
   "BirriaSDR and LR2021-SDR expose raw radio signals. They suggest lower-cost RF diagnostics, while calibration and board differences prevent treating them as reference instruments.": "BirriaSDR 与 LR2021-SDR 开放原始射频信号，可探索低成本无线诊断；但校准不足与板级差异意味着它们不能直接作为标准测量仪器。",
-  "Summary": "项目简介"
+  "Summary": "项目简介",
+  "Historical Oct 19 repository snapshot. Current Trending unavailable; these stars are not weekly growth.": "10月19日仓库历史快照；本期Trending不可读取，累计Star不是本周增量。",
+  "Retained Oct 19 repository metadata; no current weekly ranking.": "保留10月19日仓库数据，不代表当前周榜。",
+  "Historical Oct 19 cumulative stars; no current weekly ranking.": "10月19日历史累计Star，不代表本期热榜。",
+  "Historical repository stars (Oct 19)": "历史仓库Star（10月19日）",
+  "Historical top stars (Oct 19)": "历史最高Star（10月19日）",
+  "Oct 19–26 release candidates; not a popularity rank.": "10月19–26日发布候选，不代表热度排名。",
+  "Verified campaigns show deltas versus Oct 19; historical rows remain dated. Not exact 168-hour growth.": "已核实项目与10月19日快照比较，历史项保留旧日期；不是严格168小时增长。",
+  "Change vs baseline": "较历史基线变化",
+  "Oct 26: filtered list unavailable. Unknown is not zero.": "10月26日：筛选列表不可读取，未知不等于零。",
+  "Oct 26 check returned Loading. Current additions and latest date are unknown.": "10月26日复查仍显示加载中，当前新增数与最新日期未知。",
+  "Flexible surfaces become input devices": "柔性表面成为输入设备",
+  "NUS announced a textile touchscreen on Oct 22. Explore soft input surfaces, but keep research prototypes separate from manufacturable open hardware.": "NUS于10月22日公布织物触控屏，可探索柔性输入表面；研究原型与可量产开放硬件需要明确区分。",
+  "Input-device campaigns keep attracting interest": "输入设备众筹持续获得关注",
+  "OpenMote reached 1,649 backers (+182 versus Oct 19); Violoop reached 790 comments (+65). Backers and comments are different signals, not delivery validation.": "OpenMote支持者增至1,649（较10月19日+182），Violoop评论增至790（+65）。支持者与评论是不同指标，不能证明交付能力。",
+  "Missing data remains visible": "明确保留数据缺口",
+  "Trending, Tindie, OSHWHub and dynamic crowdfunding pages have access gaps. Old metrics retain their verification dates; missing data is not zero new projects.": "Trending、Tindie、立创及部分动态众筹页面存在读取缺口。旧指标保留核验日期，无法读取不等于零新增。",
+  "Historical AI share (Oct 19)": "历史AI占比（10月19日）"
 }

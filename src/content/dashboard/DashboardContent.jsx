@@ -41,6 +41,9 @@ function makeProjectColumn(t) { return {
 
 function TableCard({ id, queryId, title, rows, columns, description, searchable = false }) {
   const { language } = useRadarLanguage();
+  const { queries } = useDataApp();
+  const source = queries[queryId]?.source;
+  const sourceNote = language === "zh" ? source?.statusNote : source?.statusNoteEn;
   const displayRows = useMemo(() => language === "zh" ? rows.map(row => ({ ...row, ...row.zh })) : rows, [rows, language]);
   return (
     <DataComponent
@@ -51,7 +54,7 @@ function TableCard({ id, queryId, title, rows, columns, description, searchable 
       variant="card"
       sourceRows={rows}
       displayRows={displayRows}
-      description={description}
+      description={[sourceNote, description].filter(Boolean).join(" ")}
     >
       <DataTable label={title} columns={columns} rows={displayRows} searchable={searchable} />
     </DataComponent>
@@ -139,13 +142,13 @@ function RadarContent({ initialView = {} }) {
         { id: "software:china", items: ["oschina-table"], header: <SectionHeader id="software-china-heading" title={t("China release signals")} /> },
       ]}>
         {item("github-stars", t("New-repository stars"), "chart", 12,
-          <EvidenceChart id="github-stars" queryId="github_weekly" title={t("New-repository candidates: stars")}
+          <EvidenceChart id="github-stars" queryId="github_weekly" title={t("Historical repository stars (Oct 19)")}
             variant="card" rows={github} sourceRows={github} height={410}
-            description={t("Oct 12–19 new-repository candidates. Official metadata snapshots; Trending was unavailable. One out-of-scope adult-image repository excluded.")}
+            description={t("Historical Oct 19 repository snapshot. Current Trending unavailable; these stars are not weekly growth.")}
             spec={{ type: "horizontalBar", x: "project", y: "weeklyStars", showValues: true, sortOrder: "descending", showXAxisLabel: false, showYAxisLabel: false }} />)}
         {item("github-table", t("GitHub candidates"), "table", 12,
           <TableCard id="github-table" queryId="github_weekly" title={t("GitHub candidates")} rows={github} searchable
-            description={t("Current stars on repositories created within the window; names open official repositories.")}
+            description={t("Retained Oct 19 repository metadata; no current weekly ranking.")}
             columns={[
               { field: "rank", label: "#" }, projectColumn,
               { field: "weeklyStars", label: t("New-repo stars") },
@@ -156,7 +159,7 @@ function RadarContent({ initialView = {} }) {
             ]} />)}
         {item("oschina-table", t("China release signals"), "table", 12,
           <TableCard id="oschina-table" queryId="oschina_releases" title={t("Recent OSCHINA releases")} rows={oschina}
-            description={t("Dated releases from Oct 12–19; editorial exposure, not a popularity rank.")}
+            description={t("Oct 19–26 release candidates; not a popularity rank.")}
             columns={[projectColumn, { field: "date", label: t("Published") }, { field: "category", label: t("Category") }, { field: "summary", label: t("Release notes") }]} />)}
       </Canvas>
     );
@@ -181,7 +184,7 @@ function RadarContent({ initialView = {} }) {
         {item("crowd-backers", t("Crowd Supply backers"), "chart", 5,
           <EvidenceChart id="crowd-backers" queryId="crowdsupply_current" title={t("Campaigns: cumulative backers")}
             variant="card" rows={crowd} sourceRows={crowd} height={290}
-            description={t("Cumulative supporters. Table shows differences from the Oct 12 snapshot, not exact 168-hour growth.")}
+            description={t("Verified campaigns show deltas versus Oct 19; historical rows remain dated. Not exact 168-hour growth.")}
             spec={{ type: "bar", x: "project", y: "backers", showValues: true, sortOrder: "descending", xTickLabelLayout: "wrap", showXAxisLabel: false, showYAxisLabel: false }} />)}
         {item("hackaday-table", t("Hackaday stories"), "table", 7,
           <TableCard id="hackaday-table" queryId="hackaday_weekly" title={t("Recent hardware stories")} rows={hackaday}
@@ -193,7 +196,7 @@ function RadarContent({ initialView = {} }) {
               { field: "backers", label: t("Backers") },
               { field: "fundingPercent", label: t("Funded"), renderCell: value => value == null ? "—" : `${integer.format(value)}%` },
               { field: "raisedUsd", label: t("Raised"), renderCell: value => money.format(value) },
-              { field: "change", label: t("Change vs Oct 12") },
+              { field: "change", label: t("Change vs baseline") },
               { field: "stage", label: t("Stage") },
             ]} />)}
         {item("maker-platforms-table", t("Maker candidates"), "table", 12,
@@ -303,7 +306,7 @@ function RadarContent({ initialView = {} }) {
         {item("kpi-instructables-weekly", t("Seven-day additions"), "metric", 4,
           <MetricCard id="kpi-instructables-weekly" queryId="instructables_freshness" title={t("Seven-day additions")}
             value={Number.isFinite(fusionFreshness.weeklyNew) ? integer.format(fusionFreshness.weeklyNew) : t("Unknown")} sourceRows={instructablesFreshness} displayRows={instructablesFreshness}
-            description={t("Oct 12–19 review: filtered list unavailable. Unknown is not zero.")} />, 2)}
+            description={t("Oct 26: filtered list unavailable. Unknown is not zero.")} />, 2)}
         {item("kpi-instructables-count", t("Current Fusion projects"), "metric", 4,
           <MetricCard id="kpi-instructables-count" queryId="instructables_freshness" title={t("Current Fusion projects")}
             value={Number.isFinite(fusionFreshness.visibleProjects) ? integer.format(fusionFreshness.visibleProjects) : t("Unknown")} sourceRows={instructablesFreshness} displayRows={instructablesFreshness}
@@ -391,9 +394,9 @@ function RadarContent({ initialView = {} }) {
       { id: "overview:signals", spacing: "after-metrics", items: ["github-stars", "category-mix"] },
       { id: "overview:summary", items: ["signal-summary"] },
     ]}>
-      {item("kpi-top-stars", t("Top new-repo stars"), "metric", 3,
-        <MetricCard id="kpi-top-stars" queryId="github_weekly" title={t("Top new-repo stars")} value={compact.format(topWeeklyStars ?? 0)}
-          sourceRows={github} displayRows={github.slice(0, 1)} description={language === "zh" ? `${github[0]?.project ?? "—"}，当前新仓库候选。` : `${github[0]?.project ?? "—"}, current new-repository candidate.`} />, 2)}
+      {item("kpi-top-stars", t("Historical top stars (Oct 19)"), "metric", 3,
+        <MetricCard id="kpi-top-stars" queryId="github_weekly" title={t("Historical top stars (Oct 19)")} value={compact.format(topWeeklyStars ?? 0)}
+          sourceRows={github} displayRows={github.slice(0, 1)} description={language === "zh" ? `${github[0]?.project ?? "—"}，历史快照，核验日期10月19日。` : `${github[0]?.project ?? "—"}, historical snapshot verified Oct 19.`} />, 2)}
       {item("kpi-ai-share", t("AI share"), "metric", 3,
         <MetricCard id="kpi-ai-share" queryId="github_weekly" title={t("AI share")} value={`${Math.round(aiShare * 100)}%`}
           sourceRows={github} displayRows={categoryRows} description={language === "zh" ? `${github.length} 个候选中有 ${aiCount} 个归类为 AI 相关。` : `${aiCount} / ${github.length} candidates classified as AI-related.`} />, 2)}
@@ -402,11 +405,11 @@ function RadarContent({ initialView = {} }) {
           sourceRows={hackaday} displayRows={hackaday} description={t("Selected Hackaday stories published within the seven-day review window.")} />, 2)}
       {item("kpi-instructables-weekly", t("Fusion seven-day additions"), "metric", 3,
         <MetricCard id="kpi-instructables-weekly" queryId="instructables_freshness" title={t("Fusion seven-day additions")} value={Number.isFinite(fusionFreshness.weeklyNew) ? integer.format(fusionFreshness.weeklyNew) : t("Unknown")}
-          sourceRows={instructablesFreshness} displayRows={instructablesFreshness} description={t("Oct 19 check returned Loading. Current additions and latest date are unknown.")} />, 2)}
+          sourceRows={instructablesFreshness} displayRows={instructablesFreshness} description={t("Oct 26 check returned Loading. Current additions and latest date are unknown.")} />, 2)}
       {item("github-stars", t("New-repository stars"), "chart", 8,
-        <EvidenceChart id="github-stars" queryId="github_weekly" title={t("New-repository candidates: stars")}
+        <EvidenceChart id="github-stars" queryId="github_weekly" title={t("Historical repository stars (Oct 19)")}
           variant="card" rows={github} sourceRows={github} height={410}
-          description={t("Current stars for new repositories; no cross-platform aggregation.")}
+          description={t("Historical Oct 19 cumulative stars; no current weekly ranking.")}
           spec={{ type: "horizontalBar", x: "project", y: "weeklyStars", showValues: true, sortOrder: "descending", showXAxisLabel: false, showYAxisLabel: false }} />)}
       {item("category-mix", t("GitHub category mix"), "chart", 4,
         <EvidenceChart id="category-mix" queryId="github_weekly" title={t("Candidate category mix")}
@@ -426,9 +429,9 @@ function RadarContent({ initialView = {} }) {
           displayRows={[]}
           description={t("Source-backed input and hardware signals; product implications are editorial judgments.")}>
           <div className="osw-signal-grid">
-            <article><span>01</span><strong>{t("Human approval becomes a hardware function")}</strong><p>{t("Zhiyan combines voice, accept/reject keys and Agent state. immurok proposes fingerprint approval for individual Agent commands; security and license boundaries remain critical.")}</p></article>
-            <article><span>02</span><strong>{t("Open sensing does not mean validated haptics")}</strong><p>{t("TAKTO exposes joint sensing and tendon actuation, but force rendering and latency are not yet measured. Separate sensing, actuation and wearable validation in product trials.")}</p></article>
-            <article><span>03</span><strong>{t("Commodity radios become experimental instruments")}</strong><p>{t("BirriaSDR and LR2021-SDR expose raw radio signals. They suggest lower-cost RF diagnostics, while calibration and board differences prevent treating them as reference instruments.")}</p></article>
+            <article><span>01</span><strong>{t("Flexible surfaces become input devices")}</strong><p>{t("NUS announced a textile touchscreen on Oct 22. Explore soft input surfaces, but keep research prototypes separate from manufacturable open hardware.")}</p></article>
+            <article><span>02</span><strong>{t("Input-device campaigns keep attracting interest")}</strong><p>{t("OpenMote reached 1,649 backers (+182 versus Oct 19); Violoop reached 790 comments (+65). Backers and comments are different signals, not delivery validation.")}</p></article>
+            <article><span>03</span><strong>{t("Missing data remains visible")}</strong><p>{t("Trending, Tindie, OSHWHub and dynamic crowdfunding pages have access gaps. Old metrics retain their verification dates; missing data is not zero new projects.")}</p></article>
           </div>
         </DataComponent>)}
     </Canvas>
