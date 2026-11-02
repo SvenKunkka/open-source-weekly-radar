@@ -141,17 +141,17 @@ function RadarContent({ initialView = {} }) {
         { id: "software:tables", items: ["github-table"] },
         { id: "software:china", items: ["oschina-table"], header: <SectionHeader id="software-china-heading" title={t("China release signals")} /> },
       ]}>
-        {item("github-stars", t("New-repository stars"), "chart", 12,
-          <EvidenceChart id="github-stars" queryId="github_weekly" title={t("Historical repository stars (Oct 19)")}
+        {item("github-stars", t("Selected repository stars"), "chart", 12,
+          <EvidenceChart id="github-stars" queryId="github_weekly" title={t("Selected repositories: cumulative stars")}
             variant="card" rows={github} sourceRows={github} height={410}
-            description={t("Historical Oct 19 repository snapshot. Current Trending unavailable; these stars are not weekly growth.")}
+            description={t("GitHub daily candidates, Trendshift weekly candidates and user-tracked projects. Stars are cumulative, not weekly growth.")}
             spec={{ type: "horizontalBar", x: "project", y: "weeklyStars", showValues: true, sortOrder: "descending", showXAxisLabel: false, showYAxisLabel: false }} />)}
         {item("github-table", t("GitHub candidates"), "table", 12,
           <TableCard id="github-table" queryId="github_weekly" title={t("GitHub candidates")} rows={github} searchable
-            description={t("Retained Oct 19 repository metadata; no current weekly ranking.")}
+            description={t("Selected candidates only. Official GitHub weekly ranking was unavailable.")}
             columns={[
               { field: "rank", label: "#" }, projectColumn,
-              { field: "weeklyStars", label: t("New-repo stars") },
+              { field: "weeklyStars", label: t("Cumulative stars") },
               { field: "totalStars", label: t("Total stars") },
               { field: "category", label: t("Category") },
               { field: "region", label: t("Community") },
@@ -159,7 +159,7 @@ function RadarContent({ initialView = {} }) {
             ]} />)}
         {item("oschina-table", t("China release signals"), "table", 12,
           <TableCard id="oschina-table" queryId="oschina_releases" title={t("Recent OSCHINA releases")} rows={oschina}
-            description={t("Oct 19–26 release candidates; not a popularity rank.")}
+            description={t("Oct 26–Nov 2 release candidates; not a popularity rank.")}
             columns={[projectColumn, { field: "date", label: t("Published") }, { field: "category", label: t("Category") }, { field: "summary", label: t("Release notes") }]} />)}
       </Canvas>
     );
@@ -183,8 +183,8 @@ function RadarContent({ initialView = {} }) {
             spec={{ type: "horizontalBar", x: "project", y: "comments", showValues: true, sortOrder: "descending", showXAxisLabel: false, showYAxisLabel: false }} />)}
         {item("crowd-backers", t("Crowd Supply backers"), "chart", 5,
           <EvidenceChart id="crowd-backers" queryId="crowdsupply_current" title={t("Campaigns: cumulative backers")}
-            variant="card" rows={crowd} sourceRows={crowd} height={290}
-            description={t("Verified campaigns show deltas versus Oct 19; historical rows remain dated. Not exact 168-hour growth.")}
+            variant="card" rows={crowd.filter(row => row.metricBasis !== "historical")} sourceRows={crowd} height={290}
+            description={t("Deltas compare the Oct 26 and Nov 2 snapshots; historical rows retain older verification dates.")}
             spec={{ type: "bar", x: "project", y: "backers", showValues: true, sortOrder: "descending", xTickLabelLayout: "wrap", showXAxisLabel: false, showYAxisLabel: false }} />)}
         {item("hackaday-table", t("Hackaday stories"), "table", 7,
           <TableCard id="hackaday-table" queryId="hackaday_weekly" title={t("Recent hardware stories")} rows={hackaday}
@@ -262,8 +262,8 @@ function RadarContent({ initialView = {} }) {
             description={t("Includes prelaunch, indexed rewards and historical follow-up with explicit verification limits.")} />, 3)}
         {item("kickstarter-backers", t("Kickstarter backers"), "chart", 6,
           <EvidenceChart id="kickstarter-backers" queryId="kickstarter_current" title={t("Kickstarter: cumulative backers")}
-            variant="card" rows={kickstarter} sourceRows={kickstarter} height={330}
-            description={t("Current cumulative supporters, including ended campaigns; unavailable values stay null.")}
+            variant="card" rows={kickstarter.filter(row => row.metricBasis !== "historical")} sourceRows={kickstarter} height={330}
+            description={t("Verified current cumulative supporters only; historical records are excluded.")}
             spec={{ type: "horizontalBar", x: "project", y: "backers", showValues: true, sortOrder: "descending", showXAxisLabel: false, showYAxisLabel: false }} />)}
         {item("indiegogo-backers", t("Indiegogo evidence"), "chart", 6,
           <DataComponent id="indiegogo-backers" queryId="indiegogo_current" title={t("Indiegogo: current counts unavailable")}
@@ -306,7 +306,7 @@ function RadarContent({ initialView = {} }) {
         {item("kpi-instructables-weekly", t("Seven-day additions"), "metric", 4,
           <MetricCard id="kpi-instructables-weekly" queryId="instructables_freshness" title={t("Seven-day additions")}
             value={Number.isFinite(fusionFreshness.weeklyNew) ? integer.format(fusionFreshness.weeklyNew) : t("Unknown")} sourceRows={instructablesFreshness} displayRows={instructablesFreshness}
-            description={t("Oct 26: filtered list unavailable. Unknown is not zero.")} />, 2)}
+            description={t("Nov 2: filtered list unavailable. Unknown is not zero.")} />, 2)}
         {item("kpi-instructables-count", t("Current Fusion projects"), "metric", 4,
           <MetricCard id="kpi-instructables-count" queryId="instructables_freshness" title={t("Current Fusion projects")}
             value={Number.isFinite(fusionFreshness.visibleProjects) ? integer.format(fusionFreshness.visibleProjects) : t("Unknown")} sourceRows={instructablesFreshness} displayRows={instructablesFreshness}
@@ -394,9 +394,9 @@ function RadarContent({ initialView = {} }) {
       { id: "overview:signals", spacing: "after-metrics", items: ["github-stars", "category-mix"] },
       { id: "overview:summary", items: ["signal-summary"] },
     ]}>
-      {item("kpi-top-stars", t("Historical top stars (Oct 19)"), "metric", 3,
-        <MetricCard id="kpi-top-stars" queryId="github_weekly" title={t("Historical top stars (Oct 19)")} value={compact.format(topWeeklyStars ?? 0)}
-          sourceRows={github} displayRows={github.slice(0, 1)} description={language === "zh" ? `${github[0]?.project ?? "—"}，历史快照，核验日期10月19日。` : `${github[0]?.project ?? "—"}, historical snapshot verified Oct 19.`} />, 2)}
+      {item("kpi-top-stars", t("Highest stars among selected repositories"), "metric", 3,
+        <MetricCard id="kpi-top-stars" queryId="github_weekly" title={t("Highest stars among selected repositories")} value={compact.format(topWeeklyStars ?? 0)}
+          sourceRows={github} displayRows={github.slice(0, 1)} description={language === "zh" ? `${github[0]?.project ?? "—"}，精选候选的当前累计值。` : `${github[0]?.project ?? "—"}, selected candidate cumulative total.`} />, 2)}
       {item("kpi-ai-share", t("AI share"), "metric", 3,
         <MetricCard id="kpi-ai-share" queryId="github_weekly" title={t("AI share")} value={`${Math.round(aiShare * 100)}%`}
           sourceRows={github} displayRows={categoryRows} description={language === "zh" ? `${github.length} 个候选中有 ${aiCount} 个归类为 AI 相关。` : `${aiCount} / ${github.length} candidates classified as AI-related.`} />, 2)}
@@ -405,11 +405,11 @@ function RadarContent({ initialView = {} }) {
           sourceRows={hackaday} displayRows={hackaday} description={t("Selected Hackaday stories published within the seven-day review window.")} />, 2)}
       {item("kpi-instructables-weekly", t("Fusion seven-day additions"), "metric", 3,
         <MetricCard id="kpi-instructables-weekly" queryId="instructables_freshness" title={t("Fusion seven-day additions")} value={Number.isFinite(fusionFreshness.weeklyNew) ? integer.format(fusionFreshness.weeklyNew) : t("Unknown")}
-          sourceRows={instructablesFreshness} displayRows={instructablesFreshness} description={t("Oct 26 check returned Loading. Current additions and latest date are unknown.")} />, 2)}
-      {item("github-stars", t("New-repository stars"), "chart", 8,
-        <EvidenceChart id="github-stars" queryId="github_weekly" title={t("Historical repository stars (Oct 19)")}
+          sourceRows={instructablesFreshness} displayRows={instructablesFreshness} description={t("Nov 2 check returned a cached loading shell. Additions and latest date remain unknown.")} />, 2)}
+      {item("github-stars", t("Selected repository stars"), "chart", 8,
+        <EvidenceChart id="github-stars" queryId="github_weekly" title={t("Selected repositories: cumulative stars")}
           variant="card" rows={github} sourceRows={github} height={410}
-          description={t("Historical Oct 19 cumulative stars; no current weekly ranking.")}
+          description={t("Selected repository totals; no official weekly ranking.")}
           spec={{ type: "horizontalBar", x: "project", y: "weeklyStars", showValues: true, sortOrder: "descending", showXAxisLabel: false, showYAxisLabel: false }} />)}
       {item("category-mix", t("GitHub category mix"), "chart", 4,
         <EvidenceChart id="category-mix" queryId="github_weekly" title={t("Candidate category mix")}
@@ -429,9 +429,9 @@ function RadarContent({ initialView = {} }) {
           displayRows={[]}
           description={t("Source-backed input and hardware signals; product implications are editorial judgments.")}>
           <div className="osw-signal-grid">
-            <article><span>01</span><strong>{t("Flexible surfaces become input devices")}</strong><p>{t("NUS announced a textile touchscreen on Oct 22. Explore soft input surfaces, but keep research prototypes separate from manufacturable open hardware.")}</p></article>
-            <article><span>02</span><strong>{t("Input-device campaigns keep attracting interest")}</strong><p>{t("OpenMote reached 1,649 backers (+182 versus Oct 19); Violoop reached 790 comments (+65). Backers and comments are different signals, not delivery validation.")}</p></article>
-            <article><span>03</span><strong>{t("Missing data remains visible")}</strong><p>{t("Trending, Tindie, OSHWHub and dynamic crowdfunding pages have access gaps. Old metrics retain their verification dates; missing data is not zero new projects.")}</p></article>
+            <article><span>01</span><strong>{t("Modular desktop tools attract attention")}</strong><p>{t("DockFrame combines Framework expansion cards with desktop measurement modules. Design files are promised after the campaign, not yet public.")}</p></article>
+            <article><span>02</span><strong>{t("Input-device campaigns change stage")}</strong><p>{t("OpenMote reached 1,933 backers and entered pre-order. Violoop ended with 5,827 backers and 890 comments. Source release and delivery still need verification.")}</p></article>
+            <article><span>03</span><strong>{t("Motor control and magnetic input")}</strong><p>{t("BeagleConnect QuadESC offers four BLDC development channels but requires firmware. A separate magnetic gesture lock uses an 8×8 Hall array; security remains unverified.")}</p></article>
           </div>
         </DataComponent>)}
     </Canvas>
