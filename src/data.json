@@ -1167,7 +1167,7 @@
           },
           "verifiedAt": "2026-11-02T01:06:05Z",
           "metricBasis": "cumulative",
-          "comments": 790,
+          "comments": 890,
           "updates": 6,
           "observedAt": "2026-11-02T01:06:05Z"
         },
@@ -1225,6 +1225,29 @@
           },
           "verifiedAt": "2026-10-19T06:38:29Z",
           "metricBasis": "historical"
+        },
+        {
+          "rank": 5,
+          "project": "TRYX VESTRA VISION",
+          "backers": null,
+          "raisedDisplay": "Kicktraq snapshot: 439 backers / $114,391; official counter unavailable",
+          "status": "Funding / current candidate; launched Oct 27",
+          "category": "Hall-effect keyboard / under-switch OLED",
+          "summary": "5.48-inch OLED beneath translucent switches; top touch strip, adjustable magnetic actuation. Tracker snapshot only; independent validation pending.",
+          "url": "https://www.kickstarter.com/projects/tryx/vestra-vision-magnetic-keyboard-with-under-switch-oled",
+          "links": [
+            "https://www.kicktraq.com/projects/tryx/vestra-vision-magnetic-keyboard-with-under-switch-oled/",
+            "https://shop.tryx.com/pages/vestra-vision"
+          ],
+          "observedAt": "2026-11-02T03:29:49Z",
+          "verifiedAt": "2026-11-02T03:29:49Z",
+          "metricBasis": "candidate",
+          "zh": {
+            "raisedDisplay": "Kicktraq快照：439位支持者／114,391美元；官方计数未能读取",
+            "status": "众筹中／当前热门候选；10月27日开募",
+            "category": "磁轴键盘／轴下 OLED",
+            "summary": "轴下5.48英寸 OLED、顶部触控区域和磁轴可调触发；数值为第三方快照，实际体验待独立验证。"
+          }
         }
       ],
       "source": {
@@ -1255,6 +1278,10 @@
           {
             "title": "Nov 2 collection / 11月2日采集",
             "detail": "Technology page empty; official Violoop and immurok project pages checked. Cumulative comments and backers are distinct. 科技分类页无正文；通过项目原页核实Violoop及immurok。数字属于当前累计，评论与支持者分别统计。"
+          },
+          {
+            "title": "VESTRA VISION correction / 补充",
+            "detail": "Official project https://www.kickstarter.com/projects/tryx/vestra-vision-magnetic-keyboard-with-under-switch-oled; manufacturer https://shop.tryx.com/pages/vestra-vision ; third-party tracker https://www.kicktraq.com/projects/tryx/vestra-vision-magnetic-keyboard-with-under-switch-oled/ (439 supporters / $114,391; tracker indicated last update 46 minutes before retrieval)."
           }
         ],
         "metricDefinitions": [
@@ -1273,13 +1300,14 @@
         "metricBasis": "snapshot_delta",
         "observedAt": "2026-11-02T01:06:05Z",
         "verifiedAt": "2026-10-19T06:38:29Z",
-        "statusNote": "科技分类页无正文；通过项目原页核实Violoop及immurok。数字属于当前累计，评论与支持者分别统计。",
-        "statusNoteEn": "Technology page empty; official Violoop and immurok project pages checked. Cumulative comments and backers are distinct.",
+        "statusNote": "科技分类页无正文；通过项目原页核实Violoop及immurok。数字属于当前累计，评论与支持者分别统计。 补充 VESTRA VISION：官方项目页计数未读取，众筹数值为第三方 Kicktraq 快照。",
+        "statusNoteEn": "Technology page empty; official Violoop and immurok project pages checked. Cumulative comments and backers are distinct. VESTRA VISION added: official counters unavailable; crowdfunding figures are a third-party Kicktraq snapshot.",
         "previousExecutedAt": "2026-10-26T01:02:27Z",
         "reviewWindow": {
           "start": "2026-10-26T01:00:00Z",
           "end": "2026-11-02T01:06:05Z"
-        }
+        },
+        "supplementedAt": "2026-11-02T03:29:49Z"
       }
     },
     "indiegogo_current": {
@@ -1699,6 +1727,46 @@
           "metricBasis": "historical"
         },
         {
+          "project": "TRYX VESTRA VISION",
+          "track": "Hall-effect keyboard / display",
+          "signal": "Kicktraq snapshot: 439 backers and $114,391; launched Oct 27",
+          "stage": "Funding / current candidate",
+          "technology": "5.48-inch under-switch OLED, transparent switches, top touch strip, Hall sensing",
+          "risk": "Delivery, keycap/axis transparency, display life, heat, gaming performance and software compatibility require independent validation. 0.01 mm RT is a marketing claim.",
+          "takeaway": "Keychron: prototype under-switch display visibility and repairability, and compare top touch-screen controls with Q1 Touch Bar.",
+          "openness": "Commercial product; source and hardware licenses unverified",
+          "selectionPath": "Both / 双重命中",
+          "summary": "Commercial magnetic keyboard integrating an under-switch OLED and top touch controls. A relevant display-keyboard and HE product candidate, not verified open source.",
+          "url": "https://www.kickstarter.com/projects/tryx/vestra-vision-magnetic-keyboard-with-under-switch-oled",
+          "links": [
+            "https://www.kicktraq.com/projects/tryx/vestra-vision-magnetic-keyboard-with-under-switch-oled/",
+            "https://shop.tryx.com/pages/vestra-vision"
+          ],
+          "isHardware": true,
+          "observedAt": "2026-11-02T03:29:49Z",
+          "verifiedAt": "2026-11-02T03:29:49Z",
+          "metricBasis": "candidate",
+          "inputRelevance": 5,
+          "aiInput": 1,
+          "breakthrough": 4,
+          "potential": 4,
+          "wonder": 5,
+          "heat": 4,
+          "score": 76,
+          "zh": {
+            "track": "磁轴键盘／屏幕交互",
+            "signal": "Kicktraq快照：439位支持者、114,391美元；10月27日开募",
+            "stage": "众筹中／当前热门候选",
+            "technology": "轴下5.48英寸 OLED、透明轴体、顶部触控区与霍尔磁感应",
+            "risk": "交付、键帽轴体透光率、屏幕寿命、散热、游戏性能及软件兼容性均待独立验证；0.01毫米 RT 为厂商宣称。",
+            "takeaway": "可验证轴下显示可读性及维修难度，并与 Q1 Touch Bar 的顶部触控交互比较。",
+            "openness": "商业产品；源码及硬件许可证未核实",
+            "selectionPath": "双重命中",
+            "summary": "将轴下 OLED 与顶部触控结合的商业磁轴键盘，与屏幕键盘和 HE 产品规划高度相关；尚未证实开源。"
+          },
+          "priority": 9
+        },
+        {
           "project": "Magpie v0.1.14",
           "track": "Selection-triggered AI",
           "signal": "Magpie v0.1.19 released Nov 1 (release feed)",
@@ -1718,7 +1786,7 @@
           "heat": 2,
           "selectionPath": "Core / 核心相关",
           "score": 74,
-          "priority": 9,
+          "priority": 10,
           "summary": "Open-source application providing selection-triggered translation, explanations and workflow actions.",
           "zh": {
             "track": "选中文字触发 AI",
@@ -1754,7 +1822,7 @@
           "heat": 3,
           "selectionPath": "Core / 核心相关",
           "score": 73,
-          "priority": 10,
+          "priority": 11,
           "summary": "USB camera, microphone and touch lighting for local App Lab vision and gesture workflows; computation runs on the host board.",
           "zh": {
             "track": "视觉与语音输入",
@@ -1790,7 +1858,7 @@
           "heat": 2,
           "selectionPath": "Core / 核心相关",
           "score": 70,
-          "priority": 11,
+          "priority": 12,
           "summary": "Six-key macropad with OLED labels and application-based profiles controlled by desktop companion software.",
           "zh": {
             "track": "随应用切换的快捷键盘",
@@ -1840,7 +1908,7 @@
           "wonder": 5,
           "heat": 1,
           "score": 70,
-          "priority": 12
+          "priority": 13
         },
         {
           "project": "Prospector",
@@ -1862,7 +1930,7 @@
           "heat": 3,
           "selectionPath": "Core / 核心相关",
           "score": 69,
-          "priority": 13,
+          "priority": 14,
           "summary": "Desktop ZMK receiver with a color display and ambient-light sensing; an ongoing watch item, not a new launch this week.",
           "zh": {
             "track": "ZMK 显示接收器",
@@ -1898,7 +1966,7 @@
           "heat": 2,
           "selectionPath": "Core / 核心相关",
           "score": 66,
-          "priority": 14,
+          "priority": 15,
           "summary": "Compact multitouch module for keyboard and pointing-device prototypes, useful for comparing touchpad and trackball ergonomics.",
           "zh": {
             "track": "集成指向模块",
@@ -1948,7 +2016,7 @@
           "wonder": 4,
           "heat": 2,
           "score": 66,
-          "priority": 15
+          "priority": 16
         },
         {
           "summary": "Four-channel open-hardware brushless motor development board with current and voltage sensing.",
@@ -1984,7 +2052,7 @@
           "wonder": 4,
           "heat": 2,
           "score": 66,
-          "priority": 16
+          "priority": 17
         },
         {
           "project": "Micro Arcade",
@@ -2006,7 +2074,7 @@
           "heat": 1,
           "selectionPath": "Core / 核心相关",
           "score": 64,
-          "priority": 17,
+          "priority": 18,
           "summary": "AtomS3R remote terminal streaming a PC display and sending tilt, short-press, double-press and long-press events.",
           "zh": {
             "track": "小型远程输入终端",
@@ -2042,7 +2110,7 @@
           "heat": 1,
           "selectionPath": "Core / 核心相关",
           "score": 64,
-          "priority": 18,
+          "priority": 19,
           "summary": "Aftertouch retrofit concept adding pressure expression to existing instruments; official index still lists it as Upcoming.",
           "zh": {
             "track": "富有表现力的压力输入",
@@ -2078,7 +2146,7 @@
           "heat": 2,
           "selectionPath": "Frontier / 前沿破格",
           "score": 60,
-          "priority": 19,
+          "priority": 20,
           "summary": "Experimental conversion of a USB Wi-Fi adapter into a raw-I/Q receiver; not a calibrated reference instrument.",
           "zh": {
             "track": "低成本射频实验工具",
@@ -2114,7 +2182,7 @@
           "heat": 2,
           "selectionPath": "Frontier / 前沿破格",
           "score": 60,
-          "priority": 20,
+          "priority": 21,
           "summary": "Experimental raw-I/Q access to a LoRa radio for programmable reception, with board-specific capabilities and limits.",
           "zh": {
             "track": "便携射频实验工具",
@@ -2150,7 +2218,7 @@
           "heat": 2,
           "selectionPath": "Core / 核心相关",
           "score": 59,
-          "priority": 21,
+          "priority": 22,
           "summary": "Low-cost wired controller using RP2040-Zero and GP2040-CE, with browser configuration for rapid layout trials.",
           "zh": {
             "track": "低成本游戏控制器",
@@ -2186,7 +2254,7 @@
           "heat": 4,
           "selectionPath": "Frontier / 前沿破格",
           "score": 56,
-          "priority": 22,
+          "priority": 23,
           "summary": "Commercial desktop CNC campaign offering an optional simultaneous five-axis module; independent performance and open-hardware licensing remain unverified.",
           "zh": {
             "track": "桌面原型加工",
@@ -2222,7 +2290,7 @@
           "heat": 1,
           "selectionPath": "Frontier / 前沿破格",
           "score": 50,
-          "priority": 23,
+          "priority": 24,
           "summary": "Research drone using one motor, a hinged hub and rapid speed modulation; indoor reference sensing is still required.",
           "zh": {
             "track": "驱动与控制",
@@ -2272,7 +2340,7 @@
           "wonder": 2,
           "heat": 1,
           "score": 47,
-          "priority": 24
+          "priority": 25
         }
       ],
       "source": {
@@ -2302,6 +2370,10 @@
           {
             "title": "Nov 2 collection / 11月2日采集",
             "detail": "Adds DockFrame, QuadESC and magnetic gesture lock; refreshed selected projects, retained historical dates for others. Scores are editorial. 新增DockFrame、QuadESC、磁手势锁；OpenMote等已复核，其余保留历史核验日期。评分为编辑判断。"
+          },
+          {
+            "title": "VESTRA VISION correction / 补充",
+            "detail": "Official project https://www.kickstarter.com/projects/tryx/vestra-vision-magnetic-keyboard-with-under-switch-oled; manufacturer https://shop.tryx.com/pages/vestra-vision ; third-party tracker https://www.kicktraq.com/projects/tryx/vestra-vision-magnetic-keyboard-with-under-switch-oled/ (439 supporters / $114,391; tracker indicated last update 46 minutes before retrieval)."
           }
         ],
         "metricDefinitions": [
@@ -2346,13 +2418,14 @@
         "metricBasis": "candidate",
         "observedAt": "2026-11-02T01:06:05Z",
         "verifiedAt": "2026-10-19T06:38:29Z",
-        "statusNote": "新增DockFrame、QuadESC、磁手势锁；OpenMote等已复核，其余保留历史核验日期。评分为编辑判断。",
-        "statusNoteEn": "Adds DockFrame, QuadESC and magnetic gesture lock; refreshed selected projects, retained historical dates for others. Scores are editorial.",
+        "statusNote": "新增DockFrame、QuadESC、磁手势锁；OpenMote等已复核，其余保留历史核验日期。评分为编辑判断。 补充 VESTRA VISION：官方项目页计数未读取，众筹数值为第三方 Kicktraq 快照。",
+        "statusNoteEn": "Adds DockFrame, QuadESC and magnetic gesture lock; refreshed selected projects, retained historical dates for others. Scores are editorial. VESTRA VISION added: official counters unavailable; crowdfunding figures are a third-party Kicktraq snapshot.",
         "previousExecutedAt": "2026-10-26T01:02:27Z",
         "reviewWindow": {
           "start": "2026-10-26T01:00:00Z",
           "end": "2026-11-02T01:06:05Z"
-        }
+        },
+        "supplementedAt": "2026-11-02T03:29:49Z"
       },
       "methods": [
         {
