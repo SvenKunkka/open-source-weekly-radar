@@ -703,14 +703,18 @@
           {
             "title": "Nov 2 collection / 11月2日采集",
             "detail": "Hackster QuadESC and magnetic-gesture coverage verified; Arduino views cumulative; Tindie 502. Hackster证实本期QuadESC与磁手势报道；Arduino首页为累计浏览；Tindie首页502，仅能保留旧记录。"
+          },
+          {
+            "title": "Added source / 新增关注来源",
+            "detail": "Public read of https://youcanjustbuildthings.openai.chatgpt.site/ on 2026-11-03T11:29:59Z returned only the page shell. No project list or vote count verified; unavailable is not zero."
           }
         ],
         "collectionStatus": "partial",
         "metricBasis": "candidate",
         "observedAt": "2026-11-02T01:06:05Z",
         "verifiedAt": "2026-10-19T06:38:29Z",
-        "statusNote": "Hackster证实本期QuadESC与磁手势报道；Arduino首页为累计浏览；Tindie首页502，仅能保留旧记录。",
-        "statusNoteEn": "Hackster QuadESC and magnetic-gesture coverage verified; Arduino views cumulative; Tindie 502.",
+        "statusNote": "Hackster证实本期QuadESC与磁手势报道；Arduino首页为累计浏览；Tindie首页502，仅能保留旧记录。 新增关注：You can just build things [with hardware]；11月3日只读到页面框架，项目列表和票数未知。",
+        "statusNoteEn": "Hackster QuadESC and magnetic-gesture coverage verified; Arduino views cumulative; Tindie 502. New tracked source: You can just build things [with hardware]; on Nov 3 only a page shell was readable, so project listings and votes are unknown.",
         "platformResults": [
           {
             "platform": "Hackster.io",
@@ -732,13 +736,23 @@
             "metricBasis": "historical",
             "statusNote": "首页502；未能核实新品。",
             "observedAt": "2026-11-02T01:06:05Z"
+          },
+          {
+            "platform": "You can just build things [with hardware]",
+            "url": "https://youcanjustbuildthings.openai.chatgpt.site/",
+            "collectionStatus": "unavailable",
+            "metricBasis": "unavailable",
+            "statusNote": "11月3日公开读取仅返回页面框架，项目列表与票数未能核实；不代表零新增。",
+            "statusNoteEn": "Nov 3 public read returned only the page shell; project listings and vote counts are unverified, not zero.",
+            "observedAt": "2026-11-03T11:29:59Z"
           }
         ],
         "previousExecutedAt": "2026-10-26T01:02:27Z",
         "reviewWindow": {
           "start": "2026-10-26T01:00:00Z",
           "end": "2026-11-02T01:06:05Z"
-        }
+        },
+        "supplementedAt": "2026-11-03T11:29:59Z"
       }
     },
     "oshwhub_current": {
