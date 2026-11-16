@@ -1,7 +1,7 @@
 {
   "surface": "dashboard",
   "title": "开源软硬件趋势雷达 | Open-source Technology Radar",
-  "generatedAt": "2026-11-02T01:06:05Z",
+  "generatedAt": "2026-11-16T01:01:10Z",
   "status": "observed",
   "filters": [],
   "queries": {
@@ -130,12 +130,12 @@
             ]
           }
         ],
-        "collectionStatus": "partial",
-        "metricBasis": "candidate",
-        "observedAt": "2026-11-02T01:06:05Z",
+        "collectionStatus": "unavailable",
+        "metricBasis": "historical",
+        "observedAt": "2026-11-16T01:01:10Z",
         "verifiedAt": "2026-11-02T01:06:05Z",
-        "statusNote": "GitHub周榜不可读取；列出当日榜语音候选、Trendshift周榜候选与用户关注项目。数值为GitHub累计Star，不是周增量，不构成同一榜单。",
-        "statusNoteEn": "GitHub weekly view unavailable. Selected daily-trending, Trendshift weekly candidates and a user-tracked repository; stars are cumulative, not weekly growth or a unified ranking.",
+        "statusNote": "本次来源列表读取受限，保留历史记录及原核验时间；无法读取不等于零新增。",
+        "statusNoteEn": "Discovery unavailable; historical observations and their verification dates are retained. Unavailable does not mean zero new projects.",
         "previousExecutedAt": "2026-10-26T01:02:27Z",
         "reviewWindow": {
           "start": "2026-10-26T01:00:00Z",
@@ -281,11 +281,11 @@
           }
         ],
         "collectionStatus": "partial",
-        "metricBasis": "cumulative",
-        "observedAt": "2026-11-02T01:06:05Z",
+        "metricBasis": "historical",
+        "observedAt": "2026-11-16T01:01:35Z",
         "verifiedAt": "2026-11-02T01:06:05Z",
-        "statusNote": "11月1日 Jet Studio 报道：3条累计评论；精选项目不代表完整周榜。",
-        "statusNoteEn": "Jet Studio, Nov 1: 3 cumulative comments; selected coverage, not a complete weekly ranking.",
+        "statusNote": "来源页面已检查，现有项目列表沿用旧核验时间；本期新增候选见产品关注池。",
+        "statusNoteEn": "Source page checked; existing project rows retain their historical verification dates. New candidates appear in the product watchlist.",
         "previousExecutedAt": "2026-10-26T01:02:27Z",
         "reviewWindow": {
           "start": "2026-10-26T01:00:00Z",
@@ -500,12 +500,12 @@
             ]
           }
         ],
-        "collectionStatus": "partial",
-        "metricBasis": "snapshot_delta",
-        "observedAt": "2026-11-02T01:06:05Z",
+        "collectionStatus": "unavailable",
+        "metricBasis": "historical",
+        "observedAt": "2026-11-16T01:01:10Z",
         "verifiedAt": "2026-10-19T06:38:29Z",
-        "statusNote": "OpenMote、KeyMod、Q8botOne与DockFrame已复核；其他项目保留历史日期。差值为两次快照比较，并非严格168小时增长。",
-        "statusNoteEn": "OpenMote, KeyMod, Q8botOne and DockFrame checked; other entries historical. Deltas compare snapshots, not exact 168 hours.",
+        "statusNote": "本次来源列表读取受限，保留历史记录及原核验时间；无法读取不等于零新增。",
+        "statusNoteEn": "Discovery unavailable; historical observations and their verification dates are retained. Unavailable does not mean zero new projects.",
         "previousExecutedAt": "2026-10-26T01:02:27Z",
         "reviewWindow": {
           "start": "2026-10-26T01:00:00Z",
@@ -710,11 +710,11 @@
           }
         ],
         "collectionStatus": "partial",
-        "metricBasis": "candidate",
-        "observedAt": "2026-11-02T01:06:05Z",
+        "metricBasis": "historical",
+        "observedAt": "2026-11-16T01:01:35Z",
         "verifiedAt": "2026-10-19T06:38:29Z",
-        "statusNote": "Hackster证实本期QuadESC与磁手势报道；Arduino首页为累计浏览；Tindie首页502，仅能保留旧记录。 新增关注：You can just build things [with hardware]；11月3日只读到页面框架，项目列表和票数未知。",
-        "statusNoteEn": "Hackster QuadESC and magnetic-gesture coverage verified; Arduino views cumulative; Tindie 502. New tracked source: You can just build things [with hardware]; on Nov 3 only a page shell was readable, so project listings and votes are unknown.",
+        "statusNote": "来源页面已检查，现有项目列表沿用旧核验时间；本期新增候选见产品关注池。",
+        "statusNoteEn": "Source page checked; existing project rows retain their historical verification dates. New candidates appear in the product watchlist.",
         "platformResults": [
           {
             "platform": "Hackster.io",
@@ -835,12 +835,12 @@
             ]
           }
         ],
-        "collectionStatus": "partial",
+        "collectionStatus": "unavailable",
         "metricBasis": "historical",
-        "observedAt": "2026-11-02T01:06:05Z",
+        "observedAt": "2026-11-16T01:01:10Z",
         "verifiedAt": "2026-10-19T06:38:29Z",
-        "statusNote": "发现页403；搜索索引查到五键Vibe Coding键盘、指纹扩展坞键盘，但原页与本周热度未能核实；现存指标保留旧日期。",
-        "statusNoteEn": "Explore returned 403. Indexed Vibe Coding and fingerprint keyboards could not be checked on original pages; existing metrics remain historical.",
+        "statusNote": "本次来源列表读取受限，保留历史记录及原核验时间；无法读取不等于零新增。",
+        "statusNoteEn": "Discovery unavailable; historical observations and their verification dates are retained. Unavailable does not mean zero new projects.",
         "previousExecutedAt": "2026-10-26T01:02:27Z",
         "reviewWindow": {
           "start": "2026-10-26T01:00:00Z",
@@ -1031,12 +1031,12 @@
             ]
           }
         ],
-        "collectionStatus": "historical",
+        "collectionStatus": "unavailable",
         "metricBasis": "historical",
-        "observedAt": "2026-11-02T01:06:05Z",
+        "observedAt": "2026-11-16T01:01:10Z",
         "verifiedAt": "2026-09-02",
-        "statusNote": "筛选页返回旧缓存的加载状态；未能核实本周新增，保留9月2日历史快照。",
-        "statusNoteEn": "Filtered page returned a cached loading shell. Sept 2 historical snapshot retained; additions unknown.",
+        "statusNote": "本次来源列表读取受限，保留历史记录及原核验时间；无法读取不等于零新增。",
+        "statusNoteEn": "Discovery unavailable; historical observations and their verification dates are retained. Unavailable does not mean zero new projects.",
         "previousExecutedAt": "2026-10-26T01:02:27Z",
         "reviewWindow": {
           "start": "2026-10-26T01:00:00Z",
@@ -1096,11 +1096,11 @@
           }
         ],
         "collectionStatus": "unavailable",
-        "metricBasis": "unavailable",
-        "observedAt": "2026-11-02T01:06:05Z",
+        "metricBasis": "historical",
+        "observedAt": "2026-11-16T01:01:10Z",
         "verifiedAt": "2026-10-19T06:38:29Z",
-        "statusNote": "筛选列表未能读取；本周新增数和最新日期未知，不是零。",
-        "statusNoteEn": "Filtered list unavailable; weekly additions and latest date unknown, not zero.",
+        "statusNote": "本次来源列表读取受限，保留历史记录及原核验时间；无法读取不等于零新增。",
+        "statusNoteEn": "Discovery unavailable; historical observations and their verification dates are retained. Unavailable does not mean zero new projects.",
         "previousExecutedAt": "2026-10-26T01:02:27Z",
         "reviewWindow": {
           "start": "2026-10-26T01:00:00Z",
@@ -1149,12 +1149,12 @@
             "detail": "Release feed lists Magpie v0.1.19 on Nov 1; not a popularity ranking. 资讯列表显示Magpie v0.1.19于11月1日发布；不代表热度排名。"
           }
         ],
-        "collectionStatus": "fresh",
-        "metricBasis": "candidate",
-        "observedAt": "2026-11-02T01:06:05Z",
+        "collectionStatus": "unavailable",
+        "metricBasis": "historical",
+        "observedAt": "2026-11-16T01:01:10Z",
         "verifiedAt": "2026-10-26T01:02:27Z",
-        "statusNote": "资讯列表显示Magpie v0.1.19于11月1日发布；不代表热度排名。",
-        "statusNoteEn": "Release feed lists Magpie v0.1.19 on Nov 1; not a popularity ranking.",
+        "statusNote": "本次来源列表读取受限，保留历史记录及原核验时间；无法读取不等于零新增。",
+        "statusNoteEn": "Discovery unavailable; historical observations and their verification dates are retained. Unavailable does not mean zero new projects.",
         "previousExecutedAt": "2026-10-26T01:02:27Z",
         "reviewWindow": {
           "start": "2026-10-26T01:00:00Z",
@@ -1310,12 +1310,12 @@
             ]
           }
         ],
-        "collectionStatus": "partial",
-        "metricBasis": "snapshot_delta",
-        "observedAt": "2026-11-02T01:06:05Z",
+        "collectionStatus": "unavailable",
+        "metricBasis": "historical",
+        "observedAt": "2026-11-16T01:01:10Z",
         "verifiedAt": "2026-10-19T06:38:29Z",
-        "statusNote": "科技分类页无正文；通过项目原页核实Violoop及immurok。数字属于当前累计，评论与支持者分别统计。 补充 VESTRA VISION：官方项目页计数未读取，众筹数值为第三方 Kicktraq 快照。",
-        "statusNoteEn": "Technology page empty; official Violoop and immurok project pages checked. Cumulative comments and backers are distinct. VESTRA VISION added: official counters unavailable; crowdfunding figures are a third-party Kicktraq snapshot.",
+        "statusNote": "本次来源列表读取受限，保留历史记录及原核验时间；无法读取不等于零新增。",
+        "statusNoteEn": "Discovery unavailable; historical observations and their verification dates are retained. Unavailable does not mean zero new projects.",
         "previousExecutedAt": "2026-10-26T01:02:27Z",
         "reviewWindow": {
           "start": "2026-10-26T01:00:00Z",
@@ -1439,10 +1439,10 @@
         ],
         "collectionStatus": "unavailable",
         "metricBasis": "historical",
-        "observedAt": "2026-11-02T01:06:05Z",
+        "observedAt": "2026-11-16T01:01:10Z",
         "verifiedAt": "2026-10-19T06:38:29Z",
-        "statusNote": "分类页及TypAir项目页没有可审计内容，无法核实本周众筹状态或人数；保留历史候选。",
-        "statusNoteEn": "Discovery and TypAir pages contained no auditable data; historical candidates retained.",
+        "statusNote": "本次来源列表读取受限，保留历史记录及原核验时间；无法读取不等于零新增。",
+        "statusNoteEn": "Discovery unavailable; historical observations and their verification dates are retained. Unavailable does not mean zero new projects.",
         "previousExecutedAt": "2026-10-26T01:02:27Z",
         "reviewWindow": {
           "start": "2026-10-26T01:00:00Z",
@@ -2355,6 +2355,114 @@
           "heat": 1,
           "score": 47,
           "priority": 25
+        },
+        {
+          "project": "TeethMark",
+          "url": "https://www.hackster.io/news/teethmark-puts-a-computer-interface-in-your-mouth-c2d0d7856388",
+          "stage": "Research prototype",
+          "technology": "Oral capacitive sensing and electrotactile feedback",
+          "summary": "Experimental intraoral interface uses tongue gestures and electrical touch feedback.",
+          "track": "Input and interaction",
+          "signal": "12-person reported research prototype; Hackster coverage around Nov 14.",
+          "risk": "False activations, oral safety and long-term comfort require independent validation.",
+          "takeaway": "Explore discreet hands-free input and feedback without assuming production readiness.",
+          "openness": "Research prototype; source license not verified",
+          "isHardware": true,
+          "inputRelevance": 5,
+          "aiInput": 1,
+          "breakthrough": 5,
+          "potential": 2,
+          "wonder": 5,
+          "heat": 2,
+          "selectionPath": "Both / 双重命中",
+          "score": 72,
+          "priority": 1,
+          "zh": {
+            "summary": "研究用牙套通过电容识别舌头动作，并用电刺激提供触觉反馈，探索免手操作。",
+            "track": "输入设备与交互",
+            "signal": "研究原型，据报道测试12名参与者；非量产产品。",
+            "takeaway": "可探索隐蔽式免手输入与反馈，量产可行性尚未验证。",
+            "risk": "误触、口腔安全和长期舒适性需要进一步验证。",
+            "technology": "口腔电容感应与电触觉反馈",
+            "stage": "实验性研究原型",
+            "openness": "研究原型；源码许可未核实",
+            "selectionPath": "双重命中"
+          },
+          "observedAt": "2026-11-16T01:01:10Z",
+          "verifiedAt": "2026-11-16T01:01:10Z",
+          "metricBasis": "candidate"
+        },
+        {
+          "project": "Altar II",
+          "url": "https://electronicmaterialsoffice.com/updates/announcing-altar-ii",
+          "stage": "Crowdfunding candidate",
+          "technology": "4.75 mm mechanical keyboard with detachable dial and haptic feedback",
+          "summary": "A low-profile mechanical keyboard integrates a removable dial and haptic feedback.",
+          "track": "Input and interaction",
+          "signal": "Official Aug 6 announcement planned Kickstarter launch Nov 10; current campaign status unverified.",
+          "risk": "Thin-switch durability, haptic experience, delivery and pricing require validation.",
+          "takeaway": "Test the feasibility of a detachable dial and feedback within a thin chassis.",
+          "openness": "Commercial; openness unverified",
+          "isHardware": true,
+          "inputRelevance": 5,
+          "aiInput": 1,
+          "breakthrough": 4,
+          "potential": 4,
+          "wonder": 4,
+          "heat": 2,
+          "selectionPath": "Both / 双重命中",
+          "score": 72,
+          "priority": 1,
+          "zh": {
+            "summary": "超薄机械键盘集成可拆卸旋钮和触觉反馈，用于桌面输入与控制。",
+            "track": "输入设备与交互",
+            "signal": "厂商8月6日公告计划11月10日开募；当前众筹状态未核实。",
+            "takeaway": "可研究薄型机身中的可拆旋钮与反馈方案。",
+            "risk": "薄型轴耐久、触感、价格与交付均待验证。",
+            "technology": "薄型机械轴、可拆旋钮及触觉反馈",
+            "stage": "众筹候选，当前状态待核实",
+            "openness": "商业产品；开源状态未核实",
+            "selectionPath": "双重命中"
+          },
+          "observedAt": "2026-11-16T01:01:10Z",
+          "verifiedAt": "2026-11-16T01:01:10Z",
+          "metricBasis": "candidate"
+        },
+        {
+          "project": "Nape Pro SE",
+          "url": "https://costory.jp/cf-published-sku-groups/1923144122",
+          "stage": "Advance sales",
+          "technology": "25 mm heavy trackball and speaker-simulated scroll clicks",
+          "summary": "Trackball with a heavy ball and sound feedback on a detent-free wheel.",
+          "track": "Input and interaction",
+          "signal": "CoSTORY snapshot: 1,352 buyers and ¥14,582,874 cumulative, not weekly growth.",
+          "risk": "Delivery, acoustics, comfort and open-hardware license require validation.",
+          "takeaway": "Test heavy-ball control and audible scroll feedback independently.",
+          "openness": "Commercial presale; license unverified",
+          "isHardware": true,
+          "inputRelevance": 5,
+          "aiInput": 1,
+          "breakthrough": 3,
+          "potential": 4,
+          "wonder": 3,
+          "heat": 3,
+          "selectionPath": "Core / 核心相关",
+          "score": 67,
+          "priority": 1,
+          "zh": {
+            "summary": "先行销售的轨迹球，采用约48克重球和无卡点滚轮，并由扬声器发出提示音。",
+            "track": "输入设备与交互",
+            "signal": "CoSTORY页面累计1,352名购买者、¥14,582,874；并非本周增量。",
+            "takeaway": "可分别测试重球微操与滚动声音提示。",
+            "risk": "交付、声音效果、舒适性及开源硬件许可待验证。",
+            "technology": "25毫米重球与扬声器滚动提示",
+            "stage": "先行销售",
+            "openness": "商业先行销售；许可未核实",
+            "selectionPath": "核心相关"
+          },
+          "observedAt": "2026-11-16T01:01:10Z",
+          "verifiedAt": "2026-11-16T01:01:10Z",
+          "metricBasis": "candidate"
         }
       ],
       "source": {
@@ -2430,16 +2538,63 @@
         ],
         "collectionStatus": "partial",
         "metricBasis": "candidate",
-        "observedAt": "2026-11-02T01:06:05Z",
-        "verifiedAt": "2026-10-19T06:38:29Z",
-        "statusNote": "新增DockFrame、QuadESC、磁手势锁；OpenMote等已复核，其余保留历史核验日期。评分为编辑判断。 补充 VESTRA VISION：官方项目页计数未读取，众筹数值为第三方 Kicktraq 快照。",
-        "statusNoteEn": "Adds DockFrame, QuadESC and magnetic gesture lock; refreshed selected projects, retained historical dates for others. Scores are editorial. VESTRA VISION added: official counters unavailable; crowdfunding figures are a third-party Kicktraq snapshot.",
+        "observedAt": "2026-11-16T01:01:10Z",
+        "verifiedAt": "2026-11-16T01:01:10Z",
+        "statusNote": "新增TeethMark、Altar II和Nape Pro SE候选；其余未复核项目保留原核验日期。评分为编辑判断。",
+        "statusNoteEn": "Added TeethMark, Altar II and Nape Pro SE as candidates; other records retain their original verification dates. Scores are editorial judgments.",
         "previousExecutedAt": "2026-10-26T01:02:27Z",
         "reviewWindow": {
           "start": "2026-10-26T01:00:00Z",
           "end": "2026-11-02T01:06:05Z"
         },
-        "supplementedAt": "2026-11-02T03:29:49Z"
+        "supplementedAt": "2026-11-02T03:29:49Z",
+        "platformResults": [
+          {
+            "platform": "CoSTORY",
+            "href": "https://costory.jp/",
+            "collectionStatus": "partial",
+            "metricBasis": "cumulative",
+            "observedAt": "2026-11-16T01:01:10Z",
+            "verifiedAt": "2026-11-16T01:01:10Z",
+            "statusNote": "Nape Pro SE页面显示累计1,352名购买者，非周增量。"
+          },
+          {
+            "platform": "You can just build things",
+            "href": "https://youcanjustbuildthings.openai.chatgpt.site/",
+            "collectionStatus": "unavailable",
+            "metricBasis": "unavailable",
+            "observedAt": "2026-11-16T01:01:10Z",
+            "statusNote": "仅显示导航及登录提示，项目列表无法核实。"
+          },
+          {
+            "platform": "Tindie",
+            "collectionStatus": "unavailable",
+            "metricBasis": "unavailable",
+            "observedAt": "2026-11-16T01:01:35Z",
+            "statusNote": "页面返回502，无法核实新品。"
+          },
+          {
+            "platform": "Hackster.io",
+            "collectionStatus": "partial",
+            "metricBasis": "candidate",
+            "observedAt": "2026-11-16T01:01:35Z",
+            "statusNote": "可读新闻页面，TeethMark作为研究候选。"
+          },
+          {
+            "platform": "Arduino Project Hub",
+            "collectionStatus": "partial",
+            "metricBasis": "cumulative",
+            "observedAt": "2026-11-16T01:01:35Z",
+            "statusNote": "可读热门候选，未核实严格周增量。"
+          },
+          {
+            "platform": "BeeKeeb",
+            "collectionStatus": "partial",
+            "metricBasis": "candidate",
+            "observedAt": "2026-11-16T01:01:35Z",
+            "statusNote": "日本站本次重定向美元站；不可直接与日元价格对比。"
+          }
+        ]
       },
       "methods": [
         {
@@ -2573,11 +2728,11 @@
           }
         ],
         "collectionStatus": "partial",
-        "metricBasis": "candidate",
-        "observedAt": "2026-11-02T01:06:05Z",
+        "metricBasis": "historical",
+        "observedAt": "2026-11-16T01:01:35Z",
         "verifiedAt": "2026-10-19T06:38:29Z",
-        "statusNote": "首页轨迹球、触控板与MIP屏价格显示与上次相同；分体键盘页面和库存可能为缓存，不代表无新品或销量排名。",
-        "statusNoteEn": "Homepage trackball, touchpad and MIP prices appear unchanged. Split-keyboard index may be cached; no sales or new-launch conclusion.",
+        "statusNote": "来源页面已检查，现有项目列表沿用旧核验时间；本期新增候选见产品关注池。",
+        "statusNoteEn": "Source page checked; existing project rows retain their historical verification dates. New candidates appear in the product watchlist.",
         "previousExecutedAt": "2026-10-26T01:02:27Z",
         "reviewWindow": {
           "start": "2026-10-26T01:00:00Z",
