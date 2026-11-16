@@ -144,15 +144,15 @@ function RadarContent({ initialView = {} }) {
         {item("github-stars", t("Selected repository stars"), "chart", 12,
           <EvidenceChart id="github-stars" queryId="github_weekly" title={t("Selected repositories: cumulative stars")}
             variant="card" rows={github} sourceRows={github} height={410}
-            description={t("GitHub daily candidates, Trendshift weekly candidates and user-tracked projects. Stars are cumulative, not weekly growth.")}
+            description={t("GitHub official weekly trending snapshot: cumulative stars and this-week stars are shown separately.")}
             spec={{ type: "horizontalBar", x: "project", y: "weeklyStars", showValues: true, sortOrder: "descending", showXAxisLabel: false, showYAxisLabel: false }} />)}
         {item("github-table", t("GitHub candidates"), "table", 12,
           <TableCard id="github-table" queryId="github_weekly" title={t("GitHub candidates")} rows={github} searchable
-            description={t("Selected candidates only. Official GitHub weekly ranking was unavailable.")}
+            description={t("First eight repositories in official GitHub weekly trending order.")}
             columns={[
               { field: "rank", label: "#" }, projectColumn,
               { field: "weeklyStars", label: t("Cumulative stars") },
-              { field: "totalStars", label: t("Total stars") },
+              { field: "weeklyGain", label: t("Stars this week") },
               { field: "category", label: t("Category") },
               { field: "region", label: t("Community") },
               { field: "summary", label: t("Highlights") },
@@ -409,7 +409,7 @@ function RadarContent({ initialView = {} }) {
       {item("github-stars", t("Selected repository stars"), "chart", 8,
         <EvidenceChart id="github-stars" queryId="github_weekly" title={t("Selected repositories: cumulative stars")}
           variant="card" rows={github} sourceRows={github} height={410}
-          description={t("Selected repository totals; no official weekly ranking.")}
+          description={t("GitHub official weekly trending snapshot; chart shows cumulative stars.")}
           spec={{ type: "horizontalBar", x: "project", y: "weeklyStars", showValues: true, sortOrder: "descending", showXAxisLabel: false, showYAxisLabel: false }} />)}
       {item("category-mix", t("GitHub category mix"), "chart", 4,
         <EvidenceChart id="category-mix" queryId="github_weekly" title={t("Candidate category mix")}

@@ -1,7 +1,7 @@
 {
   "surface": "dashboard",
   "title": "开源软硬件趋势雷达 | Open-source Technology Radar",
-  "generatedAt": "2026-11-16T01:01:10Z",
+  "generatedAt": "2026-11-16T07:35:51Z",
   "status": "observed",
   "filters": [],
   "queries": {
@@ -9,101 +9,176 @@
       "rows": [
         {
           "rank": 1,
-          "project": "Handy",
-          "owner": "cjpais",
-          "weeklyStars": 36564,
-          "totalStars": 36564,
-          "forks": 3452,
-          "createdAt": "2025-02-13T02:42:29Z",
-          "category": "AI / speech input",
+          "project": "astryx",
+          "owner": "meta",
+          "weeklyStars": 29129,
+          "totalStars": 29129,
+          "weeklyGain": 13501,
+          "forks": 2276,
+          "category": "Software / developer tools",
           "region": "Global community",
-          "summary": "Offline speech-to-text application.",
-          "url": "https://github.com/cjpais/Handy",
-          "observedAt": "2026-11-02T01:06:05Z",
-          "verifiedAt": "2026-11-02T01:06:05Z",
-          "metricBasis": "cumulative",
+          "summary": "An open source design system that's fully customizable and agent ready",
+          "url": "https://github.com/meta/astryx",
+          "observedAt": "2026-11-16T07:34:42Z",
+          "verifiedAt": "2026-11-16T07:34:42Z",
+          "metricBasis": "strict_7d",
           "zh": {
-            "category": "AI 语音输入",
-            "region": "全球社区",
-            "summary": "离线语音转文字应用。"
+            "category": "软件／开发者工具",
+            "summary": "可定制、适配 AI Agent 的开源设计系统。"
           }
         },
         {
           "rank": 2,
-          "project": "dsh-superagent-prototype",
-          "owner": "deepseek-ai",
-          "weeklyStars": 7407,
-          "totalStars": 7407,
-          "forks": 756,
-          "createdAt": "2026-10-31T09:32:46Z",
-          "category": "AI / Agent",
+          "project": "skills",
+          "owner": "anthropics",
+          "weeklyStars": 195528,
+          "totalStars": 195528,
+          "weeklyGain": 6077,
+          "forks": 22979,
+          "category": "Software / developer tools",
           "region": "Global community",
-          "summary": "Autonomous agent prototype; created Oct 31.",
-          "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
-          "observedAt": "2026-11-02T01:06:05Z",
-          "verifiedAt": "2026-11-02T01:06:05Z",
-          "metricBasis": "cumulative",
+          "summary": "Public repository for Agent Skills",
+          "url": "https://github.com/anthropics/skills",
+          "observedAt": "2026-11-16T07:34:42Z",
+          "verifiedAt": "2026-11-16T07:34:42Z",
+          "metricBasis": "strict_7d",
           "zh": {
-            "category": "AI 与智能体",
-            "region": "全球社区",
-            "summary": "自主智能体原型；10月31日创建。"
+            "category": "软件／开发者工具",
+            "summary": "Agent Skills 公共技能仓库。"
           }
         },
         {
           "rank": 3,
-          "project": "hex",
-          "owner": "anomalyco",
-          "weeklyStars": 3278,
-          "totalStars": 3278,
-          "forks": 189,
-          "createdAt": "2026-07-17T23:48:56Z",
-          "category": "AI / speech input",
+          "project": "sherlock",
+          "owner": "sherlock-project",
+          "weeklyStars": 112709,
+          "totalStars": 112709,
+          "weeklyGain": 10412,
+          "forks": 13008,
+          "category": "Software / developer tools",
           "region": "Global community",
-          "summary": "Local voice dictation for macOS, Windows and Linux.",
-          "url": "https://github.com/anomalyco/hex",
-          "observedAt": "2026-11-02T01:06:05Z",
-          "verifiedAt": "2026-11-02T01:06:05Z",
-          "metricBasis": "cumulative",
+          "summary": "Hunt down social media accounts by username across social networks",
+          "url": "https://github.com/sherlock-project/sherlock",
+          "observedAt": "2026-11-16T07:34:42Z",
+          "verifiedAt": "2026-11-16T07:34:42Z",
+          "metricBasis": "strict_7d",
           "zh": {
-            "category": "AI 语音输入",
-            "region": "全球社区",
-            "summary": "支持 macOS、Windows、Linux 的本地语音听写工具。"
+            "category": "软件／开发者工具",
+            "summary": "通过用户名查找社交平台账户的工具。"
           }
         },
         {
           "rank": 4,
-          "project": "Omniphony",
-          "owner": "mgth",
-          "weeklyStars": 109,
-          "totalStars": 109,
-          "forks": 10,
-          "createdAt": "2026-03-17T22:29:57Z",
-          "category": "Audio / spatial",
+          "project": "plannotator",
+          "owner": "backnotprop",
+          "weeklyStars": 12072,
+          "totalStars": 12072,
+          "weeklyGain": 1719,
+          "forks": 1131,
+          "category": "Software / developer tools",
           "region": "Global community",
-          "summary": "GPL-3.0 real-time object and binaural spatial-audio engine, manually followed.",
-          "url": "https://github.com/mgth/Omniphony",
-          "observedAt": "2026-11-02T01:06:05Z",
-          "verifiedAt": "2026-11-02T01:06:05Z",
-          "metricBasis": "cumulative",
+          "summary": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
+          "url": "https://github.com/backnotprop/plannotator",
+          "observedAt": "2026-11-16T07:34:42Z",
+          "verifiedAt": "2026-11-16T07:34:42Z",
+          "metricBasis": "strict_7d",
           "zh": {
-            "category": "空间音频",
-            "region": "全球社区",
-            "summary": "GPL-3.0 实时对象音频与双耳空间音频引擎；用户指定关注。"
+            "category": "软件／开发者工具",
+            "summary": "面向 AI Agent 计划与代码审核的交互工具。"
+          }
+        },
+        {
+          "rank": 5,
+          "project": "agent-browser",
+          "owner": "vercel-labs",
+          "weeklyStars": 51765,
+          "totalStars": 51765,
+          "weeklyGain": 4217,
+          "forks": 3622,
+          "category": "Software / developer tools",
+          "region": "Global community",
+          "summary": "Browser automation CLI for AI agents",
+          "url": "https://github.com/vercel-labs/agent-browser",
+          "observedAt": "2026-11-16T07:34:42Z",
+          "verifiedAt": "2026-11-16T07:34:42Z",
+          "metricBasis": "strict_7d",
+          "zh": {
+            "category": "软件／开发者工具",
+            "summary": "面向 AI Agent 的浏览器自动化命令行工具。"
+          }
+        },
+        {
+          "rank": 6,
+          "project": "daily_stock_analysis",
+          "owner": "ZhuLinsen",
+          "weeklyStars": 72617,
+          "totalStars": 72617,
+          "weeklyGain": 4548,
+          "forks": 57610,
+          "category": "Software / developer tools",
+          "region": "Global community",
+          "summary": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
+          "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+          "observedAt": "2026-11-16T07:34:42Z",
+          "verifiedAt": "2026-11-16T07:34:42Z",
+          "metricBasis": "strict_7d",
+          "zh": {
+            "category": "软件／开发者工具",
+            "summary": "多来源行情与新闻驱动的 AI 股票分析工具。"
+          }
+        },
+        {
+          "rank": 7,
+          "project": "sure",
+          "owner": "we-promise",
+          "weeklyStars": 15805,
+          "totalStars": 15805,
+          "weeklyGain": 4556,
+          "forks": 1383,
+          "category": "Software / developer tools",
+          "region": "Global community",
+          "summary": "The personal finance app for everyone (by everyone)",
+          "url": "https://github.com/we-promise/sure",
+          "observedAt": "2026-11-16T07:34:42Z",
+          "verifiedAt": "2026-11-16T07:34:42Z",
+          "metricBasis": "strict_7d",
+          "zh": {
+            "category": "软件／开发者工具",
+            "summary": "个人财务管理应用。"
+          }
+        },
+        {
+          "rank": 8,
+          "project": "OpenMausBot",
+          "owner": "milind-soni",
+          "weeklyStars": 23693,
+          "totalStars": 23693,
+          "weeklyGain": 5463,
+          "forks": 3299,
+          "category": "Software / developer tools",
+          "region": "Global community",
+          "summary": "Open-source Grok Bot alternative with a virtual machine that bots can use",
+          "url": "https://github.com/milind-soni/OpenMausBot",
+          "observedAt": "2026-11-16T07:34:42Z",
+          "verifiedAt": "2026-11-16T07:34:42Z",
+          "metricBasis": "strict_7d",
+          "zh": {
+            "category": "软件／开发者工具",
+            "summary": "提供虚拟机环境的开源机器人项目。"
           }
         }
       ],
       "source": {
-        "label": "GitHub: new-repository candidates / 新仓候选",
-        "href": "https://github.com/trending",
-        "executedAt": "2026-11-02T01:06:05Z",
+        "label": "GitHub Trending weekly / GitHub 周榜",
+        "href": "https://github.com/trending?since=weekly",
+        "executedAt": "2026-11-16T07:34:42Z",
         "filters": [
-          "Selected official daily trending and third-party weekly candidates plus user-selected follow-up; no single ranking.",
-          "GitHub star count is cumulative, not a weekly gain."
+          "Official GitHub weekly Trending, first eight in page order.",
+          "weeklyStars is a compatibility field holding cumulative stars; weeklyGain is the official week figure."
         ],
         "caveats": [
-          "GitHub weekly Trending is unavailable. Trendshift is independent and its score is not GitHub star growth.",
-          "Manual candidates are not comparable ranks.",
-          "Legacy weeklyStars field stores current cumulative stars and is relabeled in the UI."
+          "GitHub weekly figures are platform-provided snapshots, not an independent event log.",
+          "Trending order is GitHub ranking, not necessarily descending by weekly stars."
         ],
         "evidenceFlow": [
           {
@@ -123,19 +198,27 @@
           {
             "label": "Cumulative stars / 累计Star",
             "field": "weeklyStars",
-            "definition": "Current GitHub total; legacy field name does not indicate weekly growth.",
+            "definition": "Cumulative GitHub stars; compatibility field name.",
             "componentIds": [
               "github-stars",
               "github-table"
             ]
+          },
+          {
+            "label": "Weekly stars / 本周Star",
+            "field": "weeklyGain",
+            "definition": "Stars this week displayed by GitHub Trending.",
+            "componentIds": [
+              "github-table"
+            ]
           }
         ],
-        "collectionStatus": "unavailable",
-        "metricBasis": "historical",
-        "observedAt": "2026-11-16T01:01:10Z",
-        "verifiedAt": "2026-11-02T01:06:05Z",
-        "statusNote": "本次来源列表读取受限，保留历史记录及原核验时间；无法读取不等于零新增。",
-        "statusNoteEn": "Discovery unavailable; historical observations and their verification dates are retained. Unavailable does not mean zero new projects.",
+        "collectionStatus": "fresh",
+        "metricBasis": "strict_7d",
+        "observedAt": "2026-11-16T07:34:42Z",
+        "verifiedAt": "2026-11-16T07:34:42Z",
+        "statusNote": "公开周榜经直接读取成功；按页面顺序列出前8项。累计Star与页面所示本周Star分列。",
+        "statusNoteEn": "Official weekly trending read directly; first eight in page order. Cumulative and weekly stars are distinct.",
         "previousExecutedAt": "2026-10-26T01:02:27Z",
         "reviewWindow": {
           "start": "2026-10-26T01:00:00Z",
@@ -207,12 +290,12 @@
             "detail": "Prospector GitHub API: 812 stars, 63 forks; +3 vs Oct 26; last push remains Nov 2025. Prospector 官方API：812 Star、63 Fork，较10月26日增加3 Star；最近代码推送仍为2025年11月。"
           }
         ],
-        "collectionStatus": "fresh",
-        "metricBasis": "cumulative",
+        "collectionStatus": "historical",
+        "metricBasis": "historical",
         "observedAt": "2026-11-02T01:06:05Z",
         "verifiedAt": "2026-11-02T01:06:05Z",
-        "statusNote": "Prospector 官方API：812 Star、63 Fork，较10月26日增加3 Star；最近代码推送仍为2025年11月。",
-        "statusNoteEn": "Prospector GitHub API: 812 stars, 63 forks; +3 vs Oct 26; last push remains Nov 2025.",
+        "statusNote": "Prospector指标尚未本次复核，保留旧日期。",
+        "statusNoteEn": "Prospector metrics were not reverified in this run; old verification date retained.",
         "previousExecutedAt": "2026-10-26T01:02:27Z",
         "reviewWindow": {
           "start": "2026-10-26T01:00:00Z",
@@ -516,6 +599,27 @@
     "maker_platforms_current": {
       "rows": [
         {
+          "platform": "Tindie",
+          "project": "duckyPad Pro",
+          "url": "https://www.tindie.com/products/dekunukem/duckypad-pro-macro-scripting-beyond-qmkvia/",
+          "signal": "Homepage popular candidate; $84.99 listed price, no weekly sales",
+          "stage": "Listed for sale",
+          "category": "Macro pad / HID",
+          "summary": "Programmable macro keypad with scripting; open-source repository available.",
+          "observedAt": "2026-11-16T07:34:42Z",
+          "verifiedAt": "2026-11-16T07:34:42Z",
+          "metricBasis": "candidate",
+          "zh": {
+            "signal": "首页热门候选，标价84.99美元；无周销量数据。",
+            "stage": "在售商品",
+            "category": "宏键盘／HID",
+            "summary": "可编程脚本宏键盘，提供公开源码仓库。"
+          },
+          "links": [
+            "https://github.com/dekuNukem/duckyPad-Pro"
+          ]
+        },
+        {
           "platform": "Hackster.io",
           "project": "Magnetic Gesture Lock",
           "url": "https://www.hackster.io/news/a-secret-magnetic-gesture-is-the-key-to-this-hidden-lock-86cae62394b2",
@@ -711,10 +815,10 @@
         ],
         "collectionStatus": "partial",
         "metricBasis": "historical",
-        "observedAt": "2026-11-16T01:01:35Z",
+        "observedAt": "2026-11-16T07:34:42Z",
         "verifiedAt": "2026-10-19T06:38:29Z",
-        "statusNote": "来源页面已检查，现有项目列表沿用旧核验时间；本期新增候选见产品关注池。",
-        "statusNoteEn": "Source page checked; existing project rows retain their historical verification dates. New candidates appear in the product watchlist.",
+        "statusNote": "Tindie首页通过直接读取可访问；热门为候选而非周销量，其他平台条目保留各自核验日期。",
+        "statusNoteEn": "Tindie homepage read directly; popularity is a candidate signal, not weekly sales. Other rows retain their verification dates.",
         "platformResults": [
           {
             "platform": "Hackster.io",
@@ -745,6 +849,14 @@
             "statusNote": "11月3日公开读取仅返回页面框架，项目列表与票数未能核实；不代表零新增。",
             "statusNoteEn": "Nov 3 public read returned only the page shell; project listings and vote counts are unverified, not zero.",
             "observedAt": "2026-11-03T11:29:59Z"
+          },
+          {
+            "platform": "Tindie",
+            "collectionStatus": "fresh",
+            "metricBasis": "candidate",
+            "observedAt": "2026-11-16T07:34:42Z",
+            "verifiedAt": "2026-11-16T07:34:42Z",
+            "statusNote": "直接读取首页热门商品，无法核验销量及7日新增。"
           }
         ],
         "previousExecutedAt": "2026-10-26T01:02:27Z",
@@ -835,12 +947,12 @@
             ]
           }
         ],
-        "collectionStatus": "unavailable",
+        "collectionStatus": "partial",
         "metricBasis": "historical",
-        "observedAt": "2026-11-16T01:01:10Z",
+        "observedAt": "2026-11-16T07:34:42Z",
         "verifiedAt": "2026-10-19T06:38:29Z",
-        "statusNote": "本次来源列表读取受限，保留历史记录及原核验时间；无法读取不等于零新增。",
-        "statusNoteEn": "Discovery unavailable; historical observations and their verification dates are retained. Unavailable does not mean zero new projects.",
+        "statusNote": "首页经直接访问可读，但未核实旧项目实时指标；保留其历史核验日期。",
+        "statusNoteEn": "Homepage reachable via direct request; existing project metrics remain historical.",
         "previousExecutedAt": "2026-10-26T01:02:27Z",
         "reviewWindow": {
           "start": "2026-10-26T01:00:00Z",
@@ -1244,20 +1356,21 @@
           "rank": 5,
           "project": "TRYX VESTRA VISION",
           "backers": null,
-          "raisedDisplay": "Kicktraq snapshot: 439 backers / $114,391; official counter unavailable",
+          "raisedDisplay": "BackerTracker snapshot: 512 backers / $133,964; official counter unavailable",
           "status": "Funding / current candidate; launched Oct 27",
           "category": "Hall-effect keyboard / under-switch OLED",
           "summary": "5.48-inch OLED beneath translucent switches; top touch strip, adjustable magnetic actuation. Tracker snapshot only; independent validation pending.",
           "url": "https://www.kickstarter.com/projects/tryx/vestra-vision-magnetic-keyboard-with-under-switch-oled",
           "links": [
             "https://www.kicktraq.com/projects/tryx/vestra-vision-magnetic-keyboard-with-under-switch-oled/",
-            "https://shop.tryx.com/pages/vestra-vision"
+            "https://shop.tryx.com/pages/vestra-vision",
+            "https://www.backerkit.com/projects/tryx/vestra-vision-magnetic-keyboard-with-under-switch-oled"
           ],
-          "observedAt": "2026-11-02T03:29:49Z",
-          "verifiedAt": "2026-11-02T03:29:49Z",
+          "observedAt": "2026-11-16T07:34:42Z",
+          "verifiedAt": "2026-11-16T07:34:42Z",
           "metricBasis": "candidate",
           "zh": {
-            "raisedDisplay": "Kicktraq快照：439位支持者／114,391美元；官方计数未能读取",
+            "raisedDisplay": "BackerTracker第三方快照：512位支持者／133,964美元；官方计数未能读取",
             "status": "众筹中／当前热门候选；10月27日开募",
             "category": "磁轴键盘／轴下 OLED",
             "summary": "轴下5.48英寸 OLED、顶部触控区域和磁轴可调触发；数值为第三方快照，实际体验待独立验证。"
@@ -1310,12 +1423,12 @@
             ]
           }
         ],
-        "collectionStatus": "unavailable",
-        "metricBasis": "historical",
-        "observedAt": "2026-11-16T01:01:10Z",
+        "collectionStatus": "partial",
+        "metricBasis": "candidate",
+        "observedAt": "2026-11-16T07:34:42Z",
         "verifiedAt": "2026-10-19T06:38:29Z",
-        "statusNote": "本次来源列表读取受限，保留历史记录及原核验时间；无法读取不等于零新增。",
-        "statusNoteEn": "Discovery unavailable; historical observations and their verification dates are retained. Unavailable does not mean zero new projects.",
+        "statusNote": "官方发现页无可审计列表；VESTRA 数值来自第三方累计快照，其他旧记录保留历史日期。",
+        "statusNoteEn": "Official discovery unavailable; VESTRA is a third-party cumulative snapshot; other rows retain historical dates.",
         "previousExecutedAt": "2026-10-26T01:02:27Z",
         "reviewWindow": {
           "start": "2026-10-26T01:00:00Z",
@@ -1743,7 +1856,7 @@
         {
           "project": "TRYX VESTRA VISION",
           "track": "Hall-effect keyboard / display",
-          "signal": "Kicktraq snapshot: 439 backers and $114,391; launched Oct 27",
+          "signal": "BackerTracker snapshot: 512 backers / $133,964; tracker values, not official real-time counts.",
           "stage": "Funding / current candidate",
           "technology": "5.48-inch under-switch OLED, transparent switches, top touch strip, Hall sensing",
           "risk": "Delivery, keycap/axis transparency, display life, heat, gaming performance and software compatibility require independent validation. 0.01 mm RT is a marketing claim.",
@@ -1754,11 +1867,12 @@
           "url": "https://www.kickstarter.com/projects/tryx/vestra-vision-magnetic-keyboard-with-under-switch-oled",
           "links": [
             "https://www.kicktraq.com/projects/tryx/vestra-vision-magnetic-keyboard-with-under-switch-oled/",
-            "https://shop.tryx.com/pages/vestra-vision"
+            "https://shop.tryx.com/pages/vestra-vision",
+            "https://www.backerkit.com/projects/tryx/vestra-vision-magnetic-keyboard-with-under-switch-oled"
           ],
           "isHardware": true,
-          "observedAt": "2026-11-02T03:29:49Z",
-          "verifiedAt": "2026-11-02T03:29:49Z",
+          "observedAt": "2026-11-16T07:34:42Z",
+          "verifiedAt": "2026-11-16T07:34:42Z",
           "metricBasis": "candidate",
           "inputRelevance": 5,
           "aiInput": 1,
@@ -1769,7 +1883,7 @@
           "score": 76,
           "zh": {
             "track": "磁轴键盘／屏幕交互",
-            "signal": "Kicktraq快照：439位支持者、114,391美元；10月27日开募",
+            "signal": "BackerTracker第三方快照：512位支持者、133,964美元；不是官方实时数值。",
             "stage": "众筹中／当前热门候选",
             "technology": "轴下5.48英寸 OLED、透明轴体、顶部触控区与霍尔磁感应",
             "risk": "交付、键帽轴体透光率、屏幕寿命、散热、游戏性能及软件兼容性均待独立验证；0.01毫米 RT 为厂商宣称。",
@@ -2435,7 +2549,7 @@
           "technology": "25 mm heavy trackball and speaker-simulated scroll clicks",
           "summary": "Trackball with a heavy ball and sound feedback on a detent-free wheel.",
           "track": "Input and interaction",
-          "signal": "CoSTORY snapshot: 1,352 buyers and ¥14,582,874 cumulative, not weekly growth.",
+          "signal": "CoSTORY project page: 1,357 buyers and ¥14,613,742 cumulative; snapshot, not weekly growth.",
           "risk": "Delivery, acoustics, comfort and open-hardware license require validation.",
           "takeaway": "Test heavy-ball control and audible scroll feedback independently.",
           "openness": "Commercial presale; license unverified",
@@ -2452,7 +2566,7 @@
           "zh": {
             "summary": "先行销售的轨迹球，采用约48克重球和无卡点滚轮，并由扬声器发出提示音。",
             "track": "输入设备与交互",
-            "signal": "CoSTORY页面累计1,352名购买者、¥14,582,874；并非本周增量。",
+            "signal": "CoSTORY项目页累计1,357名购买者、¥14,613,742；为采集快照，不是周增量。",
             "takeaway": "可分别测试重球微操与滚动声音提示。",
             "risk": "交付、声音效果、舒适性及开源硬件许可待验证。",
             "technology": "25毫米重球与扬声器滚动提示",
@@ -2460,8 +2574,83 @@
             "openness": "商业先行销售；许可未核实",
             "selectionPath": "核心相关"
           },
-          "observedAt": "2026-11-16T01:01:10Z",
-          "verifiedAt": "2026-11-16T01:01:10Z",
+          "observedAt": "2026-11-16T07:34:42Z",
+          "verifiedAt": "2026-11-16T07:34:42Z",
+          "metricBasis": "candidate"
+        },
+        {
+          "project": "duckyPad Pro",
+          "url": "https://github.com/dekuNukem/duckyPad-Pro",
+          "links": [
+            "https://www.tindie.com/products/dekunukem/duckypad-pro-macro-scripting-beyond-qmkvia/"
+          ],
+          "track": "Programmable macro input",
+          "signal": "Tindie popular-products homepage, $84.99 listed; no weekly sales.",
+          "stage": "On sale",
+          "technology": "USB HID macro pad and duckyScript automation",
+          "summary": "A programmable macro pad automates desktop workflows with scripts.",
+          "risk": "Firmware security, script behavior, integration and supply remain to be tested.",
+          "takeaway": "Explore a small physical macro controller with inspectable scripts and safe confirmation.",
+          "openness": "Repository public; complete hardware license requires review.",
+          "isHardware": true,
+          "inputRelevance": 5,
+          "aiInput": 1,
+          "breakthrough": 3,
+          "potential": 4,
+          "wonder": 3,
+          "heat": 2,
+          "selectionPath": "Core / 核心相关",
+          "zh": {
+            "summary": "可编程宏键盘，通过脚本自动执行桌面输入操作；Tindie 首页列为热门候选。",
+            "track": "宏按键／桌面输入",
+            "signal": "Tindie 首页热门候选，标价84.99美元；没有周销量数据。",
+            "stage": "在售",
+            "technology": "USB HID 宏按键和 duckyScript 脚本",
+            "risk": "固件安全、脚本行为、软件集成和供应能力需验证。",
+            "takeaway": "可研究支持脚本审核和实体确认的小型桌面控制器。",
+            "openness": "源码仓库公开；完整硬件许可待核实。",
+            "selectionPath": "核心相关"
+          },
+          "score": 66,
+          "priority": 1,
+          "observedAt": "2026-11-16T07:35:51Z",
+          "verifiedAt": "2026-11-16T07:35:51Z",
+          "metricBasis": "candidate"
+        },
+        {
+          "project": "Ulanzi Vibe Mouse",
+          "url": "https://green-keys.info/en/ulanzi-vibe-mouse-20261112/",
+          "track": "Voice and trackball input",
+          "signal": "Nov 12 public feedback request reported by GreenKeys; not a launch.",
+          "stage": "Concept / feedback",
+          "technology": "Handheld trackball, microphone and shortcut keys",
+          "summary": "A reported handheld concept combines pointer control and voice commands.",
+          "risk": "Connection, click ergonomics, privacy, pricing and shipping are unverified.",
+          "takeaway": "Prototype one-handed voice capture with simultaneous pointer and click controls.",
+          "openness": "Commercial concept; open-source status unverified.",
+          "isHardware": true,
+          "inputRelevance": 5,
+          "aiInput": 4,
+          "breakthrough": 4,
+          "potential": 4,
+          "wonder": 4,
+          "heat": 2,
+          "selectionPath": "Both / 双重命中",
+          "zh": {
+            "summary": "据报道，Ulanzi 正征集手持轨迹球加麦克风方案的反馈，可在同一设备上进行指针与语音输入；尚非上市产品。",
+            "track": "语音／轨迹球输入",
+            "signal": "GreenKeys 报道11月12日公开征集反馈；不是正式发布。",
+            "stage": "概念／征集反馈",
+            "technology": "手持轨迹球、麦克风与快捷键",
+            "risk": "连接方式、拖拽与点击手感、隐私、定价和交付均未核实。",
+            "takeaway": "可验证单手语音拾取与指针、点击同时操作的布局。",
+            "openness": "商业概念，开源状态未核实。",
+            "selectionPath": "双重命中"
+          },
+          "score": 84,
+          "priority": 1,
+          "observedAt": "2026-11-16T07:35:51Z",
+          "verifiedAt": "2026-11-16T07:35:51Z",
           "metricBasis": "candidate"
         }
       ],
@@ -2538,10 +2727,10 @@
         ],
         "collectionStatus": "partial",
         "metricBasis": "candidate",
-        "observedAt": "2026-11-16T01:01:10Z",
+        "observedAt": "2026-11-16T07:35:51Z",
         "verifiedAt": "2026-11-16T01:01:10Z",
-        "statusNote": "新增TeethMark、Altar II和Nape Pro SE候选；其余未复核项目保留原核验日期。评分为编辑判断。",
-        "statusNoteEn": "Added TeethMark, Altar II and Nape Pro SE as candidates; other records retain their original verification dates. Scores are editorial judgments.",
+        "statusNote": "补充 duckyPad Pro 与 Ulanzi Vibe Mouse；后者为媒体报道的概念候选。历史项目保留各自核验日期。",
+        "statusNoteEn": "Added duckyPad Pro and the media-reported Ulanzi Vibe Mouse concept. Historical rows retain their own verification dates.",
         "previousExecutedAt": "2026-10-26T01:02:27Z",
         "reviewWindow": {
           "start": "2026-10-26T01:00:00Z",
@@ -2606,104 +2795,67 @@
     "beekeeb_current": {
       "rows": [
         {
-          "project": "14mm Trackball",
-          "signal": "New-products section / ¥1,980",
-          "stage": "Existing candidate / no dated launch",
-          "category": "Trackball",
-          "summary": "Compact trackball component for small pointing-device experiments.",
-          "risk": "Sensor compatibility and batch differences need testing.",
-          "url": "https://shop.beekeeb.jp/products/14mm-trackball",
-          "zh": {
-            "signal": "新品栏目展示／¥1,980（日元）",
-            "stage": "已有候选／无明确上市日期",
-            "category": "轨迹球",
-            "summary": "用于小型指向设备试验的紧凑轨迹球部件。",
-            "risk": "需测试传感器兼容性和批次差异。"
-          },
-          "verifiedAt": "2026-11-02T01:06:05Z",
+          "project": "Toucan2 36",
+          "url": "https://shop.beekeeb.com/products/toucan2-36-keys-keyboard",
+          "signal": "Homepage listed price: From $189 USD; not weekly sales",
+          "stage": "Listed / launch date unverified",
+          "category": "Input / components",
+          "summary": "Wireless split keyboard with multi-touch trackpad",
+          "risk": "Stock, compatibility and launch date unverified.",
+          "observedAt": "2026-11-16T07:34:42Z",
+          "verifiedAt": "2026-11-16T07:34:42Z",
           "metricBasis": "candidate",
-          "observedAt": "2026-11-02T01:06:05Z"
+          "zh": {
+            "signal": "首页标价：From $189美元；不代表周销量。",
+            "stage": "在售候选／上市日期未核实",
+            "category": "输入／组件",
+            "summary": "无线分体键盘，集成多点触控板。",
+            "risk": "库存、兼容性及上市日期待核实。"
+          }
         },
         {
-          "project": "19mm Trackball POD1",
-          "signal": "New-products section / ¥4,880",
-          "stage": "Existing candidate / seasonal set",
-          "category": "Trackball",
-          "summary": "Lightweight 19mm ball set; no weekly sales count is published.",
-          "risk": "Check seasonal stock and sensor compatibility.",
-          "url": "https://shop.beekeeb.jp/products/19mm-light-trackball-summer-set",
-          "zh": {
-            "signal": "新品栏目展示／¥4,880（日元）",
-            "stage": "已有候选／季节性套装",
-            "category": "轨迹球",
-            "summary": "轻量19毫米轨迹球套装，未公开周销量。",
-            "risk": "需确认季节性库存与传感器兼容性。"
-          },
-          "verifiedAt": "2026-11-02T01:06:05Z",
+          "project": "19mm Trackball",
+          "url": "https://shop.beekeeb.com/products/19mm-trackball",
+          "signal": "Homepage listed price: $13 USD; not weekly sales",
+          "stage": "Listed / launch date unverified",
+          "category": "Input / components",
+          "summary": "Compact trackball component.",
+          "risk": "Stock, compatibility and launch date unverified.",
+          "observedAt": "2026-11-16T07:34:42Z",
+          "verifiedAt": "2026-11-16T07:34:42Z",
           "metricBasis": "candidate",
-          "observedAt": "2026-11-02T01:06:05Z"
+          "zh": {
+            "signal": "首页标价：$13美元；不代表周销量。",
+            "stage": "在售候选／上市日期未核实",
+            "category": "输入／组件",
+            "summary": "19毫米轨迹球组件。",
+            "risk": "库存、兼容性及上市日期待核实。"
+          }
         },
         {
-          "project": "Azoteq TPS43 Trackpad",
-          "signal": "Product page / ¥1,860",
-          "stage": "Existing module candidate",
-          "category": "Touch input",
-          "summary": "43 × 40 mm multitouch module with glass overlay and adapter.",
-          "risk": "Overlay is not removable after bonding; XIAO BLE is not included.",
-          "url": "https://shop.beekeeb.jp/products/tps43-trackpad-module",
-          "zh": {
-            "signal": "产品页／¥1,860（日元）",
-            "stage": "已有模块候选",
-            "category": "触控输入",
-            "summary": "43 × 40毫米多点触控模块，配玻璃盖板和转接板。",
-            "risk": "盖板粘接后不可移除；不包含 XIAO BLE。"
-          },
-          "verifiedAt": "2026-11-02T01:06:05Z",
+          "project": "Memory-in-pixel LCD",
+          "url": "https://shop.beekeeb.com/products/memory-in-pixel-lcd-display-module",
+          "signal": "Homepage listed price: $22 USD; not weekly sales",
+          "stage": "Listed / launch date unverified",
+          "category": "Input / components",
+          "summary": "Memory-in-pixel display module.",
+          "risk": "Stock, compatibility and launch date unverified.",
+          "observedAt": "2026-11-16T07:34:42Z",
+          "verifiedAt": "2026-11-16T07:34:42Z",
           "metricBasis": "candidate",
-          "observedAt": "2026-11-02T01:06:05Z"
-        },
-        {
-          "project": "Sharp MIP LCD module",
-          "signal": "Homepage from ¥2,680; product page ¥2,980",
-          "stage": "Existing module candidate",
-          "category": "ZMK / keyboard display",
-          "summary": "1.26 or 1.08 inch memory LCD supports ZMK layers, WPM and animation.",
-          "risk": "3.3 V only; choose one connector. Variant price difference requires checkout verification.",
-          "url": "https://shop.beekeeb.jp/products/lcd-display-module",
           "zh": {
-            "signal": "首页¥2,680起；产品页¥2,980（日元）",
-            "stage": "已有模块候选",
-            "category": "ZMK 与键盘显示",
-            "summary": "1.26或1.08英寸记忆液晶屏，支持 ZMK 键层、WPM和动画显示。",
-            "risk": "仅支持3.3 V，需选择一种连接器；版本价差需在结算时核实。"
-          },
-          "verifiedAt": "2026-11-02T01:06:05Z",
-          "metricBasis": "candidate",
-          "observedAt": "2026-11-02T01:06:05Z"
-        },
-        {
-          "project": "Toucan / 3W6HS",
-          "signal": "[Historical 2026-10-19] Collection index: from ¥29,800 / ¥17,800",
-          "stage": "Collection index, crawled two weeks ago",
-          "category": "Split keyboards",
-          "summary": "Keyboard collection was checked alongside modules; no dated new arrival verified.",
-          "risk": "Collection index is older and indicates sold out; current availability unverified.",
-          "url": "https://shop.beekeeb.jp/collections/キーボード",
-          "zh": {
-            "signal": "【历史 2026-10-19】合集索引：¥29,800／¥17,800起（日元）",
-            "stage": "两周前抓取的合集索引",
-            "category": "分体键盘",
-            "summary": "检查模块时一并查看键盘合集，未核实有明确日期的新品。",
-            "risk": "合集索引较旧且显示售罄，当前供货情况未核实。"
-          },
-          "verifiedAt": "2026-10-19T06:38:29Z",
-          "metricBasis": "historical"
+            "signal": "首页标价：$22美元；不代表周销量。",
+            "stage": "在售候选／上市日期未核实",
+            "category": "输入／组件",
+            "summary": "Memory-in-pixel 显示模块。",
+            "risk": "库存、兼容性及上市日期待核实。"
+          }
         }
       ],
       "source": {
         "label": "BeeKeeb: split keyboards, pointing modules and ZMK displays",
         "href": "https://shop.beekeeb.jp/",
-        "executedAt": "2026-11-02T01:06:05Z",
+        "executedAt": "2026-11-16T07:34:42Z",
         "filters": [
           "Homepage, keyboard collection, TPS43 and MIP module pages reviewed.",
           "No dated new arrivals or weekly sales counts verified."
@@ -2728,11 +2880,11 @@
           }
         ],
         "collectionStatus": "partial",
-        "metricBasis": "historical",
-        "observedAt": "2026-11-16T01:01:35Z",
-        "verifiedAt": "2026-10-19T06:38:29Z",
-        "statusNote": "来源页面已检查，现有项目列表沿用旧核验时间；本期新增候选见产品关注池。",
-        "statusNoteEn": "Source page checked; existing project rows retain their historical verification dates. New candidates appear in the product watchlist.",
+        "metricBasis": "candidate",
+        "observedAt": "2026-11-16T07:34:42Z",
+        "verifiedAt": "2026-11-16T07:34:42Z",
+        "statusNote": "日本域名本次跳转美元商店；所列价格为首页快照，不与历史日元报价比较，也非销量排名。",
+        "statusNoteEn": "Japanese domain redirected to USD store; homepage prices are snapshots, not comparable JPY values or sales rankings.",
         "previousExecutedAt": "2026-10-26T01:02:27Z",
         "reviewWindow": {
           "start": "2026-10-26T01:00:00Z",

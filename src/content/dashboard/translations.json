@@ -182,5 +182,9 @@
   "OpenMote reached 1,933 backers and entered pre-order. Violoop ended with 5,827 backers and 890 comments. Source release and delivery still need verification.": "OpenMote 累计1,933位支持者并进入预售；Violoop 众筹结束，项目页显示5,827位支持者和890条评论。开源资料与交付仍需核实。",
   "Motor control and magnetic input": "电机控制与磁手势输入",
   "BeagleConnect QuadESC offers four BLDC development channels but requires firmware. A separate magnetic gesture lock uses an 8×8 Hall array; security remains unverified.": "BeagleConnect QuadESC 提供四路无刷电机开发通道，但需要自行开发固件；磁手势锁使用8×8霍尔阵列，安全性尚未验证。",
-  "Verified current cumulative supporters only; historical records are excluded.": "仅显示本次核实的累计支持者，历史记录不进入图表。"
+  "Verified current cumulative supporters only; historical records are excluded.": "仅显示本次核实的累计支持者，历史记录不进入图表。",
+  "GitHub official weekly trending snapshot: cumulative stars and this-week stars are shown separately.": "GitHub 官方周榜快照：累计 Star 与本周新增 Star 分别展示。",
+  "First eight repositories in official GitHub weekly trending order.": "按 GitHub 官方周榜顺序列出前八个项目。",
+  "Stars this week": "本周 Star 增量",
+  "GitHub official weekly trending snapshot; chart shows cumulative stars.": "GitHub 官方周榜快照；图表展示累计 Star。"
 }
