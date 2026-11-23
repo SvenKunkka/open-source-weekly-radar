@@ -1,7 +1,7 @@
 {
   "surface": "dashboard",
   "title": "开源软硬件趋势雷达 | Open-source Technology Radar",
-  "generatedAt": "2026-11-23T01:03:03Z",
+  "generatedAt": "2026-11-23T01:27:30Z",
   "status": "observed",
   "filters": [],
   "queries": {
@@ -243,33 +243,33 @@
           "project": "Prospector",
           "owner": "carrefinho",
           "platform": "GitHub",
-          "totalStars": 812,
-          "forks": 63,
+          "totalStars": 820,
+          "forks": 66,
           "openIssues": 11,
           "license": "CERN-OHL-P-2.0",
           "lastPush": "2025-11-22",
           "category": "ZMK keyboard hub",
           "stage": "Open hardware / self-assembly",
-          "signal": "812 stars / 63 forks; +3 vs Oct 26",
+          "signal": "820 cumulative stars / 66 forks; +8 stars vs Nov 2 (21 days)",
           "risk": "Main repository last pushed Nov 22, 2025; test firmware-module compatibility.",
           "summary": "Desktop ZMK receiver with a color display and ambient-light sensing.",
           "url": "https://github.com/carrefinho/prospector",
           "zh": {
             "category": "ZMK 键盘接收器",
             "stage": "开放硬件／自行组装",
-            "signal": "812 Star／63 Fork；较10月26日增加3",
+            "signal": "累计 820 Star／66 Fork；较11月2日增加8 Star，间隔21天，并非周增量。",
             "risk": "主仓库最近推送为2025年11月22日，需测试固件与模块兼容性。",
             "summary": "带彩色显示屏和环境光感知的桌面 ZMK 接收器。"
           },
-          "verifiedAt": "2026-11-02T01:06:05Z",
+          "verifiedAt": "2026-11-23T01:27:30Z",
           "metricBasis": "cumulative",
-          "observedAt": "2026-11-02T01:06:05Z"
+          "observedAt": "2026-11-23T01:27:30Z"
         }
       ],
       "source": {
         "label": "Prospector: user-curated ongoing watch",
         "href": "https://github.com/carrefinho/prospector",
-        "executedAt": "2026-11-02T01:06:05Z",
+        "executedAt": "2026-11-23T01:27:30Z",
         "filters": [
           "Official repository metadata rechecked Oct 19; 806 stars, 63 forks, 11 open issues."
         ],
@@ -288,14 +288,18 @@
           {
             "title": "Nov 2 collection / 11月2日采集",
             "detail": "Prospector GitHub API: 812 stars, 63 forks; +3 vs Oct 26; last push remains Nov 2025. Prospector 官方API：812 Star、63 Fork，较10月26日增加3 Star；最近代码推送仍为2025年11月。"
+          },
+          {
+            "title": "Nov 23 verification / 11月23日复核",
+            "detail": "https://api.github.com/repos/carrefinho/prospector — 820 stars, 66 forks; compared with Nov 2 baseline of 812 stars."
           }
         ],
-        "collectionStatus": "historical",
-        "metricBasis": "historical",
-        "observedAt": "2026-11-02T01:06:05Z",
-        "verifiedAt": "2026-11-02T01:06:05Z",
-        "statusNote": "Prospector指标尚未本次复核，保留旧日期。",
-        "statusNoteEn": "Prospector metrics were not reverified in this run; old verification date retained.",
+        "collectionStatus": "fresh",
+        "metricBasis": "cumulative",
+        "observedAt": "2026-11-23T01:27:30Z",
+        "verifiedAt": "2026-11-23T01:27:30Z",
+        "statusNote": "GitHub 官方 API 复核：累计820 Star、66 Fork；较11月2日增加8 Star，非7日增量。",
+        "statusNoteEn": "Official API: 820 cumulative stars, 66 forks; 8 more stars than Nov 2, not a seven-day delta.",
         "previousExecutedAt": "2026-10-26T01:02:27Z",
         "reviewWindow": {
           "start": "2026-10-26T01:00:00Z",
@@ -307,6 +311,25 @@
       "rows": [
         {
           "rank": 1,
+          "project": "LocalDot",
+          "date": "2026-11-22",
+          "comments": 7,
+          "category": "Local voice input / replacement board",
+          "summary": "A replacement board for a third-generation Echo Dot retains its microphone array and uses ESP32-P4 and ESP32-S3 with Home Assistant. Hardware and firmware remain under development; complete design files and licensing are not yet verified.",
+          "url": "https://hackaday.com/2026/11/22/a-replacement-pcb-for-the-echo-dot/",
+          "links": [
+            "https://github.com/ale1800/LocalDot"
+          ],
+          "observedAt": "2026-11-23T01:27:30Z",
+          "verifiedAt": "2026-11-23T01:27:30Z",
+          "metricBasis": "cumulative",
+          "zh": {
+            "category": "本地语音输入／替换主板",
+            "summary": "第三代 Echo Dot 的替换主板，保留原麦克风阵列，使用 ESP32-P4 与 ESP32-S3 接入 Home Assistant。硬件和固件仍在开发，完整设计文件及许可尚未核实。"
+          }
+        },
+        {
+          "rank": 2,
           "project": "Jet Studio",
           "date": "2026-11-01",
           "comments": 3,
@@ -325,7 +348,7 @@
       "source": {
         "label": "Hackaday: articles published in the review window",
         "href": "https://hackaday.com/",
-        "executedAt": "2026-11-02T01:06:05Z",
+        "executedAt": "2026-11-23T01:27:30Z",
         "filters": [
           "Publication dates: 2026-10-12 through 2026-10-19",
           "Six selected input and frontier-hardware stories, sorted by visible cumulative comments."
@@ -350,6 +373,10 @@
           {
             "title": "Nov 2 collection / 11月2日采集",
             "detail": "Jet Studio, Nov 1: 3 cumulative comments; selected coverage, not a complete weekly ranking. 11月1日 Jet Studio 报道：3条累计评论；精选项目不代表完整周榜。"
+          },
+          {
+            "title": "Nov 23 supplement / 11月23日补充",
+            "detail": "https://hackaday.com/2026/11/22/a-replacement-pcb-for-the-echo-dot/ ; https://github.com/ale1800/LocalDot . Seven cumulative article comments; design files and license not verified."
           }
         ],
         "metricDefinitions": [
@@ -364,15 +391,15 @@
           }
         ],
         "collectionStatus": "partial",
-        "metricBasis": "historical",
-        "observedAt": "2026-11-23T01:03:03Z",
-        "verifiedAt": "2026-11-02T01:06:05Z",
-        "statusNote": "本次已检查来源，未逐项核实旧记录；保留历史日期，不代表零新增。",
-        "statusNoteEn": "Source checked; historical rows not individually reverified. This does not mean zero new projects.",
+        "metricBasis": "cumulative",
+        "observedAt": "2026-11-23T01:27:30Z",
+        "verifiedAt": "2026-11-23T01:27:30Z",
+        "statusNote": "新增11月22日 LocalDot 报道；7条为文章累计评论，不是周增量；旧条目保持历史日期。",
+        "statusNoteEn": "Added Nov 22 LocalDot story; 7 comments are cumulative, not weekly growth. Older row retains its historical date.",
         "previousExecutedAt": "2026-10-26T01:02:27Z",
         "reviewWindow": {
-          "start": "2026-10-26T01:00:00Z",
-          "end": "2026-11-02T01:06:05Z"
+          "start": "2026-11-16T01:00:00Z",
+          "end": "2026-11-23T01:27:30Z"
         }
       }
     },
@@ -599,6 +626,27 @@
     "maker_platforms_current": {
       "rows": [
         {
+          "platform": "Arduino Project Hub",
+          "project": "UNO Q Racing Joypad",
+          "url": "https://projecthub.arduino.cc/leocavagnis/uno-q-racing-joypad-4d3d6b",
+          "signal": "Published Nov 19; 1,219 cumulative views and 1 respect at observation; not weekly increments",
+          "stage": "Maker demonstration",
+          "category": "Game controller / haptics",
+          "summary": "UNO Q based physical steering controller with movement sensing and vibration for a locally hosted browser racing game. Project page labels GPL3+; code and design license scope needs verification.",
+          "observedAt": "2026-11-23T01:27:30Z",
+          "verifiedAt": "2026-11-23T01:27:30Z",
+          "metricBasis": "cumulative",
+          "zh": {
+            "signal": "11月19日发布；观察时累计1,219次浏览、1次点赞，均非周增量。",
+            "stage": "创客演示",
+            "category": "游戏控制器／触觉反馈",
+            "summary": "基于 UNO Q 的实体方向盘控制器，使用运动感知和振动反馈操控本地浏览器赛车游戏；项目页标注 GPL3+，代码与设计文件的许可范围仍需核实。"
+          },
+          "links": [
+            "https://github.com/leonardocavagnis/unoq-racing-joypad/blob/main/hardware/3dprint/wheel-board.3mf"
+          ]
+        },
+        {
           "platform": "Tindie",
           "project": "duckyPad Pro",
           "url": "https://www.tindie.com/products/dekunukem/duckypad-pro-macro-scripting-beyond-qmkvia/",
@@ -814,24 +862,24 @@
           }
         ],
         "collectionStatus": "partial",
-        "metricBasis": "historical",
-        "observedAt": "2026-11-23T01:03:03Z",
+        "metricBasis": "cumulative",
+        "observedAt": "2026-11-23T01:27:30Z",
         "verifiedAt": "2026-10-19T06:38:29Z",
-        "statusNote": "本次已检查来源，未逐项核实旧记录；保留历史日期，不代表零新增。",
-        "statusNoteEn": "Source checked; historical rows not individually reverified. This does not mean zero new projects.",
+        "statusNote": "Arduino 新增一项已核实候选；其他平台旧记录保留历史日期，本次未全面复查。",
+        "statusNoteEn": "One newly verified Arduino candidate; other platform rows retain historical verification dates and were not comprehensively rechecked.",
         "platformResults": [
           {
             "platform": "Hackster.io",
-            "collectionStatus": "fresh",
+            "collectionStatus": "historical",
             "metricBasis": "candidate",
-            "statusNote": "本期QuadESC及磁手势报道可读。",
+            "statusNote": "本期QuadESC及磁手势报道可读。（历史观察，非本次核验。）",
             "observedAt": "2026-11-02T01:06:05Z"
           },
           {
             "platform": "Arduino Project Hub",
-            "collectionStatus": "fresh",
+            "collectionStatus": "historical",
             "metricBasis": "cumulative",
-            "statusNote": "JBR-001及AI Room Tracker为累计浏览量。",
+            "statusNote": "JBR-001及AI Room Tracker为累计浏览量。（历史观察，非本次核验。）",
             "observedAt": "2026-11-02T01:06:05Z"
           },
           {
@@ -852,11 +900,19 @@
           },
           {
             "platform": "Tindie",
-            "collectionStatus": "fresh",
+            "collectionStatus": "historical",
             "metricBasis": "candidate",
             "observedAt": "2026-11-16T07:34:42Z",
             "verifiedAt": "2026-11-16T07:34:42Z",
-            "statusNote": "直接读取首页热门商品，无法核验销量及7日新增。"
+            "statusNote": "直接读取首页热门商品，无法核验销量及7日新增。（历史观察，非本次核验。）"
+          },
+          {
+            "platform": "Arduino Project Hub",
+            "collectionStatus": "fresh",
+            "metricBasis": "cumulative",
+            "statusNote": "11月19日发布的 UNO Q Racing Joypad，累计浏览和点赞为观察时快照；非周增量。",
+            "observedAt": "2026-11-23T01:27:30Z",
+            "verifiedAt": "2026-11-23T01:27:30Z"
           }
         ],
         "previousExecutedAt": "2026-10-26T01:02:27Z",
@@ -2805,6 +2861,45 @@
           "observedAt": "2026-11-23T01:03:03Z",
           "verifiedAt": "2026-11-23T01:03:03Z",
           "metricBasis": "candidate"
+        },
+        {
+          "project": "LocalDot",
+          "track": "Local voice input",
+          "signal": "Nov 22 Hackaday report: 7 cumulative comments; project files and license incomplete",
+          "stage": "Development prototype",
+          "technology": "Four-microphone array, ESP32-P4 and ESP32-S3, Home Assistant",
+          "risk": "Design files, license, voice accuracy, privacy configuration and supply are unverified.",
+          "takeaway": "Keychron: explore locally processed microphone modules with explicit privacy controls and physical mute.",
+          "url": "https://github.com/ale1800/LocalDot",
+          "links": [
+            "https://hackaday.com/2026/11/22/a-replacement-pcb-for-the-echo-dot/"
+          ],
+          "isHardware": true,
+          "openness": "Repository public; complete design files and license unverified",
+          "observedAt": "2026-11-23T01:27:30Z",
+          "verifiedAt": "2026-11-23T01:27:30Z",
+          "metricBasis": "cumulative",
+          "inputRelevance": 5,
+          "aiInput": 4,
+          "breakthrough": 4,
+          "potential": 3,
+          "wonder": 4,
+          "heat": 2,
+          "selectionPath": "Core relevance / 核心相关",
+          "score": 81,
+          "priority": 2,
+          "summary": "Replacement board for a third-generation Echo Dot that retains its microphones and connects to a local Home Assistant voice system; hardware and firmware remain in development.",
+          "zh": {
+            "track": "本地语音输入",
+            "signal": "11月22日 Hackaday 报道，观察时7条累计评论；项目文件及许可仍待核实。",
+            "stage": "开发原型",
+            "technology": "四麦克风阵列、ESP32-P4、ESP32-S3 与 Home Assistant",
+            "risk": "完整设计文件、许可、语音准确度、隐私配置及元件供应尚未核实。",
+            "takeaway": "Keychron 可探索本地处理的麦克风模块，加入明确的隐私控制和实体静音。",
+            "openness": "仓库公开；完整设计文件及许可未核实",
+            "summary": "面向第三代 Echo Dot 的替换主板，保留原有麦克风并接入本地 Home Assistant 语音系统；硬件和固件仍在开发。",
+            "selectionPath": "核心相关"
+          }
         }
       ],
       "source": {
@@ -2838,6 +2933,10 @@
           {
             "title": "VESTRA VISION correction / 补充",
             "detail": "Official project https://www.kickstarter.com/projects/tryx/vestra-vision-magnetic-keyboard-with-under-switch-oled; manufacturer https://shop.tryx.com/pages/vestra-vision ; third-party tracker https://www.kicktraq.com/projects/tryx/vestra-vision-magnetic-keyboard-with-under-switch-oled/ (439 supporters / $114,391; tracker indicated last update 46 minutes before retrieval)."
+          },
+          {
+            "title": "Nov 23 supplement / 11月23日补充",
+            "detail": "LocalDot is a core-relevance candidate; source project https://github.com/ale1800/LocalDot and independent coverage https://hackaday.com/2026/11/22/a-replacement-pcb-for-the-echo-dot/ . License and complete files unverified."
           }
         ],
         "metricDefinitions": [
