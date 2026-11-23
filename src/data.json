@@ -1,7 +1,7 @@
 {
   "surface": "dashboard",
   "title": "开源软硬件趋势雷达 | Open-source Technology Radar",
-  "generatedAt": "2026-11-16T07:35:51Z",
+  "generatedAt": "2026-11-23T01:03:03Z",
   "status": "observed",
   "filters": [],
   "queries": {
@@ -9,169 +9,169 @@
       "rows": [
         {
           "rank": 1,
-          "project": "astryx",
-          "owner": "meta",
-          "weeklyStars": 29129,
-          "totalStars": 29129,
-          "weeklyGain": 13501,
-          "forks": 2276,
-          "category": "Software / developer tools",
-          "region": "Global community",
-          "summary": "An open source design system that's fully customizable and agent ready",
-          "url": "https://github.com/meta/astryx",
-          "observedAt": "2026-11-16T07:34:42Z",
-          "verifiedAt": "2026-11-16T07:34:42Z",
-          "metricBasis": "strict_7d",
-          "zh": {
-            "category": "软件／开发者工具",
-            "summary": "可定制、适配 AI Agent 的开源设计系统。"
-          }
-        },
-        {
-          "rank": 2,
-          "project": "skills",
-          "owner": "anthropics",
-          "weeklyStars": 195528,
-          "totalStars": 195528,
-          "weeklyGain": 6077,
-          "forks": 22979,
-          "category": "Software / developer tools",
-          "region": "Global community",
-          "summary": "Public repository for Agent Skills",
-          "url": "https://github.com/anthropics/skills",
-          "observedAt": "2026-11-16T07:34:42Z",
-          "verifiedAt": "2026-11-16T07:34:42Z",
-          "metricBasis": "strict_7d",
-          "zh": {
-            "category": "软件／开发者工具",
-            "summary": "Agent Skills 公共技能仓库。"
-          }
-        },
-        {
-          "rank": 3,
-          "project": "sherlock",
-          "owner": "sherlock-project",
-          "weeklyStars": 112709,
-          "totalStars": 112709,
-          "weeklyGain": 10412,
-          "forks": 13008,
-          "category": "Software / developer tools",
-          "region": "Global community",
-          "summary": "Hunt down social media accounts by username across social networks",
-          "url": "https://github.com/sherlock-project/sherlock",
-          "observedAt": "2026-11-16T07:34:42Z",
-          "verifiedAt": "2026-11-16T07:34:42Z",
-          "metricBasis": "strict_7d",
-          "zh": {
-            "category": "软件／开发者工具",
-            "summary": "通过用户名查找社交平台账户的工具。"
-          }
-        },
-        {
-          "rank": 4,
           "project": "plannotator",
           "owner": "backnotprop",
-          "weeklyStars": 12072,
-          "totalStars": 12072,
-          "weeklyGain": 1719,
-          "forks": 1131,
+          "weeklyStars": 14429,
+          "totalStars": 14429,
+          "weeklyGain": 2815,
+          "forks": 1430,
           "category": "Software / developer tools",
           "region": "Global community",
           "summary": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
           "url": "https://github.com/backnotprop/plannotator",
-          "observedAt": "2026-11-16T07:34:42Z",
-          "verifiedAt": "2026-11-16T07:34:42Z",
+          "observedAt": "2026-11-23T01:03:03Z",
+          "verifiedAt": "2026-11-23T01:03:03Z",
           "metricBasis": "strict_7d",
           "zh": {
-            "category": "软件／开发者工具",
-            "summary": "面向 AI Agent 计划与代码审核的交互工具。"
+            "category": "软件／开发工具",
+            "summary": "用于审阅和反馈 AI Agent 计划与代码的协作工具。"
+          }
+        },
+        {
+          "rank": 2,
+          "project": "stitch-skills",
+          "owner": "google-labs-code",
+          "weeklyStars": 11922,
+          "totalStars": 11922,
+          "weeklyGain": 2683,
+          "forks": 1475,
+          "category": "Software / developer tools",
+          "region": "Global community",
+          "summary": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+          "url": "https://github.com/google-labs-code/stitch-skills",
+          "observedAt": "2026-11-23T01:03:03Z",
+          "verifiedAt": "2026-11-23T01:03:03Z",
+          "metricBasis": "strict_7d",
+          "zh": {
+            "category": "软件／开发工具",
+            "summary": "适配 Stitch MCP 的 Agent Skills 技能库。"
+          }
+        },
+        {
+          "rank": 3,
+          "project": "modern-web-guidance-src",
+          "owner": "GoogleChrome",
+          "weeklyStars": 10208,
+          "totalStars": 10208,
+          "weeklyGain": 3575,
+          "forks": 810,
+          "category": "Software / developer tools",
+          "region": "Global community",
+          "summary": "Keep your coding agent up to date with the latest web best practices",
+          "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
+          "observedAt": "2026-11-23T01:03:03Z",
+          "verifiedAt": "2026-11-23T01:03:03Z",
+          "metricBasis": "strict_7d",
+          "zh": {
+            "category": "软件／开发工具",
+            "summary": "为编程 Agent 提供现代网页开发最佳实践。"
+          }
+        },
+        {
+          "rank": 4,
+          "project": "open-code-review",
+          "owner": "alibaba",
+          "weeklyStars": 55418,
+          "totalStars": 55418,
+          "weeklyGain": 3700,
+          "forks": 4604,
+          "category": "Software / developer tools",
+          "region": "Global community",
+          "summary": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+          "url": "https://github.com/alibaba/open-code-review",
+          "observedAt": "2026-11-23T01:03:03Z",
+          "verifiedAt": "2026-11-23T01:03:03Z",
+          "metricBasis": "strict_7d",
+          "zh": {
+            "category": "软件／开发工具",
+            "summary": "结合规则管线与大模型的代码审查工具。"
           }
         },
         {
           "rank": 5,
-          "project": "agent-browser",
-          "owner": "vercel-labs",
-          "weeklyStars": 51765,
-          "totalStars": 51765,
-          "weeklyGain": 4217,
-          "forks": 3622,
+          "project": "last30days-skill",
+          "owner": "mvanhorn",
+          "weeklyStars": 72720,
+          "totalStars": 72720,
+          "weeklyGain": 4731,
+          "forks": 6425,
           "category": "Software / developer tools",
           "region": "Global community",
-          "summary": "Browser automation CLI for AI agents",
-          "url": "https://github.com/vercel-labs/agent-browser",
-          "observedAt": "2026-11-16T07:34:42Z",
-          "verifiedAt": "2026-11-16T07:34:42Z",
+          "summary": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+          "url": "https://github.com/mvanhorn/last30days-skill",
+          "observedAt": "2026-11-23T01:03:03Z",
+          "verifiedAt": "2026-11-23T01:03:03Z",
           "metricBasis": "strict_7d",
           "zh": {
-            "category": "软件／开发者工具",
-            "summary": "面向 AI Agent 的浏览器自动化命令行工具。"
+            "category": "软件／开发工具",
+            "summary": "跨多个公开平台检索近期话题的 Agent 技能。"
           }
         },
         {
           "rank": 6,
-          "project": "daily_stock_analysis",
-          "owner": "ZhuLinsen",
-          "weeklyStars": 72617,
-          "totalStars": 72617,
-          "weeklyGain": 4548,
-          "forks": 57610,
+          "project": "chrome-devtools-mcp",
+          "owner": "ChromeDevTools",
+          "weeklyStars": 58843,
+          "totalStars": 58843,
+          "weeklyGain": 2268,
+          "forks": 4916,
           "category": "Software / developer tools",
           "region": "Global community",
-          "summary": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
-          "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
-          "observedAt": "2026-11-16T07:34:42Z",
-          "verifiedAt": "2026-11-16T07:34:42Z",
+          "summary": "Chrome DevTools for coding agents",
+          "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+          "observedAt": "2026-11-23T01:03:03Z",
+          "verifiedAt": "2026-11-23T01:03:03Z",
           "metricBasis": "strict_7d",
           "zh": {
-            "category": "软件／开发者工具",
-            "summary": "多来源行情与新闻驱动的 AI 股票分析工具。"
+            "category": "软件／开发工具",
+            "summary": "供编程 Agent 使用的 Chrome 开发工具接口。"
           }
         },
         {
           "rank": 7,
-          "project": "sure",
-          "owner": "we-promise",
-          "weeklyStars": 15805,
-          "totalStars": 15805,
-          "weeklyGain": 4556,
-          "forks": 1383,
+          "project": "claude-trading-skills",
+          "owner": "tradermonty",
+          "weeklyStars": 7792,
+          "totalStars": 7792,
+          "weeklyGain": 2616,
+          "forks": 1496,
           "category": "Software / developer tools",
           "region": "Global community",
-          "summary": "The personal finance app for everyone (by everyone)",
-          "url": "https://github.com/we-promise/sure",
-          "observedAt": "2026-11-16T07:34:42Z",
-          "verifiedAt": "2026-11-16T07:34:42Z",
+          "summary": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
+          "url": "https://github.com/tradermonty/claude-trading-skills",
+          "observedAt": "2026-11-23T01:03:03Z",
+          "verifiedAt": "2026-11-23T01:03:03Z",
           "metricBasis": "strict_7d",
           "zh": {
-            "category": "软件／开发者工具",
-            "summary": "个人财务管理应用。"
+            "category": "软件／开发工具",
+            "summary": "面向股票投资研究的 Claude Code 技能集合。"
           }
         },
         {
           "rank": 8,
-          "project": "OpenMausBot",
-          "owner": "milind-soni",
-          "weeklyStars": 23693,
-          "totalStars": 23693,
-          "weeklyGain": 5463,
-          "forks": 3299,
+          "project": "ag-ui",
+          "owner": "ag-ui-protocol",
+          "weeklyStars": 21195,
+          "totalStars": 21195,
+          "weeklyGain": 3620,
+          "forks": 2157,
           "category": "Software / developer tools",
           "region": "Global community",
-          "summary": "Open-source Grok Bot alternative with a virtual machine that bots can use",
-          "url": "https://github.com/milind-soni/OpenMausBot",
-          "observedAt": "2026-11-16T07:34:42Z",
-          "verifiedAt": "2026-11-16T07:34:42Z",
+          "summary": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
+          "url": "https://github.com/ag-ui-protocol/ag-ui",
+          "observedAt": "2026-11-23T01:03:03Z",
+          "verifiedAt": "2026-11-23T01:03:03Z",
           "metricBasis": "strict_7d",
           "zh": {
-            "category": "软件／开发者工具",
-            "summary": "提供虚拟机环境的开源机器人项目。"
+            "category": "软件／开发工具",
+            "summary": "连接智能体与前端应用的交互协议。"
           }
         }
       ],
       "source": {
         "label": "GitHub Trending weekly / GitHub 周榜",
         "href": "https://github.com/trending?since=weekly",
-        "executedAt": "2026-11-16T07:34:42Z",
+        "executedAt": "2026-11-23T01:03:03Z",
         "filters": [
           "Official GitHub weekly Trending, first eight in page order.",
           "weeklyStars is a compatibility field holding cumulative stars; weeklyGain is the official week figure."
@@ -215,10 +215,10 @@
         ],
         "collectionStatus": "fresh",
         "metricBasis": "strict_7d",
-        "observedAt": "2026-11-16T07:34:42Z",
-        "verifiedAt": "2026-11-16T07:34:42Z",
-        "statusNote": "公开周榜经直接读取成功；按页面顺序列出前8项。累计Star与页面所示本周Star分列。",
-        "statusNoteEn": "Official weekly trending read directly; first eight in page order. Cumulative and weekly stars are distinct.",
+        "observedAt": "2026-11-23T01:03:03Z",
+        "verifiedAt": "2026-11-23T01:03:03Z",
+        "statusNote": "直接读取 GitHub 官方周榜前八名；累计 Star 和页面标注的本周 Star 分列。",
+        "statusNoteEn": "Read the first eight entries from official weekly Trending; cumulative and weekly stars are distinct.",
         "previousExecutedAt": "2026-10-26T01:02:27Z",
         "reviewWindow": {
           "start": "2026-10-26T01:00:00Z",
@@ -365,10 +365,10 @@
         ],
         "collectionStatus": "partial",
         "metricBasis": "historical",
-        "observedAt": "2026-11-16T01:01:35Z",
+        "observedAt": "2026-11-23T01:03:03Z",
         "verifiedAt": "2026-11-02T01:06:05Z",
-        "statusNote": "来源页面已检查，现有项目列表沿用旧核验时间；本期新增候选见产品关注池。",
-        "statusNoteEn": "Source page checked; existing project rows retain their historical verification dates. New candidates appear in the product watchlist.",
+        "statusNote": "本次已检查来源，未逐项核实旧记录；保留历史日期，不代表零新增。",
+        "statusNoteEn": "Source checked; historical rows not individually reverified. This does not mean zero new projects.",
         "previousExecutedAt": "2026-10-26T01:02:27Z",
         "reviewWindow": {
           "start": "2026-10-26T01:00:00Z",
@@ -585,10 +585,10 @@
         ],
         "collectionStatus": "unavailable",
         "metricBasis": "historical",
-        "observedAt": "2026-11-16T01:01:10Z",
+        "observedAt": "2026-11-23T01:03:03Z",
         "verifiedAt": "2026-10-19T06:38:29Z",
-        "statusNote": "本次来源列表读取受限，保留历史记录及原核验时间；无法读取不等于零新增。",
-        "statusNoteEn": "Discovery unavailable; historical observations and their verification dates are retained. Unavailable does not mean zero new projects.",
+        "statusNote": "本次页面不可读取或无法核实当前指标；保留历史核验日期，不能视为零新增。",
+        "statusNoteEn": "Current source or metrics unavailable; historical verification dates retained. This does not mean zero additions.",
         "previousExecutedAt": "2026-10-26T01:02:27Z",
         "reviewWindow": {
           "start": "2026-10-26T01:00:00Z",
@@ -815,10 +815,10 @@
         ],
         "collectionStatus": "partial",
         "metricBasis": "historical",
-        "observedAt": "2026-11-16T07:34:42Z",
+        "observedAt": "2026-11-23T01:03:03Z",
         "verifiedAt": "2026-10-19T06:38:29Z",
-        "statusNote": "Tindie首页通过直接读取可访问；热门为候选而非周销量，其他平台条目保留各自核验日期。",
-        "statusNoteEn": "Tindie homepage read directly; popularity is a candidate signal, not weekly sales. Other rows retain their verification dates.",
+        "statusNote": "本次已检查来源，未逐项核实旧记录；保留历史日期，不代表零新增。",
+        "statusNoteEn": "Source checked; historical rows not individually reverified. This does not mean zero new projects.",
         "platformResults": [
           {
             "platform": "Hackster.io",
@@ -949,10 +949,10 @@
         ],
         "collectionStatus": "partial",
         "metricBasis": "historical",
-        "observedAt": "2026-11-16T07:34:42Z",
+        "observedAt": "2026-11-23T01:03:03Z",
         "verifiedAt": "2026-10-19T06:38:29Z",
-        "statusNote": "首页经直接访问可读，但未核实旧项目实时指标；保留其历史核验日期。",
-        "statusNoteEn": "Homepage reachable via direct request; existing project metrics remain historical.",
+        "statusNote": "本次已检查来源，未逐项核实旧记录；保留历史日期，不代表零新增。",
+        "statusNoteEn": "Source checked; historical rows not individually reverified. This does not mean zero new projects.",
         "previousExecutedAt": "2026-10-26T01:02:27Z",
         "reviewWindow": {
           "start": "2026-10-26T01:00:00Z",
@@ -1145,10 +1145,10 @@
         ],
         "collectionStatus": "unavailable",
         "metricBasis": "historical",
-        "observedAt": "2026-11-16T01:01:10Z",
+        "observedAt": "2026-11-23T01:03:03Z",
         "verifiedAt": "2026-09-02",
-        "statusNote": "本次来源列表读取受限，保留历史记录及原核验时间；无法读取不等于零新增。",
-        "statusNoteEn": "Discovery unavailable; historical observations and their verification dates are retained. Unavailable does not mean zero new projects.",
+        "statusNote": "本次页面不可读取或无法核实当前指标；保留历史核验日期，不能视为零新增。",
+        "statusNoteEn": "Current source or metrics unavailable; historical verification dates retained. This does not mean zero additions.",
         "previousExecutedAt": "2026-10-26T01:02:27Z",
         "reviewWindow": {
           "start": "2026-10-26T01:00:00Z",
@@ -1209,10 +1209,10 @@
         ],
         "collectionStatus": "unavailable",
         "metricBasis": "historical",
-        "observedAt": "2026-11-16T01:01:10Z",
+        "observedAt": "2026-11-23T01:03:03Z",
         "verifiedAt": "2026-10-19T06:38:29Z",
-        "statusNote": "本次来源列表读取受限，保留历史记录及原核验时间；无法读取不等于零新增。",
-        "statusNoteEn": "Discovery unavailable; historical observations and their verification dates are retained. Unavailable does not mean zero new projects.",
+        "statusNote": "本次页面不可读取或无法核实当前指标；保留历史核验日期，不能视为零新增。",
+        "statusNoteEn": "Current source or metrics unavailable; historical verification dates retained. This does not mean zero additions.",
         "previousExecutedAt": "2026-10-26T01:02:27Z",
         "reviewWindow": {
           "start": "2026-10-26T01:00:00Z",
@@ -1263,10 +1263,10 @@
         ],
         "collectionStatus": "unavailable",
         "metricBasis": "historical",
-        "observedAt": "2026-11-16T01:01:10Z",
+        "observedAt": "2026-11-23T01:03:03Z",
         "verifiedAt": "2026-10-26T01:02:27Z",
-        "statusNote": "本次来源列表读取受限，保留历史记录及原核验时间；无法读取不等于零新增。",
-        "statusNoteEn": "Discovery unavailable; historical observations and their verification dates are retained. Unavailable does not mean zero new projects.",
+        "statusNote": "本次页面不可读取或无法核实当前指标；保留历史核验日期，不能视为零新增。",
+        "statusNoteEn": "Current source or metrics unavailable; historical verification dates retained. This does not mean zero additions.",
         "previousExecutedAt": "2026-10-26T01:02:27Z",
         "reviewWindow": {
           "start": "2026-10-26T01:00:00Z",
@@ -1356,7 +1356,7 @@
           "rank": 5,
           "project": "TRYX VESTRA VISION",
           "backers": null,
-          "raisedDisplay": "BackerTracker snapshot: 512 backers / $133,964; official counter unavailable",
+          "raisedDisplay": "BackerTracker snapshot: 525 backers / $137,179; official counter unavailable",
           "status": "Funding / current candidate; launched Oct 27",
           "category": "Hall-effect keyboard / under-switch OLED",
           "summary": "5.48-inch OLED beneath translucent switches; top touch strip, adjustable magnetic actuation. Tracker snapshot only; independent validation pending.",
@@ -1366,21 +1366,59 @@
             "https://shop.tryx.com/pages/vestra-vision",
             "https://www.backerkit.com/projects/tryx/vestra-vision-magnetic-keyboard-with-under-switch-oled"
           ],
-          "observedAt": "2026-11-16T07:34:42Z",
-          "verifiedAt": "2026-11-16T07:34:42Z",
+          "observedAt": "2026-11-23T01:03:03Z",
+          "verifiedAt": "2026-11-23T01:03:03Z",
           "metricBasis": "candidate",
           "zh": {
-            "raisedDisplay": "BackerTracker第三方快照：512位支持者／133,964美元；官方计数未能读取",
+            "raisedDisplay": "BackerTracker第三方快照：525位支持者／137,179美元；官方计数未能读取。",
             "status": "众筹中／当前热门候选；10月27日开募",
             "category": "磁轴键盘／轴下 OLED",
             "summary": "轴下5.48英寸 OLED、顶部触控区域和磁轴可调触发；数值为第三方快照，实际体验待独立验证。"
+          }
+        },
+        {
+          "rank": 6,
+          "project": "SecondBrain VoicePad",
+          "backers": null,
+          "raisedDisplay": "Unavailable",
+          "status": "Prelaunch; planned Nov 24",
+          "category": "Input device",
+          "summary": "Five-key AI voice controller; no verified supporters.",
+          "url": "https://www.kickstarter.com/projects/genspark/secondbrain-voicepad-ai-voice-controller",
+          "observedAt": "2026-11-23T01:03:03Z",
+          "verifiedAt": "2026-11-23T01:03:03Z",
+          "metricBasis": "candidate",
+          "zh": {
+            "status": "预发布／众筹候选",
+            "raisedDisplay": "暂无法核实",
+            "category": "输入设备",
+            "summary": "五键AI语音控制器；尚无可核实支持人数。"
+          }
+        },
+        {
+          "rank": 7,
+          "project": "DTL HE24",
+          "backers": null,
+          "raisedDisplay": "Unavailable",
+          "status": "Crowdfunding candidate",
+          "category": "Input device",
+          "summary": "24-key magnetic macro pad; tracker counters conflict.",
+          "url": "https://www.kickstarter.com/projects/dtl-he24/dtl-he24-a-24-key-hall-effect-macropad-kit",
+          "observedAt": "2026-11-23T01:03:03Z",
+          "verifiedAt": "2026-11-23T01:03:03Z",
+          "metricBasis": "candidate",
+          "zh": {
+            "status": "预发布／众筹候选",
+            "raisedDisplay": "暂无法核实",
+            "category": "输入设备",
+            "summary": "24键磁轴宏键盘；第三方支持人数存在冲突。"
           }
         }
       ],
       "source": {
         "label": "Kickstarter Technology: current candidates",
         "href": "https://www.kickstarter.com/discover/advanced?category_id=16&sort=popularity",
-        "executedAt": "2026-11-02T01:06:05Z",
+        "executedAt": "2026-11-23T01:03:03Z",
         "filters": [
           "Discovery returned no auditable ranking; official project pages, maker pages and dated Hackster coverage cross-checked.",
           "Current counters checked Oct 19; comparison baseline Oct 12."
@@ -1425,10 +1463,10 @@
         ],
         "collectionStatus": "partial",
         "metricBasis": "candidate",
-        "observedAt": "2026-11-16T07:34:42Z",
+        "observedAt": "2026-11-23T01:03:03Z",
         "verifiedAt": "2026-10-19T06:38:29Z",
-        "statusNote": "官方发现页无可审计列表；VESTRA 数值来自第三方累计快照，其他旧记录保留历史日期。",
-        "statusNoteEn": "Official discovery unavailable; VESTRA is a third-party cumulative snapshot; other rows retain historical dates.",
+        "statusNote": "发现页不可审计；VESTRA使用第三方快照，VoicePad为预发布，DTL支持人数冲突未采纳。",
+        "statusNoteEn": "Discovery page unavailable; VESTRA is a third-party snapshot, VoicePad is prelaunch, and conflicting DTL counters were excluded.",
         "previousExecutedAt": "2026-10-26T01:02:27Z",
         "reviewWindow": {
           "start": "2026-10-26T01:00:00Z",
@@ -1552,10 +1590,10 @@
         ],
         "collectionStatus": "unavailable",
         "metricBasis": "historical",
-        "observedAt": "2026-11-16T01:01:10Z",
+        "observedAt": "2026-11-23T01:03:03Z",
         "verifiedAt": "2026-10-19T06:38:29Z",
-        "statusNote": "本次来源列表读取受限，保留历史记录及原核验时间；无法读取不等于零新增。",
-        "statusNoteEn": "Discovery unavailable; historical observations and their verification dates are retained. Unavailable does not mean zero new projects.",
+        "statusNote": "本次页面不可读取或无法核实当前指标；保留历史核验日期，不能视为零新增。",
+        "statusNoteEn": "Current source or metrics unavailable; historical verification dates retained. This does not mean zero additions.",
         "previousExecutedAt": "2026-10-26T01:02:27Z",
         "reviewWindow": {
           "start": "2026-10-26T01:00:00Z",
@@ -1856,7 +1894,7 @@
         {
           "project": "TRYX VESTRA VISION",
           "track": "Hall-effect keyboard / display",
-          "signal": "BackerTracker snapshot: 512 backers / $133,964; tracker values, not official real-time counts.",
+          "signal": "BackerTracker snapshot 525 backers / $137,179; third-party, not official live data.",
           "stage": "Funding / current candidate",
           "technology": "5.48-inch under-switch OLED, transparent switches, top touch strip, Hall sensing",
           "risk": "Delivery, keycap/axis transparency, display life, heat, gaming performance and software compatibility require independent validation. 0.01 mm RT is a marketing claim.",
@@ -1871,8 +1909,8 @@
             "https://www.backerkit.com/projects/tryx/vestra-vision-magnetic-keyboard-with-under-switch-oled"
           ],
           "isHardware": true,
-          "observedAt": "2026-11-16T07:34:42Z",
-          "verifiedAt": "2026-11-16T07:34:42Z",
+          "observedAt": "2026-11-23T01:03:03Z",
+          "verifiedAt": "2026-11-23T01:03:03Z",
           "metricBasis": "candidate",
           "inputRelevance": 5,
           "aiInput": 1,
@@ -1883,7 +1921,7 @@
           "score": 76,
           "zh": {
             "track": "磁轴键盘／屏幕交互",
-            "signal": "BackerTracker第三方快照：512位支持者、133,964美元；不是官方实时数值。",
+            "signal": "BackerTracker第三方快照：525位支持者／137,179美元；非官方实时数值。",
             "stage": "众筹中／当前热门候选",
             "technology": "轴下5.48英寸 OLED、透明轴体、顶部触控区与霍尔磁感应",
             "risk": "交付、键帽轴体透光率、屏幕寿命、散热、游戏性能及软件兼容性均待独立验证；0.01毫米 RT 为厂商宣称。",
@@ -2549,7 +2587,7 @@
           "technology": "25 mm heavy trackball and speaker-simulated scroll clicks",
           "summary": "Trackball with a heavy ball and sound feedback on a detent-free wheel.",
           "track": "Input and interaction",
-          "signal": "CoSTORY project page: 1,357 buyers and ¥14,613,742 cumulative; snapshot, not weekly growth.",
+          "signal": "CoSTORY project snapshot: 1,612 buyers / ¥16,387,970; Nov 16 snapshot 1,357 / ¥14,613,742. Not a strict seven-day change.",
           "risk": "Delivery, acoustics, comfort and open-hardware license require validation.",
           "takeaway": "Test heavy-ball control and audible scroll feedback independently.",
           "openness": "Commercial presale; license unverified",
@@ -2566,7 +2604,7 @@
           "zh": {
             "summary": "先行销售的轨迹球，采用约48克重球和无卡点滚轮，并由扬声器发出提示音。",
             "track": "输入设备与交互",
-            "signal": "CoSTORY项目页累计1,357名购买者、¥14,613,742；为采集快照，不是周增量。",
+            "signal": "CoSTORY项目页快照：1,612名购买者／¥16,387,970；11月16日快照为1,357名／¥14,613,742。两次观察间隔不足严格7天。",
             "takeaway": "可分别测试重球微操与滚动声音提示。",
             "risk": "交付、声音效果、舒适性及开源硬件许可待验证。",
             "technology": "25毫米重球与扬声器滚动提示",
@@ -2574,9 +2612,9 @@
             "openness": "商业先行销售；许可未核实",
             "selectionPath": "核心相关"
           },
-          "observedAt": "2026-11-16T07:34:42Z",
-          "verifiedAt": "2026-11-16T07:34:42Z",
-          "metricBasis": "candidate"
+          "observedAt": "2026-11-23T01:03:03Z",
+          "verifiedAt": "2026-11-23T01:03:03Z",
+          "metricBasis": "snapshot_delta"
         },
         {
           "project": "duckyPad Pro",
@@ -2652,12 +2690,127 @@
           "observedAt": "2026-11-16T07:35:51Z",
           "verifiedAt": "2026-11-16T07:35:51Z",
           "metricBasis": "candidate"
+        },
+        {
+          "project": "SecondBrain VoicePad",
+          "url": "https://www.kickstarter.com/projects/genspark/secondbrain-voicepad-ai-voice-controller",
+          "links": [
+            "https://shop.genspark.ai/pages/voicepad",
+            "https://www.notebookcheck.net/SecondBrain-VoicePad-Compact-AI-controls-and-dictation-for-your-desk.1456759.0.html"
+          ],
+          "track": "AI voice / desktop input",
+          "signal": "Nov 22 press coverage; planned Nov 24 launch, no verified supporters.",
+          "stage": "Prelaunch",
+          "technology": "Five programmable keys, microphones, voice dictation and Bluetooth/USB",
+          "summary": "A five-key desktop controller for AI dictation and shortcuts, planned for crowdfunding.",
+          "risk": "Microphone privacy, subscription limits, transcription accuracy and delivery remain unverified.",
+          "takeaway": "Compare dedicated press-to-talk control with F4 voice workflow and evaluate privacy indicators.",
+          "openness": "Commercial product; source and hardware licenses unverified.",
+          "isHardware": true,
+          "inputRelevance": 5,
+          "aiInput": 5,
+          "breakthrough": 4,
+          "potential": 4,
+          "wonder": 4,
+          "heat": 2,
+          "selectionPath": "Both / 双重命中",
+          "zh": {
+            "summary": "面向电脑的五键桌面语音控制器，结合可编程快捷键、语音听写和会议转写，计划进行众筹。",
+            "track": "AI语音／桌面输入",
+            "signal": "11月22日报道，计划11月24日启动众筹；支持人数尚无法核实。",
+            "stage": "预发布",
+            "technology": "五枚可编程按键、双麦克风、语音听写与蓝牙／USB",
+            "risk": "麦克风隐私、订阅额度、识别准确度和交付均待验证。",
+            "takeaway": "可与F4语音工作流比较实体按住说话操作和隐私提示。",
+            "openness": "商业产品，源码与硬件许可未核实。",
+            "selectionPath": "双重命中"
+          },
+          "score": 88,
+          "priority": 1,
+          "observedAt": "2026-11-23T01:03:03Z",
+          "verifiedAt": "2026-11-23T01:03:03Z",
+          "metricBasis": "candidate"
+        },
+        {
+          "project": "DTL HE24",
+          "url": "https://www.kickstarter.com/projects/dtl-he24/dtl-he24-a-24-key-hall-effect-macropad-kit",
+          "links": [
+            "https://www.pledgebox.com/projects/dtl-he24-a-24-key-hall-effect-macropad-kit"
+          ],
+          "track": "Hall-effect macro controller",
+          "signal": "Tracker lists Nov 15–Dec 15; tracker counters conflict, not reliable.",
+          "stage": "Crowdfunding candidate",
+          "technology": "24 magnetic switches, dual encoders and display",
+          "summary": "A Hall-effect macro-pad kit with dual encoders and a display.",
+          "risk": "Counter conflict, firmware capabilities, case fit and fulfillment need verification.",
+          "takeaway": "Evaluate compact magnetic macro pads with configurable encoder and display functions.",
+          "openness": "Commercial kit; source license unverified.",
+          "isHardware": true,
+          "inputRelevance": 5,
+          "aiInput": 1,
+          "breakthrough": 3,
+          "potential": 3,
+          "wonder": 3,
+          "heat": 1,
+          "selectionPath": "Core / 核心相关",
+          "zh": {
+            "summary": "24键磁轴宏键盘套件，带双旋钮和屏幕，用于自定义快捷输入与控制。",
+            "track": "磁轴宏键盘",
+            "signal": "第三方跟踪页显示11月15日至12月15日；不同抓取的支持人数冲突，未采用具体值。",
+            "stage": "众筹候选",
+            "technology": "24枚磁轴、双旋钮和显示屏",
+            "risk": "众筹人数冲突、固件能力、外壳适配及交付需核实。",
+            "takeaway": "可评估磁轴宏键盘结合旋钮与小屏的桌面控制体验。",
+            "openness": "商业套件，源码许可未核实。",
+            "selectionPath": "核心相关"
+          },
+          "score": 62,
+          "priority": 1,
+          "observedAt": "2026-11-23T01:03:03Z",
+          "verifiedAt": "2026-11-23T01:03:03Z",
+          "metricBasis": "candidate"
+        },
+        {
+          "project": "MIT featherweight flying robot",
+          "url": "https://news.mit.edu/2026/featherweight-flying-robot-carries-its-own-sensors-and-computers-1118",
+          "track": "Frontier robotics",
+          "signal": "MIT research report Nov 18; no market popularity metric.",
+          "stage": "Research prototype / tethered power",
+          "technology": "Flapping soft actuators, onboard IMU, optical flow, time-of-flight and computation",
+          "summary": "A flapping microrobot carries onboard sensing and computation while remaining externally powered.",
+          "risk": "External power tether, payload, endurance and manufacturability limit practical use.",
+          "takeaway": "Study low-mass integration of sensors and embedded processing for future tiny wearables.",
+          "openness": "Research publication; hardware design and license unverified.",
+          "isHardware": true,
+          "inputRelevance": 1,
+          "aiInput": 1,
+          "breakthrough": 5,
+          "potential": 3,
+          "wonder": 5,
+          "heat": 2,
+          "selectionPath": "Frontier / 前沿破格",
+          "zh": {
+            "summary": "MIT 微型扑翼机器人搭载机载传感器和计算系统，探索精确飞行；仍依赖外部电源。",
+            "track": "前沿机器人／传感",
+            "signal": "MIT 于11月18日发布研究报道；没有可比较的市场热度指标。",
+            "stage": "研究原型／外接电源",
+            "technology": "软体扑翼驱动、机载惯导、光流、测距及计算",
+            "risk": "外接供电、载荷、续航和制造工艺限制实际应用。",
+            "takeaway": "可借鉴微型可穿戴设备中的轻量化多传感器与嵌入式计算集成。",
+            "openness": "研究成果；硬件设计和许可证尚未核实。",
+            "selectionPath": "前沿破格"
+          },
+          "score": 51,
+          "priority": 1,
+          "observedAt": "2026-11-23T01:03:03Z",
+          "verifiedAt": "2026-11-23T01:03:03Z",
+          "metricBasis": "candidate"
         }
       ],
       "source": {
         "label": "Product opportunities: core relevance + hardware frontier",
         "href": "https://github.com/SvenKunkka/open-source-weekly-radar",
-        "executedAt": "2026-11-02T01:06:05Z",
+        "executedAt": "2026-11-23T01:03:03Z",
         "filters": [
           "Core: inputRelevance >= 4 OR aiInput >= 4.",
           "Frontier: isHardware AND breakthrough >= 4 AND wonder >= 4.",
@@ -2727,10 +2880,10 @@
         ],
         "collectionStatus": "partial",
         "metricBasis": "candidate",
-        "observedAt": "2026-11-16T07:35:51Z",
-        "verifiedAt": "2026-11-16T01:01:10Z",
-        "statusNote": "补充 duckyPad Pro 与 Ulanzi Vibe Mouse；后者为媒体报道的概念候选。历史项目保留各自核验日期。",
-        "statusNoteEn": "Added duckyPad Pro and the media-reported Ulanzi Vibe Mouse concept. Historical rows retain their own verification dates.",
+        "observedAt": "2026-11-23T01:03:03Z",
+        "verifiedAt": "2026-11-23T01:03:03Z",
+        "statusNote": "新增VoicePad、DTL HE24和MIT扑翼机器人；已复查Nape Pro SE及VESTRA，其他项目保留原日期。",
+        "statusNoteEn": "Added VoicePad, DTL HE24 and MIT microrobot; refreshed Nape Pro SE and VESTRA. Other rows retain their dates.",
         "previousExecutedAt": "2026-10-26T01:02:27Z",
         "reviewWindow": {
           "start": "2026-10-26T01:00:00Z",
@@ -2739,49 +2892,136 @@
         "supplementedAt": "2026-11-02T03:29:49Z",
         "platformResults": [
           {
-            "platform": "CoSTORY",
-            "href": "https://costory.jp/",
+            "platform": "GitHub Trending",
+            "collectionStatus": "fresh",
+            "metricBasis": "strict_7d",
+            "observedAt": "2026-11-23T01:03:03Z",
+            "statusNote": "官方周榜直接读取成功。"
+          },
+          {
+            "platform": "Hackaday",
             "collectionStatus": "partial",
-            "metricBasis": "cumulative",
-            "observedAt": "2026-11-16T01:01:10Z",
-            "verifiedAt": "2026-11-16T01:01:10Z",
-            "statusNote": "Nape Pro SE页面显示累计1,352名购买者，非周增量。"
-          },
-          {
-            "platform": "You can just build things",
-            "href": "https://youcanjustbuildthings.openai.chatgpt.site/",
-            "collectionStatus": "unavailable",
-            "metricBasis": "unavailable",
-            "observedAt": "2026-11-16T01:01:10Z",
-            "statusNote": "仅显示导航及登录提示，项目列表无法核实。"
-          },
-          {
-            "platform": "Tindie",
-            "collectionStatus": "unavailable",
-            "metricBasis": "unavailable",
-            "observedAt": "2026-11-16T01:01:35Z",
-            "statusNote": "页面返回502，无法核实新品。"
+            "metricBasis": "historical",
+            "observedAt": "2026-11-23T01:03:03Z",
+            "statusNote": "页面可读，旧记录未逐项复核。"
           },
           {
             "platform": "Hackster.io",
             "collectionStatus": "partial",
             "metricBasis": "candidate",
-            "observedAt": "2026-11-16T01:01:35Z",
-            "statusNote": "可读新闻页面，TeethMark作为研究候选。"
+            "observedAt": "2026-11-23T01:03:03Z",
+            "statusNote": "新闻页可读，项目详情覆盖不完整。"
           },
           {
-            "platform": "Arduino Project Hub",
+            "platform": "Crowd Supply",
+            "collectionStatus": "unavailable",
+            "metricBasis": "unavailable",
+            "observedAt": "2026-11-23T01:03:03Z",
+            "statusNote": "官方页面返回403。"
+          },
+          {
+            "platform": "Tindie",
             "collectionStatus": "partial",
-            "metricBasis": "cumulative",
-            "observedAt": "2026-11-16T01:01:35Z",
-            "statusNote": "可读热门候选，未核实严格周增量。"
+            "metricBasis": "candidate",
+            "observedAt": "2026-11-23T01:03:03Z",
+            "statusNote": "首页直连200；未核实周销量。"
           },
           {
             "platform": "BeeKeeb",
             "collectionStatus": "partial",
             "metricBasis": "candidate",
-            "observedAt": "2026-11-16T01:01:35Z",
-            "statusNote": "日本站本次重定向美元站；不可直接与日元价格对比。"
+            "observedAt": "2026-11-23T01:03:03Z",
+            "statusNote": "日本域名跳转美元商店，不与旧日元价格比较。"
+          },
+          {
+            "platform": "OSHWHub",
+            "collectionStatus": "partial",
+            "metricBasis": "candidate",
+            "observedAt": "2026-11-23T01:03:03Z",
+            "statusNote": "首页直连200，项目指标未逐项复核。"
+          },
+          {
+            "platform": "OSCHINA",
+            "collectionStatus": "unavailable",
+            "metricBasis": "unavailable",
+            "observedAt": "2026-11-23T01:03:03Z",
+            "statusNote": "页面没有可审计正文。"
+          },
+          {
+            "platform": "Instructables Teachers Fusion",
+            "collectionStatus": "unavailable",
+            "metricBasis": "unavailable",
+            "observedAt": "2026-11-23T01:03:03Z",
+            "statusNote": "页面仅加载状态。"
+          },
+          {
+            "platform": "Arduino Project Hub",
+            "collectionStatus": "partial",
+            "metricBasis": "candidate",
+            "observedAt": "2026-11-23T01:03:03Z",
+            "statusNote": "可读热门列表；没有严格周增量。"
+          },
+          {
+            "platform": "Kickstarter Technology",
+            "collectionStatus": "partial",
+            "metricBasis": "candidate",
+            "observedAt": "2026-11-23T01:03:03Z",
+            "statusNote": "发现页不可读取，项目与第三方跟踪页交叉核查。"
+          },
+          {
+            "platform": "Indiegogo Innovation & Tech",
+            "collectionStatus": "partial",
+            "metricBasis": "candidate",
+            "observedAt": "2026-11-23T01:03:03Z",
+            "statusNote": "发现页不可读；搜索索引中项目阶段有待复核。"
+          },
+          {
+            "platform": "You can just build things",
+            "collectionStatus": "unavailable",
+            "metricBasis": "unavailable",
+            "observedAt": "2026-11-23T01:03:03Z",
+            "statusNote": "仅导航壳，项目列表不可核实。"
+          },
+          {
+            "platform": "CoSTORY",
+            "collectionStatus": "partial",
+            "metricBasis": "snapshot_delta",
+            "observedAt": "2026-11-23T01:03:03Z",
+            "statusNote": "Nape Pro SE详情页已核查；首页与详情快照可能不一致。"
+          }
+        ],
+        "searchCoverage": [
+          {
+            "group": "HE / 磁轴",
+            "queries": [
+              "2026 november 17 hall effect keyboard rapid trigger Kickstarter",
+              "2026 11月 磁轴 键盘 新品"
+            ],
+            "status": "partial"
+          },
+          {
+            "group": "屏幕键盘",
+            "queries": [
+              "november 2026 OLED LCD screen keyboard crowdfunding",
+              "2026 11月 屏幕 键盘 OLED 轴下 磁轴"
+            ],
+            "status": "partial"
+          },
+          {
+            "group": "AI语音",
+            "queries": [
+              "november 2026 AI voice dictation desktop controller launch",
+              "2026 11月 AI 语音 输入 设备 键盘 新品"
+            ],
+            "status": "partial"
+          },
+          {
+            "group": "分体与指向",
+            "queries": [
+              "november 2026 split keyboard trackball touchpad ZMK",
+              "2026 11月 分体 键盘 轨迹球 力反馈 旋钮"
+            ],
+            "status": "partial"
           }
         ]
       },
@@ -2880,11 +3120,11 @@
           }
         ],
         "collectionStatus": "partial",
-        "metricBasis": "candidate",
-        "observedAt": "2026-11-16T07:34:42Z",
+        "metricBasis": "historical",
+        "observedAt": "2026-11-23T01:03:03Z",
         "verifiedAt": "2026-11-16T07:34:42Z",
-        "statusNote": "日本域名本次跳转美元商店；所列价格为首页快照，不与历史日元报价比较，也非销量排名。",
-        "statusNoteEn": "Japanese domain redirected to USD store; homepage prices are snapshots, not comparable JPY values or sales rankings.",
+        "statusNote": "本次已检查来源，未逐项核实旧记录；保留历史日期，不代表零新增。",
+        "statusNoteEn": "Source checked; historical rows not individually reverified. This does not mean zero new projects.",
         "previousExecutedAt": "2026-10-26T01:02:27Z",
         "reviewWindow": {
           "start": "2026-10-26T01:00:00Z",
